@@ -1,0 +1,55 @@
+#+TITLE: Roadmap del Proyecto Laia
+#+AUTHOR: Tu Nombre
+#+DATE: 2023-10-01
+
+* Fases del Proyecto
+
+** PREPARACIÓN
+   :PROPERTIES:
+   :CATEGORY: Fase
+   :START: 2023-10-01
+   :END: 2023-12-31
+   :END:
+
+** DESARROLLO INICIAL
+   :PROPERTIES:
+   :CATEGORY: Fase
+   :START: 2024-01-01
+   :END: 2025-06-30
+   :END:
+
+** EXPANSIÓN Y VALIDACIÓN
+   :PROPERTIES:
+   :CATEGORY: Fase
+   :START: 2025-07-01
+   :END: 2027-06-30
+   :END:
+
+** CONSOLIDACIÓN
+   :PROPERTIES:
+   :CATEGORY: Fase
+   :START: 2027-07-01
+   :END: 2030-06-30
+   :END:
+
+** LIDERAZGO GLOBAL
+   :PROPERTIES:
+   :CATEGORY: Fase
+   :START: 2030-07-01
+   :END: 2035-12-31
+   :END:
+
+* Diagrama de Gantt
+
+#+BEGIN_SRC gantt :scale 1.0 :today-marker on :width 80
+[Preparación]
+    : 2023-10-01, 92d
+[Desarrollo Inicial]
+    : 2024-01-01, 546d
+[Expansión y Validación]
+    : 2025-07-01, 730d
+[Consolidación]
+    : 2027-07-01, 1095d
+[Liderazgo Global]
+    : 2030-07-01, 2000d
+#+END_SRC
