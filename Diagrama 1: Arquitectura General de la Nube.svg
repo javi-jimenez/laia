@@ -1,0 +1,192 @@
+<svg width="899pt" height="368pt" viewBox="0.00 0.00 899.14 368.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 364)">
+<title>ArquitecturaGeneral</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-364 895.14,-364 895.14,4 -4,4"/>
+<!-- Usuarios -->
+<g id="node1" class="node">
+<title>Usuarios</title>
+<path fill="none" stroke="black" d="M148.24,-144C148.24,-144 12,-144 12,-144 6,-144 0,-138 0,-132 0,-132 0,-120 0,-120 0,-114 6,-108 12,-108 12,-108 148.24,-108 148.24,-108 154.24,-108 160.24,-114 160.24,-120 160.24,-120 160.24,-132 160.24,-132 160.24,-138 154.24,-144 148.24,-144"/>
+<text text-anchor="middle" x="80.12" y="-121.8" font-family="Times,serif" font-size="14.00">Usuarios (Colaboradores)</text>
+</g>
+<!-- APIGateway -->
+<g id="node2" class="node">
+<title>APIGateway</title>
+<path fill="none" stroke="black" d="M276.05,-225C276.05,-225 208.24,-225 208.24,-225 202.24,-225 196.24,-219 196.24,-213 196.24,-213 196.24,-201 196.24,-201 196.24,-195 202.24,-189 208.24,-189 208.24,-189 276.05,-189 276.05,-189 282.05,-189 288.05,-195 288.05,-201 288.05,-201 288.05,-213 288.05,-213 288.05,-219 282.05,-225 276.05,-225"/>
+<text text-anchor="middle" x="242.14" y="-202.8" font-family="Times,serif" font-size="14.00">API Gateway</text>
+</g>
+<!-- Usuarios&#45;&gt;APIGateway -->
+<g id="edge1" class="edge">
+<title>Usuarios-&gt;APIGateway</title>
+<path fill="none" stroke="black" d="M117.43,-144.38C140.27,-155.94 169.95,-170.96 194.52,-183.4"/>
+<polygon fill="black" stroke="black" points="192.85,-186.48 203.35,-187.87 196.01,-180.23 192.85,-186.48"/>
+</g>
+<!-- Firewall -->
+<g id="node13" class="node">
+<title>Firewall</title>
+<path fill="none" stroke="black" d="M261.47,-90C261.47,-90 222.82,-90 222.82,-90 216.82,-90 210.82,-84 210.82,-78 210.82,-78 210.82,-66 210.82,-66 210.82,-60 216.82,-54 222.82,-54 222.82,-54 261.47,-54 261.47,-54 267.47,-54 273.47,-60 273.47,-66 273.47,-66 273.47,-78 273.47,-78 273.47,-84 267.47,-90 261.47,-90"/>
+<text text-anchor="middle" x="242.14" y="-67.8" font-family="Times,serif" font-size="14.00">Firewall</text>
+</g>
+<!-- Usuarios&#45;&gt;Firewall -->
+<g id="edge14" class="edge">
+<title>Usuarios-&gt;Firewall</title>
+<path fill="none" stroke="black" d="M135.74,-107.57C156.73,-100.49 180.32,-92.53 199.85,-85.93"/>
+<polygon fill="black" stroke="black" points="200.74,-89.33 209.1,-82.81 198.51,-82.69 200.74,-89.33"/>
+</g>
+<!-- Autenticacion -->
+<g id="node3" class="node">
+<title>Autenticacion</title>
+<path fill="none" stroke="black" d="M481.99,-360C481.99,-360 344.6,-360 344.6,-360 338.6,-360 332.6,-354 332.6,-348 332.6,-348 332.6,-336 332.6,-336 332.6,-330 338.6,-324 344.6,-324 344.6,-324 481.99,-324 481.99,-324 487.99,-324 493.99,-330 493.99,-336 493.99,-336 493.99,-348 493.99,-348 493.99,-354 487.99,-360 481.99,-360"/>
+<text text-anchor="middle" x="413.3" y="-337.8" font-family="Times,serif" font-size="14.00">Servicio de Autenticación</text>
+</g>
+<!-- APIGateway&#45;&gt;Autenticacion -->
+<g id="edge2" class="edge">
+<title>APIGateway-&gt;Autenticacion</title>
+<path fill="none" stroke="black" d="M252.02,-225.11C264.72,-249.14 290.31,-291.3 324.05,-315 325.63,-316.11 327.25,-317.17 328.91,-318.19"/>
+<polygon fill="black" stroke="black" points="327.02,-321.15 337.48,-322.86 330.37,-315 327.02,-321.15"/>
+</g>
+<!-- Colaboracion -->
+<g id="node4" class="node">
+<title>Colaboracion</title>
+<path fill="none" stroke="black" d="M480.44,-306C480.44,-306 346.15,-306 346.15,-306 340.15,-306 334.15,-300 334.15,-294 334.15,-294 334.15,-282 334.15,-282 334.15,-276 340.15,-270 346.15,-270 346.15,-270 480.44,-270 480.44,-270 486.44,-270 492.44,-276 492.44,-282 492.44,-282 492.44,-294 492.44,-294 492.44,-300 486.44,-306 480.44,-306"/>
+<text text-anchor="middle" x="413.3" y="-283.8" font-family="Times,serif" font-size="14.00">Servicio de Colaboración</text>
+</g>
+<!-- APIGateway&#45;&gt;Colaboracion -->
+<g id="edge3" class="edge">
+<title>APIGateway-&gt;Colaboracion</title>
+<path fill="none" stroke="black" d="M266.82,-225.5C282.39,-236.96 303.6,-251.31 324.05,-261 327.31,-262.54 330.67,-264.03 334.1,-265.44"/>
+<polygon fill="black" stroke="black" points="332.55,-268.59 343.14,-268.96 335.09,-262.07 332.55,-268.59"/>
+</g>
+<!-- Almacenamiento -->
+<g id="node5" class="node">
+<title>Almacenamiento</title>
+<path fill="none" stroke="black" d="M490.55,-252C490.55,-252 336.05,-252 336.05,-252 330.05,-252 324.05,-246 324.05,-240 324.05,-240 324.05,-228 324.05,-228 324.05,-222 330.05,-216 336.05,-216 336.05,-216 490.55,-216 490.55,-216 496.55,-216 502.55,-222 502.55,-228 502.55,-228 502.55,-240 502.55,-240 502.55,-246 496.55,-252 490.55,-252"/>
+<text text-anchor="middle" x="413.3" y="-229.8" font-family="Times,serif" font-size="14.00">Servicio de Almacenamiento</text>
+</g>
+<!-- APIGateway&#45;&gt;Almacenamiento -->
+<g id="edge4" class="edge">
+<title>APIGateway-&gt;Almacenamiento</title>
+<path fill="none" stroke="black" d="M288.47,-214.24C296.09,-215.45 304.26,-216.76 312.63,-218.09"/>
+<polygon fill="black" stroke="black" points="311.8,-221.5 322.23,-219.62 312.91,-214.59 311.8,-221.5"/>
+</g>
+<!-- Procesamiento -->
+<g id="node6" class="node">
+<title>Procesamiento</title>
+<path fill="none" stroke="black" d="M483.94,-198C483.94,-198 342.65,-198 342.65,-198 336.65,-198 330.65,-192 330.65,-186 330.65,-186 330.65,-174 330.65,-174 330.65,-168 336.65,-162 342.65,-162 342.65,-162 483.94,-162 483.94,-162 489.94,-162 495.94,-168 495.94,-174 495.94,-174 495.94,-186 495.94,-186 495.94,-192 489.94,-198 483.94,-198"/>
+<text text-anchor="middle" x="413.3" y="-175.8" font-family="Times,serif" font-size="14.00">Servicio de Procesamiento</text>
+</g>
+<!-- APIGateway&#45;&gt;Procesamiento -->
+<g id="edge5" class="edge">
+<title>APIGateway-&gt;Procesamiento</title>
+<path fill="none" stroke="black" d="M288.47,-199.76C298.06,-198.23 308.51,-196.57 319.15,-194.87"/>
+<polygon fill="black" stroke="black" points="319.45,-198.36 328.77,-193.33 318.35,-191.45 319.45,-198.36"/>
+</g>
+<!-- Balanceador -->
+<g id="node9" class="node">
+<title>Balanceador</title>
+<path fill="none" stroke="black" d="M471.1,-144C471.1,-144 355.5,-144 355.5,-144 349.5,-144 343.5,-138 343.5,-132 343.5,-132 343.5,-120 343.5,-120 343.5,-114 349.5,-108 355.5,-108 355.5,-108 471.1,-108 471.1,-108 477.1,-108 483.1,-114 483.1,-120 483.1,-120 483.1,-132 483.1,-132 483.1,-138 477.1,-144 471.1,-144"/>
+<text text-anchor="middle" x="413.3" y="-121.8" font-family="Times,serif" font-size="14.00">Balanceador de Carga</text>
+</g>
+<!-- APIGateway&#45;&gt;Balanceador -->
+<g id="edge10" class="edge">
+<title>APIGateway-&gt;Balanceador</title>
+<path fill="none" stroke="black" d="M266.82,-188.5C282.39,-177.04 303.6,-162.69 324.05,-153 327.31,-151.46 330.67,-149.97 334.1,-148.56"/>
+<polygon fill="black" stroke="black" points="335.09,-151.93 343.14,-145.04 332.55,-145.41 335.09,-151.93"/>
+</g>
+<!-- BDSQL -->
+<g id="node7" class="node">
+<title>BDSQL</title>
+<path fill="none" stroke="black" d="M674.15,-319C674.15,-319 572.11,-319 572.11,-319 566.11,-319 560.11,-313 560.11,-307 560.11,-307 560.11,-295 560.11,-295 560.11,-289 566.11,-283 572.11,-283 572.11,-283 674.15,-283 674.15,-283 680.15,-283 686.15,-289 686.15,-295 686.15,-295 686.15,-307 686.15,-307 686.15,-313 680.15,-319 674.15,-319"/>
+<text text-anchor="middle" x="623.13" y="-296.8" font-family="Times,serif" font-size="14.00">Base de Datos SQL</text>
+</g>
+<!-- Autenticacion&#45;&gt;BDSQL -->
+<g id="edge6" class="edge">
+<title>Autenticacion-&gt;BDSQL</title>
+<path fill="none" stroke="black" d="M494.35,-326.21C512.26,-322.67 531.17,-318.94 548.79,-315.47"/>
+<polygon fill="black" stroke="black" points="549.25,-318.95 558.38,-313.58 547.89,-312.08 549.25,-318.95"/>
+</g>
+<!-- Colaboracion&#45;&gt;BDSQL -->
+<g id="edge7" class="edge">
+<title>Colaboracion-&gt;BDSQL</title>
+<path fill="none" stroke="black" d="M492.87,-292.91C511.06,-294.05 530.36,-295.26 548.33,-296.38"/>
+<polygon fill="black" stroke="black" points="547.92,-299.87 558.12,-297 548.36,-292.88 547.92,-299.87"/>
+</g>
+<!-- BDNoSQL -->
+<g id="node8" class="node">
+<title>BDNoSQL</title>
+<path fill="none" stroke="black" d="M682.71,-238C682.71,-238 563.56,-238 563.56,-238 557.56,-238 551.56,-232 551.56,-226 551.56,-226 551.56,-214 551.56,-214 551.56,-208 557.56,-202 563.56,-202 563.56,-202 682.71,-202 682.71,-202 688.71,-202 694.71,-208 694.71,-214 694.71,-214 694.71,-226 694.71,-226 694.71,-232 688.71,-238 682.71,-238"/>
+<text text-anchor="middle" x="623.13" y="-215.8" font-family="Times,serif" font-size="14.00">Base de Datos NoSQL</text>
+</g>
+<!-- Almacenamiento&#45;&gt;BDNoSQL -->
+<g id="edge8" class="edge">
+<title>Almacenamiento-&gt;BDNoSQL</title>
+<path fill="none" stroke="black" d="M503.04,-228.02C515.25,-227.2 527.74,-226.36 539.82,-225.54"/>
+<polygon fill="black" stroke="black" points="540.01,-229.04 549.75,-224.88 539.54,-222.06 540.01,-229.04"/>
+</g>
+<!-- Procesamiento&#45;&gt;BDNoSQL -->
+<g id="edge9" class="edge">
+<title>Procesamiento-&gt;BDNoSQL</title>
+<path fill="none" stroke="black" d="M496.44,-195.81C510.91,-198.59 525.96,-201.49 540.42,-204.27"/>
+<polygon fill="black" stroke="black" points="539.37,-207.63 549.85,-206.09 540.69,-200.76 539.37,-207.63"/>
+</g>
+<!-- Servidores -->
+<g id="node10" class="node">
+<title>Servidores</title>
+<path fill="none" stroke="black" d="M695.72,-144C695.72,-144 550.55,-144 550.55,-144 544.55,-144 538.55,-138 538.55,-132 538.55,-132 538.55,-120 538.55,-120 538.55,-114 544.55,-108 550.55,-108 550.55,-108 695.72,-108 695.72,-108 701.72,-108 707.72,-114 707.72,-120 707.72,-120 707.72,-132 707.72,-132 707.72,-138 701.72,-144 695.72,-144"/>
+<text text-anchor="middle" x="623.13" y="-121.8" font-family="Times,serif" font-size="14.00">Servidores de Aplicaciones</text>
+</g>
+<!-- Balanceador&#45;&gt;Servidores -->
+<g id="edge11" class="edge">
+<title>Balanceador-&gt;Servidores</title>
+<path fill="none" stroke="black" d="M483.5,-126C497.43,-126 512.3,-126 526.93,-126"/>
+<polygon fill="black" stroke="black" points="526.54,-129.5 536.54,-126 526.54,-122.5 526.54,-129.5"/>
+</g>
+<!-- Cola -->
+<g id="node11" class="node">
+<title>Cola</title>
+<path fill="none" stroke="black" d="M862.81,-171C862.81,-171 772.05,-171 772.05,-171 766.05,-171 760.05,-165 760.05,-159 760.05,-159 760.05,-147 760.05,-147 760.05,-141 766.05,-135 772.05,-135 772.05,-135 862.81,-135 862.81,-135 868.81,-135 874.81,-141 874.81,-147 874.81,-147 874.81,-159 874.81,-159 874.81,-165 868.81,-171 862.81,-171"/>
+<text text-anchor="middle" x="817.43" y="-148.8" font-family="Times,serif" font-size="14.00">Servicios de Cola</text>
+</g>
+<!-- Servidores&#45;&gt;Cola -->
+<g id="edge12" class="edge">
+<title>Servidores-&gt;Cola</title>
+<path fill="none" stroke="black" d="M708.2,-137.8C721.64,-139.69 735.41,-141.62 748.42,-143.45"/>
+<polygon fill="black" stroke="black" points="747.74,-146.89 758.13,-144.81 748.71,-139.96 747.74,-146.89"/>
+</g>
+<!-- Monitoreo -->
+<g id="node12" class="node">
+<title>Monitoreo</title>
+<path fill="none" stroke="black" d="M879.14,-117C879.14,-117 755.72,-117 755.72,-117 749.72,-117 743.72,-111 743.72,-105 743.72,-105 743.72,-93 743.72,-93 743.72,-87 749.72,-81 755.72,-81 755.72,-81 879.14,-81 879.14,-81 885.14,-81 891.14,-87 891.14,-93 891.14,-93 891.14,-105 891.14,-105 891.14,-111 885.14,-117 879.14,-117"/>
+<text text-anchor="middle" x="817.43" y="-94.8" font-family="Times,serif" font-size="14.00">Servicios de Monitoreo</text>
+</g>
+<!-- Servidores&#45;&gt;Monitoreo -->
+<g id="edge13" class="edge">
+<title>Servidores-&gt;Monitoreo</title>
+<path fill="none" stroke="black" d="M708.2,-114.2C716.16,-113.08 724.25,-111.94 732.22,-110.82"/>
+<polygon fill="black" stroke="black" points="732.47,-114.32 741.89,-109.47 731.5,-107.39 732.47,-114.32"/>
+</g>
+<!-- VPN -->
+<g id="node14" class="node">
+<title>VPN</title>
+<path fill="none" stroke="black" d="M428.3,-90C428.3,-90 398.3,-90 398.3,-90 392.3,-90 386.3,-84 386.3,-78 386.3,-78 386.3,-66 386.3,-66 386.3,-60 392.3,-54 398.3,-54 398.3,-54 428.3,-54 428.3,-54 434.3,-54 440.3,-60 440.3,-66 440.3,-66 440.3,-78 440.3,-78 440.3,-84 434.3,-90 428.3,-90"/>
+<text text-anchor="middle" x="413.3" y="-67.8" font-family="Times,serif" font-size="14.00">VPN</text>
+</g>
+<!-- Firewall&#45;&gt;VPN -->
+<g id="edge15" class="edge">
+<title>Firewall-&gt;VPN</title>
+<path fill="none" stroke="black" d="M273.78,-72C302.1,-72 344.28,-72 374.65,-72"/>
+<polygon fill="black" stroke="black" points="374.54,-75.5 384.54,-72 374.54,-68.5 374.54,-75.5"/>
+</g>
+<!-- CDN -->
+<g id="node15" class="node">
+<title>CDN</title>
+<path fill="none" stroke="black" d="M428.3,-36C428.3,-36 398.3,-36 398.3,-36 392.3,-36 386.3,-30 386.3,-24 386.3,-24 386.3,-12 386.3,-12 386.3,-6 392.3,0 398.3,0 398.3,0 428.3,0 428.3,0 434.3,0 440.3,-6 440.3,-12 440.3,-12 440.3,-24 440.3,-24 440.3,-30 434.3,-36 428.3,-36"/>
+<text text-anchor="middle" x="413.3" y="-13.8" font-family="Times,serif" font-size="14.00">CDN</text>
+</g>
+<!-- Firewall&#45;&gt;CDN -->
+<g id="edge16" class="edge">
+<title>Firewall-&gt;CDN</title>
+<path fill="none" stroke="black" d="M273.82,-61.56C288.92,-56.47 307.41,-50.32 324.05,-45 340.75,-39.66 359.3,-33.95 375.06,-29.16"/>
+<polygon fill="black" stroke="black" points="375.98,-32.54 384.54,-26.3 373.95,-25.84 375.98,-32.54"/>
+</g>
+</g>
+</svg>

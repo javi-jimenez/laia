@@ -1,0 +1,90 @@
+<svg width="290pt" height="404pt" viewBox="0.00 0.00 289.86 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
+<title>FlujoColaboracion</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-400 285.86,-400 285.86,4 -4,4"/>
+<!-- InicioSesion -->
+<g id="node1" class="node">
+<title>InicioSesion</title>
+<path fill="none" stroke="black" d="M198.94,-396C198.94,-396 86.41,-396 86.41,-396 80.41,-396 74.41,-390 74.41,-384 74.41,-384 74.41,-372 74.41,-372 74.41,-366 80.41,-360 86.41,-360 86.41,-360 198.94,-360 198.94,-360 204.94,-360 210.94,-366 210.94,-372 210.94,-372 210.94,-384 210.94,-384 210.94,-390 204.94,-396 198.94,-396"/>
+<text text-anchor="middle" x="142.68" y="-373.8" font-family="Times,serif" font-size="14.00">Usuario Inicia Sesión</text>
+</g>
+<!-- Autenticacion -->
+<g id="node2" class="node">
+<title>Autenticacion</title>
+<path fill="none" stroke="black" d="M211.37,-324C211.37,-324 73.98,-324 73.98,-324 67.98,-324 61.98,-318 61.98,-312 61.98,-312 61.98,-300 61.98,-300 61.98,-294 67.98,-288 73.98,-288 73.98,-288 211.37,-288 211.37,-288 217.37,-288 223.37,-294 223.37,-300 223.37,-300 223.37,-312 223.37,-312 223.37,-318 217.37,-324 211.37,-324"/>
+<text text-anchor="middle" x="142.68" y="-301.8" font-family="Times,serif" font-size="14.00">Servicio de Autenticación</text>
+</g>
+<!-- InicioSesion&#45;&gt;Autenticacion -->
+<g id="edge1" class="edge">
+<title>InicioSesion-&gt;Autenticacion</title>
+<path fill="none" stroke="black" d="M142.68,-359.7C142.68,-352.41 142.68,-343.73 142.68,-335.54"/>
+<polygon fill="black" stroke="black" points="146.18,-335.62 142.68,-325.62 139.18,-335.62 146.18,-335.62"/>
+</g>
+<!-- Dashboard -->
+<g id="node3" class="node">
+<title>Dashboard</title>
+<path fill="none" stroke="black" d="M210.02,-252C210.02,-252 75.34,-252 75.34,-252 69.34,-252 63.34,-246 63.34,-240 63.34,-240 63.34,-228 63.34,-228 63.34,-222 69.34,-216 75.34,-216 75.34,-216 210.02,-216 210.02,-216 216.02,-216 222.02,-222 222.02,-228 222.02,-228 222.02,-240 222.02,-240 222.02,-246 216.02,-252 210.02,-252"/>
+<text text-anchor="middle" x="142.68" y="-229.8" font-family="Times,serif" font-size="14.00">Dashboard Personalizado</text>
+</g>
+<!-- Autenticacion&#45;&gt;Dashboard -->
+<g id="edge2" class="edge">
+<title>Autenticacion-&gt;Dashboard</title>
+<path fill="none" stroke="black" d="M142.68,-287.7C142.68,-280.41 142.68,-271.73 142.68,-263.54"/>
+<polygon fill="black" stroke="black" points="146.18,-263.62 142.68,-253.62 139.18,-263.62 146.18,-263.62"/>
+</g>
+<!-- Chat -->
+<g id="node4" class="node">
+<title>Chat</title>
+<path fill="none" stroke="black" d="M123.36,-180C123.36,-180 12,-180 12,-180 6,-180 0,-174 0,-168 0,-168 0,-156 0,-156 0,-150 6,-144 12,-144 12,-144 123.36,-144 123.36,-144 129.36,-144 135.36,-150 135.36,-156 135.36,-156 135.36,-168 135.36,-168 135.36,-174 129.36,-180 123.36,-180"/>
+<text text-anchor="middle" x="67.68" y="-157.8" font-family="Times,serif" font-size="14.00">Chat en Tiempo Real</text>
+</g>
+<!-- Dashboard&#45;&gt;Chat -->
+<g id="edge3" class="edge">
+<title>Dashboard-&gt;Chat</title>
+<path fill="none" stroke="black" d="M124.14,-215.7C115.21,-207.37 104.35,-197.22 94.54,-188.07"/>
+<polygon fill="black" stroke="black" points="97.07,-185.64 87.37,-181.38 92.29,-190.76 97.07,-185.64"/>
+</g>
+<!-- Archivos -->
+<g id="node5" class="node">
+<title>Archivos</title>
+<path fill="none" stroke="black" d="M269.86,-180C269.86,-180 165.49,-180 165.49,-180 159.49,-180 153.49,-174 153.49,-168 153.49,-168 153.49,-156 153.49,-156 153.49,-150 159.49,-144 165.49,-144 165.49,-144 269.86,-144 269.86,-144 275.86,-144 281.86,-150 281.86,-156 281.86,-156 281.86,-168 281.86,-168 281.86,-174 275.86,-180 269.86,-180"/>
+<text text-anchor="middle" x="217.68" y="-157.8" font-family="Times,serif" font-size="14.00">Compartir Archivos</text>
+</g>
+<!-- Dashboard&#45;&gt;Archivos -->
+<g id="edge4" class="edge">
+<title>Dashboard-&gt;Archivos</title>
+<path fill="none" stroke="black" d="M161.22,-215.7C170.14,-207.37 181.01,-197.22 190.82,-188.07"/>
+<polygon fill="black" stroke="black" points="193.06,-190.76 197.99,-181.38 188.29,-185.64 193.06,-190.76"/>
+</g>
+<!-- Sincronizacion -->
+<g id="node6" class="node">
+<title>Sincronizacion</title>
+<path fill="none" stroke="black" d="M215.66,-108C215.66,-108 69.69,-108 69.69,-108 63.69,-108 57.69,-102 57.69,-96 57.69,-96 57.69,-84 57.69,-84 57.69,-78 63.69,-72 69.69,-72 69.69,-72 215.66,-72 215.66,-72 221.66,-72 227.66,-78 227.66,-84 227.66,-84 227.66,-96 227.66,-96 227.66,-102 221.66,-108 215.66,-108"/>
+<text text-anchor="middle" x="142.68" y="-85.8" font-family="Times,serif" font-size="14.00">Sincronización de Cambios</text>
+</g>
+<!-- Chat&#45;&gt;Sincronizacion -->
+<g id="edge5" class="edge">
+<title>Chat-&gt;Sincronizacion</title>
+<path fill="none" stroke="black" d="M86.22,-143.7C95.14,-135.37 106.01,-125.22 115.82,-116.07"/>
+<polygon fill="black" stroke="black" points="118.06,-118.76 122.99,-109.38 113.29,-113.64 118.06,-118.76"/>
+</g>
+<!-- Archivos&#45;&gt;Sincronizacion -->
+<g id="edge6" class="edge">
+<title>Archivos-&gt;Sincronizacion</title>
+<path fill="none" stroke="black" d="M199.14,-143.7C190.21,-135.37 179.35,-125.22 169.54,-116.07"/>
+<polygon fill="black" stroke="black" points="172.07,-113.64 162.37,-109.38 167.29,-118.76 172.07,-113.64"/>
+</g>
+<!-- Almacenamiento -->
+<g id="node7" class="node">
+<title>Almacenamiento</title>
+<path fill="none" stroke="black" d="M219.93,-36C219.93,-36 65.43,-36 65.43,-36 59.43,-36 53.43,-30 53.43,-24 53.43,-24 53.43,-12 53.43,-12 53.43,-6 59.43,0 65.43,0 65.43,0 219.93,0 219.93,0 225.93,0 231.93,-6 231.93,-12 231.93,-12 231.93,-24 231.93,-24 231.93,-30 225.93,-36 219.93,-36"/>
+<text text-anchor="middle" x="142.68" y="-13.8" font-family="Times,serif" font-size="14.00">Servicio de Almacenamiento</text>
+</g>
+<!-- Sincronizacion&#45;&gt;Almacenamiento -->
+<g id="edge7" class="edge">
+<title>Sincronizacion-&gt;Almacenamiento</title>
+<path fill="none" stroke="black" d="M142.68,-71.7C142.68,-64.41 142.68,-55.73 142.68,-47.54"/>
+<polygon fill="black" stroke="black" points="146.18,-47.62 142.68,-37.62 139.18,-47.62 146.18,-47.62"/>
+</g>
+</g>
+</svg>

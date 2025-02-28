@@ -1,0 +1,52 @@
+<svg width="666pt" height="50pt" viewBox="0.00 0.00 665.59 49.60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 45.6)">
+<title>SeguridadMonitoreo</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-45.6 661.59,-45.6 661.59,4 -4,4"/>
+<!-- Autenticacion -->
+<g id="node1" class="node">
+<title>Autenticacion</title>
+<path fill="none" stroke="black" d="M169.61,-41.6C169.61,-41.6 12,-41.6 12,-41.6 6,-41.6 0,-35.6 0,-29.6 0,-29.6 0,-12 0,-12 0,-6 6,0 12,0 12,0 169.61,0 169.61,0 175.61,0 181.61,-6 181.61,-12 181.61,-12 181.61,-29.6 181.61,-29.6 181.61,-35.6 175.61,-41.6 169.61,-41.6"/>
+<text text-anchor="middle" x="90.8" y="-25" font-family="Times,serif" font-size="14.00">Autenticación y Autorización</text>
+<text text-anchor="middle" x="90.8" y="-8.2" font-family="Times,serif" font-size="14.00">(OAuth2, JWT)</text>
+</g>
+<!-- Cifrado -->
+<g id="node2" class="node">
+<title>Cifrado</title>
+<path fill="none" stroke="black" d="M342.95,-41.6C342.95,-41.6 229.61,-41.6 229.61,-41.6 223.61,-41.6 217.61,-35.6 217.61,-29.6 217.61,-29.6 217.61,-12 217.61,-12 217.61,-6 223.61,0 229.61,0 229.61,0 342.95,0 342.95,0 348.95,0 354.95,-6 354.95,-12 354.95,-12 354.95,-29.6 354.95,-29.6 354.95,-35.6 348.95,-41.6 342.95,-41.6"/>
+<text text-anchor="middle" x="286.28" y="-25" font-family="Times,serif" font-size="14.00">Cifrado</text>
+<text text-anchor="middle" x="286.28" y="-8.2" font-family="Times,serif" font-size="14.00">(TLS/SSL, AES-256)</text>
+</g>
+<!-- Autenticacion&#45;&gt;Cifrado -->
+<g id="edge1" class="edge">
+<title>Autenticacion-&gt;Cifrado</title>
+<path fill="none" stroke="black" d="M182.03,-20.8C189.97,-20.8 197.97,-20.8 205.82,-20.8"/>
+<polygon fill="black" stroke="black" points="205.66,-24.3 215.66,-20.8 205.66,-17.3 205.66,-24.3"/>
+</g>
+<!-- Monitoreo -->
+<g id="node3" class="node">
+<title>Monitoreo</title>
+<path fill="none" stroke="black" d="M522.45,-41.6C522.45,-41.6 402.95,-41.6 402.95,-41.6 396.95,-41.6 390.95,-35.6 390.95,-29.6 390.95,-29.6 390.95,-12 390.95,-12 390.95,-6 396.95,0 402.95,0 402.95,0 522.45,0 522.45,0 528.45,0 534.45,-6 534.45,-12 534.45,-12 534.45,-29.6 534.45,-29.6 534.45,-35.6 528.45,-41.6 522.45,-41.6"/>
+<text text-anchor="middle" x="462.7" y="-25" font-family="Times,serif" font-size="14.00">Monitoreo</text>
+<text text-anchor="middle" x="462.7" y="-8.2" font-family="Times,serif" font-size="14.00">(Prometheus, Grafana)</text>
+</g>
+<!-- Cifrado&#45;&gt;Monitoreo -->
+<g id="edge2" class="edge">
+<title>Cifrado-&gt;Monitoreo</title>
+<path fill="none" stroke="black" d="M355.21,-20.8C363.08,-20.8 371.17,-20.8 379.2,-20.8"/>
+<polygon fill="black" stroke="black" points="378.98,-24.3 388.98,-20.8 378.98,-17.3 378.98,-24.3"/>
+</g>
+<!-- Auditoria -->
+<g id="node4" class="node">
+<title>Auditoria</title>
+<path fill="none" stroke="black" d="M645.59,-41.6C645.59,-41.6 582.45,-41.6 582.45,-41.6 576.45,-41.6 570.45,-35.6 570.45,-29.6 570.45,-29.6 570.45,-12 570.45,-12 570.45,-6 576.45,0 582.45,0 582.45,0 645.59,0 645.59,0 651.59,0 657.59,-6 657.59,-12 657.59,-12 657.59,-29.6 657.59,-29.6 657.59,-35.6 651.59,-41.6 645.59,-41.6"/>
+<text text-anchor="middle" x="614.02" y="-25" font-family="Times,serif" font-size="14.00">Auditoría</text>
+<text text-anchor="middle" x="614.02" y="-8.2" font-family="Times,serif" font-size="14.00">(ELK Stack)</text>
+</g>
+<!-- Monitoreo&#45;&gt;Auditoria -->
+<g id="edge3" class="edge">
+<title>Monitoreo-&gt;Auditoria</title>
+<path fill="none" stroke="black" d="M534.86,-20.8C542.84,-20.8 550.88,-20.8 558.6,-20.8"/>
+<polygon fill="black" stroke="black" points="558.52,-24.3 568.52,-20.8 558.52,-17.3 558.52,-24.3"/>
+</g>
+</g>
+</svg>
