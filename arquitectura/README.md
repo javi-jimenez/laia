@@ -1,5 +1,7 @@
 ## Arquitectura
 
+Esta parte hay que revisarla.
+
 ### Diagrama 1: Arquitectura General de la Nube
 
 ![Diagrama 1: Arquitectura General de la Nube](./Diagrama%201:%20Arquitectura%20General%20de%20la%20Nube.svg)
