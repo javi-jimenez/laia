@@ -6,4 +6,4 @@ Alguien que es sabia se suele expresar con buenas palabras y expresarse con clar
 
 ## Hoja de Ruta
 
-<img src="laia-gantt-202502272325.png" alt="Diagrama Gantt de Laia" width="650"/>
+<img src="laia-roadmap-gantt-202502272325.png" alt="Diagrama Gantt de Laia" width="650"/>
