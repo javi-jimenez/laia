@@ -12,7 +12,7 @@ Alguien que es sabia se suele expresar con buenas palabras y expresarse con clar
 
 ## Laia: Ethical Artificial Intelligence Research Project
 
-<b>Laia</b>﻿, is an open-source initiative founded by Francisco Javier Jiménez of Brisecom, dedicated to advancing ethical considerations in artificial intelligence (AI). The project name means "The one who speaks sweetly or expresses clearly" in Catalan, symbolizing clarity and wisdom in AI decision-making.
+<b>Laia</b>﻿, is an open-source initiative founded by Francisco Javier Jiménez Gómez of Brisecom, dedicated to advancing ethical considerations in artificial intelligence (AI). The project name means "The one who speaks sweetly or expresses clearly" in Catalan, symbolizing clarity and wisdom in AI decision-making.
 
 ### Project Vision and Mission
 
@@ -26,7 +26,7 @@ Laia aims to foster transparent, responsible, and ethical AI technologies by exp
 
 ### Call for Support
 
-At this stage, Laia seeks non-compromise funding specifically to support Francisco Javier Jiménez’s full-time dedication to initial research efforts. This flexible funding is vital for:
+At this stage, Laia seeks non-compromise funding specifically to support Francisco Javier Jiménez Gómez’s full-time dedication to initial research efforts. This flexible funding is vital for:
 
 - Sustaining living costs during the research phase.
 - Accelerating progress without the delay of formal proposal preparations.
@@ -42,7 +42,7 @@ At this stage, Laia seeks non-compromise funding specifically to support Francis
 
 Explore the project at GitHub: https://github.com/javi-jimenez/laia
 
-Follow updates and contact Francisco Javier Jiménez through the Brisecom network or [LinkedIn](https://www.linkedin.com/posts/ximenezfrancisco_github-javi-jimenezlaia-proyecto-laia-activity-7396160782042013697-Hg6v).
+Follow updates and contact Francisco Javier Jiménez Gómez through the Brisecom network or [LinkedIn](https://www.linkedin.com/posts/ximenezfrancisco_github-javi-jimenezlaia-proyecto-laia-activity-7396160782042013697-Hg6v).
 
 Together, we can build ethical, trustworthy AI technologies essential for a sustainable digital future.
 
