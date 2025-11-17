@@ -45,3 +45,13 @@ Explore the project at GitHub: https://github.com/javi-jimenez/laia
 Follow updates and contact Francisco Javier Jiménez through the Brisecom network or [LinkedIn](https://www.linkedin.com/posts/ximenezfrancisco_github-javi-jimenezlaia-proyecto-laia-activity-7396160782042013697-Hg6v).
 
 Together, we can build ethical, trustworthy AI technologies essential for a sustainable digital future.
+
+## Support This Project
+
+If you find Laia valuable and want to support ethical AI research, consider sponsoring or donating through these platforms:
+
+- [GitHub Sponsors](https://github.com/sponsors/javi-jimenez) – Directly sponsor development on GitHub.
+- [Open Collective](https://opencollective.com/brisecom) – Transparent funding and community support.
+- [PayPal](https://www.paypal.me/brisecom) – Quick and easy donations.
+
+Every contribution helps me dedicate full-time effort to this important work in AI ethics and transparency. Thank you for your support!
