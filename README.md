@@ -52,5 +52,6 @@ If you find Laia valuable and want to support ethical AI research, consider spon
 
 - [GitHub Sponsors](https://github.com/sponsors/javi-jimenez) – Directly sponsor development on GitHub.
 - [PayPal](https://www.paypal.me/brisecom) – Quick and easy donations.
+- [Web: https://brisecom.org/](https://brisecom.org/) - Web about the project.
 
 Every contribution helps me dedicate full-time effort to this important work in AI ethics and transparency. Thank you for your support!
