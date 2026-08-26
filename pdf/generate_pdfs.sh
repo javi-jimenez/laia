@@ -74,7 +74,7 @@ generate_one() {
     title="$(get_meta "$md" "title")"
   fi
   subtitle="${SUBTITLE:-A Whitepaper by LAIA and Brisecom}"
-  author="${AUTHOR:-Brisecom / LAIA Project}"
+  author="${AUTHOR:-Francisco Javier Jiménez Gómez}"
   date="${DATE:-}"
   out="$OUT_DIR/$base.pdf"
 
