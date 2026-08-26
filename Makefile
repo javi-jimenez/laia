@@ -76,15 +76,15 @@ clean:
 
 # ---------- Crear Release de GitHub ----------
 # Genera los PDFs y crea un release con ellos como assets.
-# Añade un timestamp (números juntos: AAAAAMMDDHHMMSS) al título.
-# Uso: make release TAG=v1.0.0 NOTES="mensaje"
+# El tag y el timestamp se generan automáticamente con la fecha/hora
+# (ej. tag v202608270108). Uso: make release NOTES="mensaje"
 .PHONY: release
 release: pdfs
 	@command -v gh >/dev/null 2>&1 || { echo "❌ gh CLI no está instalado. Instala con: sudo apt install gh"; exit 1; }
 	@gh auth status >/dev/null 2>&1 || { echo "❌ gh no está autenticado. Ejecuta: gh auth login"; exit 1; }
-	$(eval TAG ?= v0.0.0)
+	$(eval TS := $(shell date +%Y%m%d%H%M))
+	$(eval TAG := v$(TS))
 	$(eval NOTES ?= LAIA_Whitepapers)
-	$(eval TS := $(shell date +%Y%m%d%H%M%S))
 	@echo "▶ Creando release $(TAG) [$(TS)]..."
 	@gh release create "$(TAG)" $(OUT_DIR)/*.pdf --title "$(NOTES) $(TS)" --notes "PDFs de los whitepapers de LAIA — $(TS)"
 	@echo "✅ Release $(TAG) creado con los PDFs."
