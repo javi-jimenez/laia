@@ -6,6 +6,9 @@
 SHELL := /bin/bash
 
 # ---------- Variables ----------
+empty :=
+space := $(empty) $(empty)
+
 PDF_DIR   := pdf
 OUT_DIR   := $(PDF_DIR)/out
 WP_DIR    := whitepapers
@@ -76,15 +79,16 @@ clean:
 
 # ---------- Crear Release de GitHub ----------
 # Genera los PDFs y crea un release con ellos como assets.
-# El tag y el timestamp se generan automáticamente con la fecha/hora
-# (ej. tag v202608270108). Uso: make release NOTES="mensaje"
+# El tag usa el patrón de los releases históricos: AAAAMMDDHHMM-Nombre
+# (ej. 202608270110-LAIA-Whitepapers). Uso: make release NAME="nombre"
 .PHONY: release
 release: pdfs
 	@command -v gh >/dev/null 2>&1 || { echo "❌ gh CLI no está instalado. Instala con: sudo apt install gh"; exit 1; }
 	@gh auth status >/dev/null 2>&1 || { echo "❌ gh no está autenticado. Ejecuta: gh auth login"; exit 1; }
 	$(eval TS := $(shell date +%Y%m%d%H%M))
-	$(eval TAG := v$(TS))
-	$(eval NOTES ?= LAIA_Whitepapers)
-	@echo "▶ Creando release $(TAG) [$(TS)]..."
-	@gh release create "$(TAG)" $(OUT_DIR)/*.pdf --title "$(NOTES) $(TS)" --notes "PDFs de los whitepapers de LAIA — $(TS)"
+	$(eval NAME ?= LAIA-Whitepapers)
+	$(eval TAG := $(TS)-$(NAME))
+	$(eval TITLE := $(subst -,$(space),$(NAME)))
+	@echo "▶ Creando release $(TAG)..."
+	@gh release create "$(TAG)" $(OUT_DIR)/*.pdf --title "$(TITLE)" --notes "PDFs de los whitepapers de LAIA — $(TS)"
 	@echo "✅ Release $(TAG) creado con los PDFs."
