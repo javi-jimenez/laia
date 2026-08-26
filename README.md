@@ -18,9 +18,9 @@
 
 > **LAIA se encuentra en su fase de Expansión y Validación (2025–2027).**
 
-Tras las etapas de preparación e investigación, LAIA está **expandiendo** sus capacidades con la IA y los trabajos previos ya realizados, y se encuentra ahora en la **validación comercial**: comprobar la demanda real de sus servicios de reporte y advisory antes de la comercialización plena.
+Tras las etapas de preparación e investigación, LAIA está **expandiendo** sus capacidades con la IA y los trabajos previos ya realizados, y se encuentra en la **validación comercial** y de **colaboraciones institucionales**: contacto activo con **Naciones Unidas, la Unión Europea y consorcios europeos** (EIC Pathfinder, Horizon Europe), que darán sus frutos el próximo año.
 
-El siguiente diagrama Gantt refleja la **hoja de ruta del proyecto**. La fase actual se sitúa dentro de la etapa de **Expansión y Validación (2025–2027)**, que continúa **en curso**.
+El siguiente diagrama Gantt refleja la **hoja de ruta del proyecto**. La fase actual se sitúa dentro de la etapa de **Expansión y Validación (2025–2027)**, que continúa **en curso**, y se prevé la **consolidación para el verano de 2027**.
 
 <img src="laia-roadmap-gantt-202502272325.png" alt="Diagrama Gantt del Roadmap de LAIA" width="650"/>
 
@@ -31,10 +31,10 @@ El siguiente diagrama Gantt refleja la **hoja de ruta del proyecto**. La fase ac
 | Preparación | 2023-10 → 2023-12 | ✅ Completada |
 | Desarrollo Inicial | 2024-01 → 2025-06 | ✅ Completada |
 | **Expansión y Validación** | **2025-07 → 2027-06** | 🟢 **En curso** |
-| Consolidación | 2027-07 → 2030-06 | ⏳ Futura |
+| **Consolidación** | **2027-07 → 2030-06** | ⏳ **Futura** |
 | Liderazgo Global | 2030-07 → 2035-12 | ⏳ Futura |
 
-> **Validación comercial:** dentro de esta fase, LAIA está validando la demanda de sus servicios mediante la **venta directa en internet** de informes técnicos y servicios de advisory, con pago seguro vía **Stripe**.
+> **Colaboraciones institucionales:** LAIA está trabajando con **Naciones Unidas, la Unión Europea y consorcios europeos** (EIC Pathfinder, Horizon Europe). Estos proyectos operarán con seguridad el próximo año, lo que sitúa la **consolidación** para el **verano de 2027**.
 
 ---
 
@@ -171,16 +171,16 @@ Dos modalidades de contratación, respaldadas por LAIA para investigación, aná
 - **Alcance:** un informe técnico independiente, revisión de sistema o entregable específico.
 - **Ideal para:** intervenciones puntuales, evaluación técnica antes de una decisión estratégica u opinión externa documentada.
 
-#### 💳 Compra Directa en Línea (pago seguro vía Stripe)
+#### 💳 Compra Directa en Línea
 
-LAIA ofrece **venta directa en internet** mediante un **formulario de pago seguro con Stripe**. Si deseas contratar un servicio o informe, puedes completar la compra directamente en línea:
+LAIA ofrece **venta directa en internet** de sus servicios de advisory e informes técnicos, con pago seguro en línea:
 
 - **Informe único:** pago único de **EUR 1.500**.
 - **Subscripción mensual (Launch Tier):** pago recurrente de **EUR 600/mes**.
 
-> 🔗 **Formulario de pago Stripe:** [*enlace al formulario de pago*] *(sustituye por tu enlace de Stripe Payment Link o Payment Page)*
+> 🔗 **Compra y más información:** visita **brisecom.org/services**, donde encontrarás los **formularios de pago en línea** y toda la información sobre los servicios de Brisecom.
 
-Si tienes **preguntas antes de comprar**, contacta primero en **info@brisecom.org** y te redirigiremos al formulario de pago correspondiente. La compra se procesa de forma segura e inmediata, y el entregable se coordina tras la confirmación del pago.
+Si tienes **preguntas antes de comprar**, contacta en **info@brisecom.org** y te indicaremos el enlace de pago correspondiente. La compra se procesa de forma segura e inmediata, y el entregable se coordina tras la confirmación del pago.
 
 > 📬 Para alcances personalizados o consultas comerciales: **info@brisecom.org**
 
@@ -190,7 +190,7 @@ Si tienes **preguntas antes de comprar**, contacta primero en **info@brisecom.or
 
 Puedes contribuir al desarrollo de LAIA de varias formas:
 
-- **🛒 Compra directa en línea** — contrata un informe único o la subscripción mensual con pago seguro vía **Stripe** (formulario de pago en la sección de Ofertas de Advisory).
+- **🛒 Compra directa en línea** — contrata un informe único o la subscripción mensual a través de [brisecom.org/services](https://brisecom.org/services/), donde encontrarás los formularios de pago.
 - **Subscríbete a los servicios de advisory** — el apoyo recurrente financia la investigación continua.
 - **Contrata un informe único** — cada encargo financia investigación aplicada.
 - **Sponsor en GitHub** — [github.com/sponsors/javi-jimenez](https://github.com/sponsors/javi-jimenez)
@@ -205,6 +205,7 @@ Cada contribución ayuda a dedicar esfuerzo a tiempo completo a esta labor en é
 
 - **Web del proyecto LAIA:** [laia.brisecom.org](https://laia.brisecom.org/)
 - **Brisecom (Think Tank):** [brisecom.org](https://brisecom.org/)
+- **Servicios y compra en línea:** [brisecom.org/services](https://brisecom.org/services/)
 - **Repositorio GitHub:** [github.com/javi-jimenez/laia](https://github.com/javi-jimenez/laia)
 - **LinkedIn:** [Francisco Javier Jiménez Gómez](https://www.linkedin.com/posts/ximenezfrancisco_github-javi-jimenezlaia-proyecto-laia-activity-7396160782042013697-Hg6v)
 
