@@ -1,0 +1,15 @@
+# Artefactos generados (se suben como Release de GitHub, no al repo)
+pdf/out/
+
+# TeX auxiliares
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Sistema / editor
+.DS_Store
+*.swp
