@@ -1,6 +1,6 @@
 ---
 title: "The LAIA Operational Framework: Architecture, Validation, and Governance"
-authors: ["Francisco Javier Jiménez Gómez", "Brisecom Research"]
+authors: ["Francisco Javier Jiménez Gómez"]
 affiliation: "Brisecom / LAIA Project"
 date: 2026-04-15
 version: "1.0"

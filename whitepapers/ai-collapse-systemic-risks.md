@@ -1,6 +1,6 @@
 ---
 title: "AI Collapse: Degradation, Scaling Limits, and Systemic Risks"
-authors: ["Brisecom Research"]
+authors: ["Francisco Javier Jiménez Gómez"]
 affiliation: "Brisecom / LAIA Project"
 date: 2025-12-18
 version: "1.0"

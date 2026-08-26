@@ -1,6 +1,6 @@
 ---
 title: "Command & Control as Information Sovereignty: Reclaiming the C2 Acronym"
-authors: ["Brisecom Research"]
+authors: ["Francisco Javier Jiménez Gómez"]
 affiliation: "Brisecom / LAIA Project"
 date: 2026-03-01
 version: "1.0"

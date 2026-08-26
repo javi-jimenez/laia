@@ -1,6 +1,6 @@
 ---
 title: "Unified World Architecture for Legacy MMORPG Ecosystems: A Strategic Framework"
-authors: ["Brisecom Research"]
+authors: ["Francisco Javier Jiménez Gómez"]
 affiliation: "Brisecom / LAIA Project"
 date: 2026-08-18
 version: "1.0"

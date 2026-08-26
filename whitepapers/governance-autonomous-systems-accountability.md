@@ -1,6 +1,6 @@
 ---
 title: "Governance of Autonomous Systems: A Framework for Accountability"
-authors: ["Brisecom Research"]
+authors: ["Francisco Javier Jiménez Gómez"]
 affiliation: "Brisecom / LAIA Project"
 date: 2024-11-10
 version: "1.0"

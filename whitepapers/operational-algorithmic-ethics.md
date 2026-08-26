@@ -1,6 +1,6 @@
 ---
 title: "Operational Algorithmic Ethics: From Principles to Practice"
-authors: ["Brisecom Research"]
+authors: ["Francisco Javier Jiménez Gómez"]
 affiliation: "Brisecom / LAIA Project"
 date: 2024-11-15
 version: "1.0"

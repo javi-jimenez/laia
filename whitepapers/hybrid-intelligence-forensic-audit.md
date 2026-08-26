@@ -1,6 +1,6 @@
 ---
 title: "Hybrid Intelligence in Forensic Audit: A Case Study in Systemic Fraud Resolution"
-authors: ["Analysis Department, BRISECOM SL"]
+authors: ["Francisco Javier Jiménez Gómez"]
 affiliation: "Brisecom / LAIA Project"
 date: 2026-03-19
 version: "1.0"
