@@ -9,6 +9,7 @@ SHELL := /bin/bash
 empty :=
 space := $(empty) $(empty)
 
+REPO_ROOT := $(CURDIR)
 PDF_DIR   := pdf
 OUT_DIR   := $(PDF_DIR)/out
 WP_DIR    := whitepapers
@@ -78,7 +79,10 @@ clean:
 	@echo "✔ Directorio $(OUT_DIR)/ eliminado."
 
 # ---------- Crear Release de GitHub ----------
-# Genera los PDFs y crea un release con ellos como assets.
+# Genera los PDFs y crea un release con:
+#   - Un zip con los documentos .md de la raíz (Proyecto-IA-*.md + README).
+#   - Un zip con los whitepapers .md.
+#   - Los PDFs de los whitepapers como assets.
 # El tag usa el patrón de los releases históricos: AAAAMMDDHHMM-Nombre
 # (ej. 202608270110-LAIA-Whitepapers). Uso: make release NAME="nombre"
 .PHONY: release
@@ -89,6 +93,11 @@ release: pdfs
 	$(eval NAME ?= LAIA-Whitepapers)
 	$(eval TAG := $(TS)-$(NAME))
 	$(eval TITLE := $(subst -,$(space),$(NAME)))
+	$(eval DOC_ZIP := $(OUT_DIR)/documentos-$(TS).zip)
+	$(eval WP_ZIP := $(OUT_DIR)/whitepapers-$(TS).zip)
+	@echo "▶ Empaquetando documentos y whitepapers..."
+	@cd "$(REPO_ROOT)" && zip -j "$(DOC_ZIP)" *.md
+	@cd "$(REPO_ROOT)" && zip -j "$(WP_ZIP)" whitepapers/*.md
 	@echo "▶ Creando release $(TAG)..."
-	@gh release create "$(TAG)" $(OUT_DIR)/*.pdf --title "$(TITLE)" --notes "PDFs de los whitepapers de LAIA — $(TS)"
-	@echo "✅ Release $(TAG) creado con los PDFs."
+	@gh release create "$(TAG)" "$(DOC_ZIP)" "$(WP_ZIP)" $(OUT_DIR)/*.pdf --title "$(TITLE)" --notes "Documentos y whitepapers de LAIA — $(TS)"
+	@echo "✅ Release $(TAG) creado con documentos, whitepapers y PDFs."
