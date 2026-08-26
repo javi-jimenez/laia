@@ -35,11 +35,38 @@ get_meta() {
     | sed -E 's/^["'"'"']|["'"'"']$//g'
 }
 
+# Escapa caracteres especiales de LaTeX en un valor.
+latex_escape() {
+  printf '%s' "$1" \
+    | sed -E 's/\\/\\textbackslash{}/g; s/&/\\&/g; s/%/\\%/g; s/\$/\\$/g; s/#/\\#/g; s/_/\\_/g; s/\{/\\{/g; s/\}/\\}/g; s/~/\textasciitilde{}/g; s/\^/\textasciicircum{}/g'
+}
+
+# Escapa caracteres especiales de LaTeX (para insertar texto en la portada).
+latex_escape() {
+  printf '%s' "$1" \
+    | perl -pe 's/\\/\\textbackslash{}/g; s/&/\\&/g; s/%/\\%/g; s/\$/\\\$/g; s/#/\\#/g; s/_/\\_/g; s/\{/\\{/g; s/\}/\\}/g; s/~/\\textasciitilde{}/g; s/\^/\\textasciicircum{}/g'
+}
+
+# Genera una portada temporal con las variables $title$, $subtitle$, $author$
+# resueltas (pandoc NO sustituye variables en --include-before-body).
+# Usa perl para manejar correctamente caracteres especiales (&, $, etc.).
+make_cover() {
+  local title subtitle author
+  title="$(latex_escape "$1")"
+  subtitle="$(latex_escape "$2")"
+  author="$(latex_escape "$3")"
+  TITLE="$title" SUBTITLE="$subtitle" AUTHOR="$author" perl -pe '
+    s/\$title\$/$ENV{TITLE}/g;
+    s/\$subtitle\$/$ENV{SUBTITLE}/g;
+    s/\$author\$/$ENV{AUTHOR}/g;
+  ' "$COVER"
+}
+
 generate_one() {
   local md="$1"
   local base
   base="$(basename "$md" .md)"
-  local title subtitle author date out
+  local title subtitle author date out cover_tmp
   local args=()
 
   title="$TITLE"
@@ -51,25 +78,33 @@ generate_one() {
   date="${DATE:-}"
   out="$OUT_DIR/$base.pdf"
 
+  # Generar la portada con las variables resueltas.
+  cover_tmp="$(mktemp --suffix=.tex)"
+  make_cover "$title" "$subtitle" "$author" > "$cover_tmp"
+
+  # NOTA: NO pasamos title/subtitle/author como --metadata a pandoc, porque la
+  # plantilla por defecto generaría una segunda portada con esos metadatos.
+  # La portada ya se genera en cover_tmp con las variables resueltas.
+  # Con --variable title/subtitle/author vacíos evitamos que la plantilla por
+  # defecto genere su propia portada.
   args=(
     "$md"
     --from markdown+raw_html
     --to pdf
     --pdf-engine=xelatex
-    --include-before-body="$COVER"
+    --variable title=""
+    --variable subtitle=""
+    --variable author=""
+    --include-before-body="$cover_tmp"
     -o "$out"
   )
-  if [ -n "$title" ]; then
-    args+=(--metadata "title=$title")
-  fi
-  args+=(--metadata "subtitle=$subtitle")
-  args+=(--metadata "author=$author")
   if [ -n "$date" ]; then
     args+=(--metadata "date=$date")
   fi
 
   echo "▶ Generando: $base.pdf"
   pandoc "${args[@]}"
+  rm -f "$cover_tmp"
 
   echo "  ✔ $out"
 }
