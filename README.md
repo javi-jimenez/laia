@@ -14,41 +14,27 @@
 
 ---
 
-## 📌 Estado Actual — Fase de Despliegue
+## 📌 Estado Actual — Expansión y Validación
 
-> **A partir de agosto de 2026, LAIA inicia su fase operativa de despliegue.**
+> **LAIA se encuentra en su fase de Expansión y Validación (2025–2027).**
 
-Tras las etapas de preparación e investigación, LAIA entra en su **fase de puesta en oferta al cliente**: el despliegue comercial de sus capacidades en casos reales — auditoría forense, validación matemática de sistemas, gobernanza de IA, cumplimiento normativo y consultoría — con supervisión humana rigurosa.
+Tras las etapas de preparación e investigación, LAIA está **expandiendo** sus capacidades con la IA y los trabajos previos ya realizados, y se encuentra ahora en la **validación comercial**: comprobar la demanda real de sus servicios de reporte y advisory antes de la comercialización plena.
 
-El siguiente diagrama de Gantt refleja la **hoja de ruta actualizada** del proyecto, con las desviaciones temporales corregidas respecto a la planificación original. La fase vigente es la **Puesta en Oferta de Servicios de LAIA (2026)**.
+El siguiente diagrama Gantt refleja la **hoja de ruta del proyecto**. La fase actual se sitúa dentro de la etapa de **Expansión y Validación (2025–2027)**, que continúa **en curso**.
 
-### 📅 Diagrama de Gantt (actualizado)
+<img src="laia-roadmap-gantt-202502272325.png" alt="Diagrama Gantt del Roadmap de LAIA" width="650"/>
 
-Escala temporal: `2023 ───────────────────────────────────── 2035` (los bloques indican el periodo de cada fase)
+**Fases del proyecto:**
 
-```
-2023   2024   2025   2026   2027   2028   2029   2030   2031   2032   2033   2034   2035
-│      │      │      │      │      │      │      │      │      │      │      │      │
-█──────█  Preparación                                              ✅ Completada
-        ████████████  Desarrollo Inicial                            ✅ Completada
-                    ████████████████  Expansión y Validación        ✅ Completada (adelantada)
-                                ████  ◀── Puesta en Oferta de Servicios  🟢 EN CURSO
-                                        ██████████████████████  Consolidación   ⏳ Futura
-                                                                    ██████████████  Liderazgo Global  ⏳ Futura
-```
+| Fase | Periodo | Estado |
+|------|---------|--------|
+| Preparación | 2023-10 → 2023-12 | ✅ Completada |
+| Desarrollo Inicial | 2024-01 → 2025-06 | ✅ Completada |
+| **Expansión y Validación** | **2025-07 → 2027-06** | 🟢 **En curso** |
+| Consolidación | 2027-07 → 2030-06 | ⏳ Futura |
+| Liderazgo Global | 2030-07 → 2035-12 | ⏳ Futura |
 
-### 🗓️ Fases del proyecto (con desviaciones corregidas)
-
-| Fase | Plan original | Fecha real | Desviación | Estado |
-|------|---------------|------------|------------|--------|
-| Preparación | 2023-10 → 2023-12 | 2023-10 → 2024-03 | +3 meses | ✅ Completada |
-| Desarrollo Inicial | 2024-01 → 2025-06 | 2024-04 → 2025-12 | +6 meses | ✅ Completada |
-| Expansión y Validación | 2025-07 → 2027-06 | 2026-01 → 2026-08 | **adelantada** | ✅ Completada |
-| **Puesta en Oferta de Servicios** | — | **2026-08 → en curso** | **nueva fase** | 🟢 **En curso** |
-| Consolidación | 2027-07 → 2030-06 | 2027-01 → 2030-06 | +0 | ⏳ Futura |
-| Liderazgo Global | 2030-07 → 2035-12 | 2030-07 → 2035-12 | +0 | ⏳ Futura |
-
-> **Nota sobre desviaciones:** la investigación y validación iniciales se completaron antes de lo previsto gracias al avance de los casos aplicados (whitepapers 2024–2026). Esto permite iniciar en **agosto de 2026** la fase de **puesta en oferta de servicios al cliente**, que adelanta la comercialización de las capacidades de LAIA respecto al plan original.
+> **Validación comercial:** dentro de esta fase, LAIA está validando la demanda de sus servicios mediante la **venta directa en internet** de informes técnicos y servicios de advisory, con pago seguro vía **Stripe**.
 
 ---
 
@@ -185,6 +171,17 @@ Dos modalidades de contratación, respaldadas por LAIA para investigación, aná
 - **Alcance:** un informe técnico independiente, revisión de sistema o entregable específico.
 - **Ideal para:** intervenciones puntuales, evaluación técnica antes de una decisión estratégica u opinión externa documentada.
 
+#### 💳 Compra Directa en Línea (pago seguro vía Stripe)
+
+LAIA ofrece **venta directa en internet** mediante un **formulario de pago seguro con Stripe**. Si deseas contratar un servicio o informe, puedes completar la compra directamente en línea:
+
+- **Informe único:** pago único de **EUR 1.500**.
+- **Subscripción mensual (Launch Tier):** pago recurrente de **EUR 600/mes**.
+
+> 🔗 **Formulario de pago Stripe:** [*enlace al formulario de pago*] *(sustituye por tu enlace de Stripe Payment Link o Payment Page)*
+
+Si tienes **preguntas antes de comprar**, contacta primero en **info@brisecom.org** y te redirigiremos al formulario de pago correspondiente. La compra se procesa de forma segura e inmediata, y el entregable se coordina tras la confirmación del pago.
+
 > 📬 Para alcances personalizados o consultas comerciales: **info@brisecom.org**
 
 ---
@@ -193,6 +190,7 @@ Dos modalidades de contratación, respaldadas por LAIA para investigación, aná
 
 Puedes contribuir al desarrollo de LAIA de varias formas:
 
+- **🛒 Compra directa en línea** — contrata un informe único o la subscripción mensual con pago seguro vía **Stripe** (formulario de pago en la sección de Ofertas de Advisory).
 - **Subscríbete a los servicios de advisory** — el apoyo recurrente financia la investigación continua.
 - **Contrata un informe único** — cada encargo financia investigación aplicada.
 - **Sponsor en GitHub** — [github.com/sponsors/javi-jimenez](https://github.com/sponsors/javi-jimenez)
