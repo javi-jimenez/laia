@@ -22,11 +22,16 @@ help:
 	@echo "  make deps        Instala dependencias (pandoc + TeX Live) en Ubuntu"
 	@echo "  make pdfs        Genera los PDFs de todos los whitepapers"
 	@echo "  make pdf-one     Genera un PDF concreto (WP=whitepapers/<archivo>.md)"
+	@echo "  make release     Genera los PDFs y crea un Release de GitHub (TAG=..., NOTES=...)"
 	@echo "  make clean       Elimina los PDFs generados"
 	@echo "  make check       Verifica que las dependencias están instaladas"
 	@echo ""
 	@echo "Ejemplo de un solo PDF:"
 	@echo "  make pdf-one WP=whitepapers/acs-assistant-context-standard.md"
+	@echo ""
+	@echo "Ejemplos de release:"
+	@echo "  make release TAG=v1.0.0 NOTES=\"LAIA Whitepapers v1.0\""
+	@echo "  make release   (usa TAG vX.Y.Z y NOTES por defecto)"
 
 # ---------- Dependencias (Ubuntu) ----------
 .PHONY: deps
@@ -68,3 +73,16 @@ pdf-one: check
 clean:
 	@rm -rf $(OUT_DIR)
 	@echo "✔ Directorio $(OUT_DIR)/ eliminado."
+
+# ---------- Crear Release de GitHub ----------
+# Genera los PDFs y crea un release con ellos como assets.
+# Uso: make release TAG=v1.0.0 NOTES="mensaje"
+.PHONY: release
+release: pdfs
+	@command -v gh >/dev/null 2>&1 || { echo "❌ gh CLI no está instalado. Instala con: sudo apt install gh"; exit 1; }
+	@gh auth status >/dev/null 2>&1 || { echo "❌ gh no está autenticado. Ejecuta: gh auth login"; exit 1; }
+	$(eval TAG ?= v0.0.0)
+	$(eval NOTES ?= LAIA_Whitepapers)
+	@echo "▶ Creando release $(TAG)..."
+	@gh release create "$(TAG)" $(OUT_DIR)/*.pdf --title "$(NOTES)" --notes "PDFs de los whitepapers de LAIA"
+	@echo "✅ Release $(TAG) creado con los PDFs."
