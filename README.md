@@ -22,19 +22,7 @@ Tras las etapas de preparación e investigación, LAIA está **expandiendo** sus
 
 El siguiente diagrama Gantt refleja la **hoja de ruta del proyecto**. La fase actual se sitúa dentro de la etapa de **Expansión y Validación (2025–2027)**, que continúa **en curso**, y se prevé la **consolidación para el verano de 2027**.
 
-### 📅 Diagrama de Gantt
-
-Escala temporal: `2023 ───────────────────────────────────── 2035` (los bloques indican el periodo de cada fase)
-
-```
-2023   2024   2025   2026   2027   2028   2029   2030   2031   2032   2033   2034   2035
-│      │      │      │      │      │      │      │      │      │      │      │      │
-█──────█  Preparación                                              ✅ Completada
-        ████████████  Desarrollo Inicial                            ✅ Completada
-                    ████████████████  Expansión y Validación        🟢 EN CURSO
-                                        ██████████████████████  Consolidación  ⏳ Futura
-                                                                    ██████████████  Liderazgo Global  ⏳ Futura
-```
+<img src="laia-roadmap-gantt-202502272325.png" alt="Diagrama Gantt del Roadmap de LAIA" width="650"/>
 
 **Fases del proyecto:**
 
