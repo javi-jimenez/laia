@@ -21,6 +21,7 @@ These documents transform applied research and real-world case studies into rigo
 | 09 | [AI Collapse: Degradation, Scaling Limits, and Systemic Risks](ai-collapse-systemic-risks.md) | Model collapse, synthetic data, systemic risk | 2025-12-18 | Draft | [PDF](https://github.com/javi-jimenez/laia/releases/download/202608270117-LAIA-Whitepapers/ai-collapse-systemic-risks.pdf) |
 | 10 | [The LAIA Operational Framework: Architecture, Validation, and Governance](laia-operational-framework.md) | LAIA reference architecture, operational model | 2026-04-15 | Draft | [PDF](https://github.com/javi-jimenez/laia/releases/download/202608270117-LAIA-Whitepapers/laia-operational-framework.pdf) |
 | 11 | [Command & Control as Information Sovereignty: Reclaiming the C2 Acronym](command-control-information-sovereignty.md) | Information governance, control theory | 2026-03-01 | Draft | [PDF](https://github.com/javi-jimenez/laia/releases/download/202608270117-LAIA-Whitepapers/command-control-information-sovereignty.pdf) |
+| 12 | [Collaborative Operational Framework: Human-AI Synergy Across the Neptuno Network](collaborative-operational-framework-neptuno-network.md) | Human-AI collaboration, zero trust, IP governance | 2026-10-16 | Draft | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/collaborative-operational-framework-neptuno-network.pdf) |
 
 ## Document Conventions
 
