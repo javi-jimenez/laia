@@ -48,17 +48,18 @@ LAIA produce **documentos técnicos formales** (whitepapers) que transforman inv
 
 | # | Documento | Fecha | PDF |
 |---|-----------|-------|-----|
-| 01 | [ACS: An Assistant Context Standard for Persistent, Traceable AI Memory](whitepapers/acs-assistant-context-standard.md) | 2025-12-30 | [PDF](https://github.com/javi-jimenez/laia/releases/download/202608270117-LAIA-Whitepapers/acs-assistant-context-standard.pdf) |
-| 02 | [Hybrid Intelligence in Forensic Audit](whitepapers/hybrid-intelligence-forensic-audit.md) | 2026-03-19 | [PDF](https://github.com/javi-jimenez/laia/releases/download/202608270117-LAIA-Whitepapers/hybrid-intelligence-forensic-audit.pdf) |
-| 03 | [Ethical AI in High-Stakes Engineering](whitepapers/ethical-ai-ballistic-validation.md) | 2026-08-10 | [PDF](https://github.com/javi-jimenez/laia/releases/download/202608270117-LAIA-Whitepapers/ethical-ai-ballistic-validation.pdf) |
-| 04 | [Governance of Autonomous Systems](whitepapers/governance-autonomous-systems-accountability.md) | 2024-11-10 | [PDF](https://github.com/javi-jimenez/laia/releases/download/202608270117-LAIA-Whitepapers/governance-autonomous-systems-accountability.pdf) |
-| 05 | [Operational Algorithmic Ethics](whitepapers/operational-algorithmic-ethics.md) | 2024-11-15 | [PDF](https://github.com/javi-jimenez/laia/releases/download/202608270117-LAIA-Whitepapers/operational-algorithmic-ethics.pdf) |
-| 06 | [Formal Methods vs. Machine Learning](whitepapers/formal-methods-vs-machine-learning.md) | 2025-12-30 | [PDF](https://github.com/javi-jimenez/laia/releases/download/202608270117-LAIA-Whitepapers/formal-methods-vs-machine-learning.pdf) |
-| 07 | [Unified World Architecture for MMORPG Ecosystems](whitepapers/unified-world-architecture-mmorpg.md) | 2026-08-18 | [PDF](https://github.com/javi-jimenez/laia/releases/download/202608270117-LAIA-Whitepapers/unified-world-architecture-mmorpg.pdf) |
-| 08 | [Universal DNS and Distributed Systems](whitepapers/universal-dns-distributed-systems.md) | 2025-12-22 | [PDF](https://github.com/javi-jimenez/laia/releases/download/202608270117-LAIA-Whitepapers/universal-dns-distributed-systems.pdf) |
-| 09 | [AI Collapse and Systemic Risks](whitepapers/ai-collapse-systemic-risks.md) | 2025-12-18 | [PDF](https://github.com/javi-jimenez/laia/releases/download/202608270117-LAIA-Whitepapers/ai-collapse-systemic-risks.pdf) |
-| 10 | [The LAIA Operational Framework](whitepapers/laia-operational-framework.md) | 2026-04-15 | [PDF](https://github.com/javi-jimenez/laia/releases/download/202608270117-LAIA-Whitepapers/laia-operational-framework.pdf) |
-| 11 | [Command & Control as Information Sovereignty](whitepapers/command-control-information-sovereignty.md) | 2026-03-01 | [PDF](https://github.com/javi-jimenez/laia/releases/download/202608270117-LAIA-Whitepapers/command-control-information-sovereignty.pdf) |
+| 01 | [ACS: An Assistant Context Standard for Persistent, Traceable AI Memory](whitepapers/acs-assistant-context-standard.md) | 2025-12-30 | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/acs-assistant-context-standard.pdf) |
+| 02 | [Hybrid Intelligence in Forensic Audit](whitepapers/hybrid-intelligence-forensic-audit.md) | 2026-03-19 | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/hybrid-intelligence-forensic-audit.pdf) |
+| 03 | [Ethical AI in High-Stakes Engineering](whitepapers/ethical-ai-ballistic-validation.md) | 2026-08-10 | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/ethical-ai-ballistic-validation.pdf) |
+| 04 | [Governance of Autonomous Systems](whitepapers/governance-autonomous-systems-accountability.md) | 2024-11-10 | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/governance-autonomous-systems-accountability.pdf) |
+| 05 | [Operational Algorithmic Ethics](whitepapers/operational-algorithmic-ethics.md) | 2024-11-15 | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/operational-algorithmic-ethics.pdf) |
+| 06 | [Formal Methods vs. Machine Learning](whitepapers/formal-methods-vs-machine-learning.md) | 2025-12-30 | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/formal-methods-vs-machine-learning.pdf) |
+| 07 | [Unified World Architecture for MMORPG Ecosystems](whitepapers/unified-world-architecture-mmorpg.md) | 2026-08-18 | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/unified-world-architecture-mmorpg.pdf) |
+| 08 | [Universal DNS and Distributed Systems](whitepapers/universal-dns-distributed-systems.md) | 2025-12-22 | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/universal-dns-distributed-systems.pdf) |
+| 09 | [AI Collapse and Systemic Risks](whitepapers/ai-collapse-systemic-risks.md) | 2025-12-18 | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/ai-collapse-systemic-risks.pdf) |
+| 10 | [The LAIA Operational Framework](whitepapers/laia-operational-framework.md) | 2026-04-15 | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/laia-operational-framework.pdf) |
+| 11 | [Command & Control as Information Sovereignty](whitepapers/command-control-information-sovereignty.md) | 2026-03-01 | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/command-control-information-sovereignty.pdf) |
+| 12 | [Collaborative Operational Framework: Human-AI Synergy Across the Neptuno Network](whitepapers/collaborative-operational-framework-neptuno-network.md) | 2026-10-16 | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/collaborative-operational-framework-neptuno-network.pdf) |
 
 ---
 
