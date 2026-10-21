@@ -60,6 +60,7 @@ LAIA produce **documentos técnicos formales** (whitepapers) que transforman inv
 | 10 | [The LAIA Operational Framework](whitepapers/laia-operational-framework.md) | 2026-04-15 | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/laia-operational-framework.pdf) |
 | 11 | [Command & Control as Information Sovereignty](whitepapers/command-control-information-sovereignty.md) | 2026-03-01 | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/command-control-information-sovereignty.pdf) |
 | 12 | [Collaborative Operational Framework: Human-AI Synergy Across the Neptuno Network](whitepapers/collaborative-operational-framework-neptuno-network.md) | 2026-10-16 | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/collaborative-operational-framework-neptuno-network.pdf) |
+| 13 | [Ethics as Infrastructure: Build Conditions and the Layer the EU AI Act Does Not Regulate](whitepapers/ethics-as-infrastructure-build-conditions.md) | 2026-10-21 | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/ethics-as-infrastructure-build-conditions.pdf) |
 
 ---
 

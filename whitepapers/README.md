@@ -22,6 +22,7 @@ These documents transform applied research and real-world case studies into rigo
 | 10 | [The LAIA Operational Framework: Architecture, Validation, and Governance](laia-operational-framework.md) | LAIA reference architecture, operational model | 2026-04-15 | Draft | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/laia-operational-framework.pdf) |
 | 11 | [Command & Control as Information Sovereignty: Reclaiming the C2 Acronym](command-control-information-sovereignty.md) | Information governance, control theory | 2026-03-01 | Draft | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/command-control-information-sovereignty.pdf) |
 | 12 | [Collaborative Operational Framework: Human-AI Synergy Across the Neptuno Network](collaborative-operational-framework-neptuno-network.md) | Human-AI collaboration, zero trust, IP governance | 2026-10-16 | Draft | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/collaborative-operational-framework-neptuno-network.pdf) |
+| 13 | [Ethics as Infrastructure: Build Conditions and the Layer the EU AI Act Does Not Regulate](ethics-as-infrastructure-build-conditions.md) | Build conditions, AI Act gap analysis, labour and ethics | 2026-10-21 | Draft | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/ethics-as-infrastructure-build-conditions.pdf) |
 
 ## Document Conventions
 
