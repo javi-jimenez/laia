@@ -31,6 +31,7 @@ These documents transform applied research and real-world case studies into rigo
 | 19 | [The Lux Equation: Measuring the Economic Return of Gratitude and Congregation, and What It Cannot Prove](lux-equation-measurable-return.md) | Gratitude, congregation, health economics, epistemic limits | 2026-10-23 | Draft | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/lux-equation-measurable-return.pdf) |
 | 20 | [Contract-First, Interface-Agnostic Design: The Operation as the Unit of Software Architecture](contract-first-interface-agnostic-design.md) | Software architecture, contracts, ports and adapters | 2026-10-23 | Draft | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/contract-first-interface-agnostic-design.pdf) |
 | 21 | [Meteoectasis: A Terminological Framework for Total Impact-Induced Assimilation and Dilatation in Planetary Accretion](meteoectasis-impact-induced-assimilation.md) | Impact physics, terminology, isotopic homogenisation | 2026-10-30 | Draft | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/meteoectasis-impact-induced-assimilation.pdf) |
+| 22 | [Freedom as an Absorbing State: Game Theory, Withdrawal and the Path of Faith](freedom-as-absorbing-state-game-theory-of-faith.md) | Game theory, freedom, exit and closure, faith | 2026-11-02 | Draft | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/freedom-as-absorbing-state-game-theory-of-faith.pdf) |
 
 ## Document Conventions
 
