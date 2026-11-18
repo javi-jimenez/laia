@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2025-12-22
 version: "1.0"
 status: "Draft"
+order: 8
+topic: "Distributed systems, DNS, Web3"
 tags: ["DNS", "distributed systems", "Web3", "CRDT", "decentralized", "space", "LAIA"]
 keywords: ["universal DNS", "DDNSC", "distributed service discovery", "CRDT", "decentralized systems", "space networking"]
 license: "CC BY-NC-SA 4.0"

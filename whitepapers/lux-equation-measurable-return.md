@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2026-10-23
 version: "1.0"
 status: "Draft"
+order: 19
+topic: "Gratitude, congregation, health economics, epistemic limits"
 tags: ["gratitude", "congregation", "social capital", "health economics", "religion", "measurement", "epistemics"]
 keywords: ["gratitude intervention", "religious attendance", "mortality", "depression", "social capital", "cost avoidance", "proxy measurement", "what cannot be measured"]
 license: "CC BY-NC-SA 4.0"

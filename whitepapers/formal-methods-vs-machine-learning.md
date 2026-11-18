@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2025-12-30
 version: "1.0"
 status: "Draft"
+order: 6
+topic: "Formal verification, ML, explainability"
 tags: ["formal methods", "machine learning", "verification", "computational cost", "explainability", "truth affinity", "LAIA"]
 keywords: ["formal verification", "machine learning", "computational cost", "truth affinity", "hybrid systems", "explainability"]
 license: "CC BY-NC-SA 4.0"

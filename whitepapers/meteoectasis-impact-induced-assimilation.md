@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2026-10-30
 version: "1.0"
 status: "Draft"
+order: 21
+topic: "Impact physics, terminology, isotopic homogenisation"
 tags: ["planetary science", "impact physics", "accretion", "terminology", "geophysics", "isotopic homogenisation"]
 keywords: ["meteoectasis", "accretionary impact", "hit-and-run", "impact-induced mixing", "magma ocean", "latent heat of fusion", "isotopic homogenisation", "Theia", "terminology proposal"]
 license: "CC BY-NC-SA 4.0"

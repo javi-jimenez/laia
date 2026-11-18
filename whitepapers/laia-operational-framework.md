@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2026-04-15
 version: "1.0"
 status: "Draft"
+order: 10
+topic: "LAIA reference architecture, operational model"
 tags: ["LAIA", "reference architecture", "operational framework", "ethical AI", "validation", "governance"]
 keywords: ["LAIA", "operational framework", "ethical AI", "validation", "reference architecture", "governance"]
 license: "CC BY-NC-SA 4.0"

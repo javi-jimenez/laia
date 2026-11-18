@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2026-11-01
 version: "0.1"
 status: "Draft"
+order: 23
+topic: "Institutional design, consensus, veto, compensation of forces"
 tags: ["political theory", "institutional design", "governance", "consensus", "veto", "game theory", "systems theory"]
 keywords: ["dynamic equilibrium", "consensus", "veto", "consociationalism", "deliberative democracy", "institutional design", "balance of powers", "compensation of forces"]
 license: "CC BY-NC-SA 4.0"

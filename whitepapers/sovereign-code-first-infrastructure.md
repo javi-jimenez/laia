@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2026-11-19
 version: "1.0"
 status: "Draft"
+order: 24
+topic: "Code-first infrastructure, declarative intent, vendor lock-in"
 tags: ["software architecture", "infrastructure abstraction", "vendor lock-in", "code-first", "portable systems", "sovereignty", "EU AI Act"]
 keywords: ["code-first infrastructure", "declarative intent", "ephemeral plumbing", "ports and adapters", "vendor lock-in", "local-to-production parity", "sovereign systems"]
 license: "CC BY-NC-SA 4.0"

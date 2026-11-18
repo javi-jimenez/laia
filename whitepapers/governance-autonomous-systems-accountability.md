@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2024-11-10
 version: "1.0"
 status: "Draft"
+order: 4
+topic: "AI governance, accountability, auditing"
 tags: ["AI governance", "autonomous systems", "accountability", "auditing", "regulation", "LAIA"]
 keywords: ["governance", "accountability", "audit", "autonomous systems", "AI regulation", "transparency"]
 license: "CC BY-NC-SA 4.0"

@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2026-11-02
 version: "0.1"
 status: "Draft"
+order: 22
+topic: "Game theory, freedom, exit and closure, faith"
 tags: ["game theory", "freedom", "institutional design", "exit", "faith", "systems theory", "ethics"]
 keywords: ["absorbing state", "exit and voice", "commitment device", "observing equilibrium", "honourable means", "path of faith", "decoupling", "terminal set"]
 license: "CC BY-NC-SA 4.0"

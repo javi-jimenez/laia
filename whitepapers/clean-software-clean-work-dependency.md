@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2026-10-23
 version: "1.0"
 status: "Draft"
+order: 15
+topic: "Vendor lock-in, exitability, professional autonomy"
 tags: ["clean software", "professional autonomy", "exitability", "dependency", "open standards", "labour relations", "vendor lock-in"]
 keywords: ["clean software", "vendor lock-in", "exitability", "professional autonomy", "open standards", "dependency audit", "portability"]
 license: "CC BY-NC-SA 4.0"

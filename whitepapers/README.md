@@ -8,6 +8,7 @@ These documents transform applied research and real-world case studies into rigo
 
 > Los **PDFs** de cada documento están disponibles en la [última release de GitHub](https://github.com/javi-jimenez/laia/releases/latest).
 
+<!-- whitepapers-index:start -->
 | # | Document | Topic | Date | Status | PDF |
 |---|----------|-------|------|--------|-----|
 | 01 | [ACS: An Assistant Context Standard for Persistent, Traceable AI Memory](acs-assistant-context-standard.md) | Structured AI memory, axioms vs. inferences | 2025-12-30 | Draft | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/acs-assistant-context-standard.pdf) |
@@ -34,6 +35,7 @@ These documents transform applied research and real-world case studies into rigo
 | 22 | [Freedom as an Absorbing State: Game Theory, Withdrawal and the Path of Faith](freedom-as-absorbing-state-game-theory-of-faith.md) | Game theory, freedom, exit and closure, faith | 2026-11-02 | Draft | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/freedom-as-absorbing-state-game-theory-of-faith.pdf) |
 | 23 | [Dynamic Equilibrium: A Framework Beyond Consensus and Veto](dynamic-equilibrium-beyond-consensus-veto.md) | Institutional design, consensus, veto, compensation of forces | 2026-11-01 | Draft | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/dynamic-equilibrium-beyond-consensus-veto.pdf) |
 | 24 | [Sovereign Code-First Infrastructure: Decoupling Business Logic from Persistent Plumbing](sovereign-code-first-infrastructure.md) | Code-first infrastructure, declarative intent, vendor lock-in | 2026-11-19 | Draft | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/sovereign-code-first-infrastructure.pdf) |
+<!-- whitepapers-index:end -->
 
 ## Document Conventions
 
@@ -42,9 +44,35 @@ These documents transform applied research and real-world case studies into rigo
 - **License:** CC BY-NC-SA 4.0 (unless otherwise noted).
 - **Status:** Documents marked *Draft* are open for review and collaboration.
 
+### Front matter and the index
+
+The tables in this file and in the project [README](../README.md) are **generated** from the front matter of
+each document — do not edit them by hand. The fields that drive the index are:
+
+| Field | Required | Purpose |
+|:--|:--|:--|
+| `title` | yes | Link text in both tables |
+| `date` | yes | `YYYY-MM-DD`, shown in the *Date* column |
+| `order` | no | Rank in the `#` column; pinned because other papers cite it as "WP *N*" |
+| `topic` | no | Text of the *Topic* column (falls back to the first `tags`) |
+| `status` | no | *Status* column (defaults to `Draft`) |
+
+Regenerate the index after adding or editing a document:
+
+```bash
+make index          # rewrite both tables
+make index-check    # exit 1 if they are out of date (used by CI)
+```
+
+CI runs the check on every pull request and, on pushes to `main`, commits the regenerated tables automatically.
+
 ## Contributing
 
 To propose corrections, extensions, or new research topics, please open an issue or pull request in this repository. Each document is versioned and open to community review, consistent with the LAIA project's commitment to radical transparency and reproducibility.
+
+To add a whitepaper, create `whitepapers/<slug>.md` with the front matter above (and its `order`), then run
+`make index`. The PDF link in the index follows the file name, so the slug determines the asset name used by
+`make release`.
 
 ## Related
 

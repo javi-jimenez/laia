@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2026-10-23
 version: "1.0"
 status: "Draft"
+order: 20
+topic: "Software architecture, contracts, ports and adapters"
 tags: ["software architecture", "contract-first design", "hexagonal architecture", "Unix philosophy", "API design", "separation of concerns"]
 keywords: ["contract-first", "interface-agnostic", "ports and adapters", "operation contract", "error taxonomy", "Unix philosophy", "CLI", "API design"]
 license: "CC BY-NC-SA 4.0"

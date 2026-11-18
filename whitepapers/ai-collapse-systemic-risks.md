@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2025-12-18
 version: "1.0"
 status: "Draft"
+order: 9
+topic: "Model collapse, synthetic data, systemic risk"
 tags: ["AI collapse", "model collapse", "synthetic data", "scaling limits", "systemic risk", "LAIA"]
 keywords: ["model collapse", "synthetic data", "scaling", "data limits", "systemic risk", "AI safety"]
 license: "CC BY-NC-SA 4.0"

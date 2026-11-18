@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2026-08-18
 version: "1.0"
 status: "Draft"
+order: 7
+topic: "Systems architecture, game economies, scaling"
 tags: ["MMORPG", "game architecture", "unified world", "monetization", "systems design", "LAIA"]
 keywords: ["MMORPG", "one tamriel", "unified world", "level scaling", "game monetization", "player retention"]
 license: "CC BY-NC-SA 4.0"

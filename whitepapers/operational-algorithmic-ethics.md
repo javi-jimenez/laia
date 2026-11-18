@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2024-11-15
 version: "1.0"
 status: "Draft"
+order: 5
+topic: "Applied AI ethics, bias, transparency"
 tags: ["AI ethics", "algorithmic bias", "transparency", "audit", "operational ethics", "LAIA"]
 keywords: ["algorithmic ethics", "bias", "participatory audit", "radical transparency", "accountability"]
 license: "CC BY-NC-SA 4.0"

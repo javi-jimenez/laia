@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2026-03-01
 version: "1.0"
 status: "Draft"
+order: 11
+topic: "Information governance, control theory"
 tags: ["C2", "information governance", "control theory", "sovereignty", "LAIA", "systems architecture"]
 keywords: ["command and control", "C2", "information governance", "sovereignty", "control theory", "systems architecture"]
 license: "CC BY-NC-SA 4.0"

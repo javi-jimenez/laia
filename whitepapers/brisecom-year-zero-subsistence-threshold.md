@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2026-10-23
 version: "1.0"
 status: "Draft"
+order: 14
+topic: "Fixed cost base, B2B contracting, viability of a one-person company"
 tags: ["company viability", "fixed cost", "B2B contracting", "lean structure", "corporate governance", "year zero"]
 keywords: ["minimum viable company", "fixed cost base", "B2B contracts", "no payroll", "subsistence threshold", "corporate governance", "independence"]
 license: "CC BY-NC-SA 4.0"

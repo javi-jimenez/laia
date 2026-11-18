@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2026-10-23
 version: "1.0"
 status: "Draft"
+order: 16
+topic: "Defence layers, ordering dependency, convergence point"
 tags: ["NEPTUNO", "resilience", "compliance", "security", "operational projection", "technological sovereignty", "system architecture"]
 keywords: ["NEPTUNO", "three layers", "resilience architecture", "EU AI Act", "SBOM", "operational projection", "convergence point", "ambidextrous organisation"]
 license: "CC BY-NC-SA 4.0"

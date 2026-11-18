@@ -1,9 +1,15 @@
 # .github/workflows/deploy-laia.brisecom.org.yml
 name: Deploy laia.brisecom.org to OVH
-on: push
+on:
+  push:
+  workflow_dispatch:   # permite relanzar el despliegue (p. ej. tras el auto-commit del índice)
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    # Serializa los despliegues FTP para evitar subidas concurrentes.
+    concurrency:
+      group: deploy-laia.brisecom.org
+      cancel-in-progress: false
     steps:
     - uses: actions/checkout@v4
     - uses: SamKirkland/FTP-Deploy-Action@v4.3.5

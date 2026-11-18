@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2026-10-21
 version: "1.0"
 status: "Draft"
+order: 13
+topic: "Build conditions, AI Act gap analysis, labour and ethics"
 tags: ["AI ethics", "EU AI Act", "labour rights", "AI governance", "ethical economy", "build conditions", "LAIA"]
 keywords: ["ethics as infrastructure", "build conditions", "AI Act Article 14", "Article 26", "platform work directive", "algorithmic management", "fundamental rights impact assessment", "AI literacy"]
 license: "CC BY-NC-SA 4.0"

@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2026-10-23
 version: "1.0"
 status: "Draft"
+order: 17
+topic: "Defence economics, multiplier differential, opportunity cost"
 tags: ["defence economics", "fiscal multiplier", "opportunity cost", "conflict", "public investment", "NEPTUNO", "conjecture"]
 keywords: ["defence economics", "offensive operations cost", "fiscal multiplier", "opportunity cost of defence", "positive-sum security", "regional development", "NEPTUNO framework"]
 license: "CC BY-NC-SA 4.0"

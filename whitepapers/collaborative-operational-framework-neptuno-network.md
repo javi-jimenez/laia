@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2026-10-16
 version: "1.0"
 status: "Draft"
+order: 12
+topic: "Human-AI collaboration, zero trust, IP governance"
 tags: ["Neptuno Network", "human-AI collaboration", "agentic AI", "zero trust", "AI governance", "intellectual property", "EU AI Act", "LAIA"]
 keywords: ["collaborative framework", "agentic collaboration", "human-in-the-loop", "zero-trust", "distributed systems", "AI Act", "GDPR", "operational standard"]
 license: "CC BY-NC-SA 4.0"

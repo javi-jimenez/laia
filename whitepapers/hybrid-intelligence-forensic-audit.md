@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2026-03-19
 version: "1.0"
 status: "Draft"
+order: 2
+topic: "Human-AI collaboration, forensic auditing"
 tags: ["forensic audit", "hybrid intelligence", "human-AI collaboration", "fraud", "transparency", "LAIA"]
 keywords: ["hybrid intelligence", "forensic auditing", "substitution variables", "radical transparency", "systemic fraud"]
 license: "CC BY-NC-SA 4.0"

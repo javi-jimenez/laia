@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2026-08-10
 version: "1.0"
 status: "Draft"
+order: 3
+topic: "AI-assisted mathematical validation, defense"
 tags: ["ballistics", "mathematical validation", "ethical AI", "defense", "engineering", "LAIA"]
 keywords: ["ballistic validation", "armor-piercing ammunition", "mathematical modeling", "ethical AI", "defense engineering"]
 license: "CC BY-NC-SA 4.0"

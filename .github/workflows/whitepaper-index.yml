@@ -1,0 +1,64 @@
+name: Whitepaper index
+
+# Keeps the whitepaper tables in README.md and whitepapers/README.md in sync
+# with the front matter of the files in whitepapers/.
+#
+#  - Pull requests: fails if the index is stale (python scripts/whitepaper_index.py --check)
+#  - Pushes to main: regenerates and commits the index, then re-runs the site
+#    deploy (a push made with GITHUB_TOKEN does not trigger other workflows).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "whitepapers/**"
+      - "scripts/whitepaper_index.py"
+      - ".github/workflows/whitepaper-index.yml"
+  pull_request:
+    paths:
+      - "README.md"
+      - "whitepapers/**"
+      - "scripts/whitepaper_index.py"
+      - ".github/workflows/whitepaper-index.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: whitepaper-index-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  index:
+    name: Sync whitepaper index
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Check index is up to date
+        if: github.event_name == 'pull_request'
+        run: python3 scripts/whitepaper_index.py --check
+
+      - name: Regenerate and commit index
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/whitepaper_index.py
+          if git diff --quiet; then
+            echo "Index already up to date; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Auto-update whitepaper index [skip ci]"
+          git push
+          echo "Index committed; re-running the site deploy."
+          gh workflow run deploy-laia.brisecom.org.yml --ref main

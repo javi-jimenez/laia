@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2026-10-23
 version: "1.0"
 status: "Draft"
+order: 18
+topic: "Trade corridors, chokepoint risk, Hormuz"
 tags: ["trade routes", "chokepoints", "Silk Road", "maritime logistics", "Hormuz", "systemic risk", "NEPTUNO"]
 keywords: ["chokepoint", "trade artery", "maritime traffic", "Strait of Hormuz", "Suez", "circulation model", "blockade cost", "Silk Road 2.0"]
 license: "CC BY-NC-SA 4.0"

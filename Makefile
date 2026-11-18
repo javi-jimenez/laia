@@ -16,6 +16,7 @@ WP_DIR    := whitepapers
 
 PANDOC    ?= pandoc
 XELATEX   ?= xelatex
+PYTHON    ?= python3
 
 # ---------- Ayuda ----------
 .PHONY: help
@@ -24,6 +25,8 @@ help:
 	@echo ""
 	@echo "Objetivos disponibles:"
 	@echo "  make deps        Instala dependencias (pandoc + TeX Live) en Ubuntu"
+	@echo "  make index       Regenera el índice de whitepapers en los README"
+	@echo "  make index-check Verifica que el índice esté actualizado (CI)"
 	@echo "  make pdfs        Genera los PDFs de todos los whitepapers"
 	@echo "  make pdf-one     Genera un PDF concreto (WP=whitepapers/<archivo>.md)"
 	@echo "  make release     Genera los PDFs y crea un Release de GitHub (TAG=..., NOTES=...)"
@@ -53,6 +56,19 @@ check:
 	@command -v $(PANDOC) >/dev/null 2>&1 || { echo "❌ pandoc no está instalado. Ejecuta: make deps"; exit 1; }
 	@command -v $(XELATEX) >/dev/null 2>&1 || { echo "❌ xelatex no está instalado. Ejecuta: make deps"; exit 1; }
 	@echo "✅ Dependencias disponibles: $(PANDOC) y $(XELATEX)."
+
+# ---------- Índice de whitepapers ----------
+# El front matter de cada whitepaper (title, date, status, order, topic) es la
+# única fuente de verdad: las tablas de README.md y whitepapers/README.md se
+# regeneran a partir de él. Añadir un whitepaper = crear el .md con su front
+# matter y ejecutar `make index` (el CI también lo comprueba).
+.PHONY: index
+index:
+	@$(PYTHON) scripts/whitepaper_index.py
+
+.PHONY: index-check
+index-check:
+	@$(PYTHON) scripts/whitepaper_index.py --check
 
 # ---------- Generar todos los PDFs ----------
 .PHONY: pdfs
@@ -86,7 +102,7 @@ clean:
 # El tag usa el patrón de los releases históricos: AAAAMMDDHHMM-Nombre
 # (ej. 202608270110-LAIA-Whitepapers). Uso: make release NAME="nombre"
 .PHONY: release
-release: pdfs
+release: index pdfs
 	@command -v gh >/dev/null 2>&1 || { echo "❌ gh CLI no está instalado. Instala con: sudo apt install gh"; exit 1; }
 	@gh auth status >/dev/null 2>&1 || { echo "❌ gh no está autenticado. Ejecuta: gh auth login"; exit 1; }
 	$(eval TS := $(shell date +%Y%m%d%H%M))

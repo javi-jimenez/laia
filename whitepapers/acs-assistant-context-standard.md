@@ -5,6 +5,8 @@ affiliation: "Brisecom / LAIA Project"
 date: 2025-12-30
 version: "1.0"
 status: "Draft"
+order: 1
+topic: "Structured AI memory, axioms vs. inferences"
 tags: ["AI", "memory", "context", "standard", "traceability", "LLM", "ACS"]
 keywords: ["assistant context", "axioms", "inferences", "persistent memory", "hallucination", "traceability"]
 license: "CC BY-NC-SA 4.0"
