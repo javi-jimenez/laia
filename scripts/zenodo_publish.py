@@ -48,6 +48,13 @@ WPS_DIR = REPO_ROOT / "whitepapers"
 
 USER_AGENT = "laia-zenodo-publisher/1.0 (+https://laia.brisecom.org)"
 
+# Token lookup order: env var, then this file (kept outside the repo so it can
+# never be committed). The file only needs to contain the token. Sandbox uses
+# its own file so a rehearsal cannot overwrite the production credentials.
+TOKEN_DIR = Path.home() / ".config" / "laia"
+DEFAULT_TOKEN_FILE = TOKEN_DIR / "zenodo.token"
+SANDBOX_TOKEN_FILE = TOKEN_DIR / "zenodo.sandbox.token"
+
 ABSTRACT_RE = re.compile(
     r"^##\s+Abstract\s*$(.*?)(?=^##\s)", re.MULTILINE | re.DOTALL | re.IGNORECASE
 )
@@ -103,8 +110,11 @@ def extract_abstract(path: Path) -> str:
 def build_metadata(paper: Paper, abstract: str) -> dict:
     creators = []
     for author in paper.authors:
-        family, given = split_name(author)
-        creators.append({"name": f"{family}, {given}" if given else family})
+        family, given = author.family_given
+        creator = {"name": f"{family}, {given}" if given else family}
+        if author.orcid:
+            creator["orcid"] = author.orcid
+        creators.append(creator)
 
     metadata = {
         "title": paper.title,
@@ -117,9 +127,8 @@ def build_metadata(paper: Paper, abstract: str) -> dict:
         "license": "cc-by-nc-sa-4.0",
         "keywords": list(paper.keywords) or [paper.topic] if paper.topic else [],
         "version": paper.version or "1.0",
+        "notes": f"{paper.affiliation} · {paper.status} · {paper.license}",
     }
-    if paper.affiliation:
-        metadata["imprint"] = paper.affiliation
     return metadata
 
 
@@ -156,6 +165,24 @@ def save_dois(dois: dict[str, dict[str, object]]) -> None:
     )
 
 
+def resolve_token(token_file: str | None, sandbox: bool) -> str:
+    """Read the token from ZENODO_TOKEN, then from the environment's file."""
+    token = os.environ.get("ZENODO_TOKEN", "").strip()
+    if token:
+        return token
+    if token_file:
+        path = Path(token_file).expanduser()
+    else:
+        path = SANDBOX_TOKEN_FILE if sandbox else DEFAULT_TOKEN_FILE
+    if path.is_file():
+        return path.read_text(encoding="utf-8").strip()
+    return ""
+
+
+def default_token_path(sandbox: bool) -> Path:
+    return SANDBOX_TOKEN_FILE if sandbox else DEFAULT_TOKEN_FILE
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Create (and optionally publish) Zenodo records for the whitepapers."
@@ -173,6 +200,10 @@ def main() -> int:
     )
     parser.add_argument(
         "--sandbox", action="store_true", help="use sandbox.zenodo.org instead of production"
+    )
+    parser.add_argument(
+        "--token-file",
+        help="file containing the token (default: ~/.config/laia/zenodo[.sandbox].token)",
     )
     args = parser.parse_args()
 
@@ -202,13 +233,24 @@ def main() -> int:
         print("\n(dry run: nothing sent)")
         return 0
 
-    token = os.environ.get("ZENODO_TOKEN", "").strip()
+    token = resolve_token(args.token_file, args.sandbox)
     if not token:
+        location = (
+            "https://sandbox.zenodo.org/account/settings/applications/"
+            if args.sandbox
+            else "https://zenodo.org/account/settings/applications/"
+        )
+        target = (
+            Path(args.token_file).expanduser()
+            if args.token_file
+            else default_token_path(args.sandbox)
+        )
         raise SystemExit(
-            "error: ZENODO_TOKEN is not set. Create one at "
-            + ("https://sandbox.zenodo.org/account/settings/applications/"
-               if args.sandbox
-               else "https://zenodo.org/account/settings/applications/")
+            "error: no Zenodo token found.\n"
+            f"  Create one at {location} (scopes: deposit:write, deposit:actions)\n"
+            f"  then either export ZENODO_TOKEN=... or save it with:\n"
+            f"    mkdir -p {target.parent} && chmod 700 {target.parent}\n"
+            f"    printf '%s' TOKEN > {target} && chmod 600 {target}"
         )
 
     api = SANDBOX if args.sandbox else PRODUCTION

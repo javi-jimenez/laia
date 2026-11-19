@@ -48,7 +48,9 @@ def load_dois() -> dict[str, dict[str, object]]:
 
 
 def bib_key(paper: Paper) -> str:
-    family = split_name(paper.authors[0])[0].split()[-1] if paper.authors else "laia"
+    family = (
+        split_name(paper.authors[0].name)[0].split()[-1] if paper.authors else "laia"
+    )
     ascii_family = (
         family.lower()
         .replace("í", "i")
@@ -80,7 +82,7 @@ def render_bibtex(papers: list[tuple[int, Paper]], dois: dict) -> str:
         doi = (dois.get(paper.slug) or {}).get("doi")
         fields = [
             f"  title       = {{{paper.title}}}",
-            f"  author      = {{{' and '.join(paper.authors)}}}",
+            f"  author      = {{{' and '.join(a.name for a in paper.authors)}}}",
             f"  institution = {{{paper.affiliation}}}",
             f"  year        = {{{paper.year}}}",
             f"  type        = {{Technical Report}}",
@@ -88,6 +90,9 @@ def render_bibtex(papers: list[tuple[int, Paper]], dois: dict) -> str:
         ]
         if paper.topic:
             fields.append(f"  keywords    = {{{paper.topic}}}")
+        for author in paper.authors:
+            if author.orcid:
+                fields.append(f"  orcid       = {{{author.orcid}}}")
         if doi:
             fields.append(f"  doi         = {{{doi}}}")
         fields.append(f"  url         = {{{paper.url}}}")
@@ -110,10 +115,12 @@ def render_cff(papers: list[tuple[int, Paper]], dois: dict) -> str:
             ]
         )
         for author in paper.authors:
-            family, given = split_name(author)
+            family, given = author.family_given
             reference_lines.append("      - family-names: " + json.dumps(family, ensure_ascii=False))
             if given:
                 reference_lines.append("        given-names: " + json.dumps(given, ensure_ascii=False))
+            if author.orcid:
+                reference_lines.append(f"        orcid: https://orcid.org/{author.orcid}")
         reference_lines.append(f"    year: {paper.year}")
         reference_lines.append(f"    date-published: {paper.date}")
         reference_lines.append(f"    number: \"WP {number:02d}\"")
@@ -155,7 +162,10 @@ def render_json(papers: list[tuple[int, Paper]], dois: dict) -> str:
                 "slug": paper.slug,
                 "citationId": paper.citation_id,
                 "title": paper.title,
-                "authors": list(paper.authors),
+                "authors": [
+                    {"name": a.name, "orcid": a.orcid, "affiliation": a.affiliation}
+                    for a in paper.authors
+                ],
                 "affiliation": paper.affiliation,
                 "date": paper.date,
                 "year": paper.year,

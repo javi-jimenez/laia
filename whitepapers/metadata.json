@@ -8,7 +8,11 @@
       "citationId": "laia-acs-assistant-context-standard",
       "title": "ACS: An Assistant Context Standard for Persistent, Traceable AI Memory",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2025-12-30",
@@ -36,7 +40,11 @@
       "citationId": "laia-hybrid-intelligence-forensic-audit",
       "title": "Hybrid Intelligence in Forensic Audit: A Case Study in Systemic Fraud Resolution",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2026-03-19",
@@ -63,7 +71,11 @@
       "citationId": "laia-ethical-ai-ballistic-validation",
       "title": "Ethical AI in High-Stakes Engineering: Mathematical Validation of Ballistic Systems",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2026-08-10",
@@ -90,7 +102,11 @@
       "citationId": "laia-governance-autonomous-systems-accountability",
       "title": "Governance of Autonomous Systems: A Framework for Accountability",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2024-11-10",
@@ -118,7 +134,11 @@
       "citationId": "laia-operational-algorithmic-ethics",
       "title": "Operational Algorithmic Ethics: From Principles to Practice",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2024-11-15",
@@ -145,7 +165,11 @@
       "citationId": "laia-formal-methods-vs-machine-learning",
       "title": "Formal Methods vs. Machine Learning: Computational Cost and Truth Affinity",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2025-12-30",
@@ -173,7 +197,11 @@
       "citationId": "laia-unified-world-architecture-mmorpg",
       "title": "Unified World Architecture for Legacy MMORPG Ecosystems: A Strategic Framework",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2026-08-18",
@@ -201,7 +229,11 @@
       "citationId": "laia-universal-dns-distributed-systems",
       "title": "Universal DNS: Distributed Service Discovery at Planetary and Galactic Scale",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2025-12-22",
@@ -229,7 +261,11 @@
       "citationId": "laia-ai-collapse-systemic-risks",
       "title": "AI Collapse: Degradation, Scaling Limits, and Systemic Risks",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2025-12-18",
@@ -257,7 +293,11 @@
       "citationId": "laia-laia-operational-framework",
       "title": "The LAIA Operational Framework: Architecture, Validation, and Governance",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2026-04-15",
@@ -285,7 +325,11 @@
       "citationId": "laia-command-control-information-sovereignty",
       "title": "Command & Control as Information Sovereignty: Reclaiming the C2 Acronym",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2026-03-01",
@@ -313,7 +357,11 @@
       "citationId": "laia-collaborative-operational-framework-neptuno-network",
       "title": "Collaborative Operational Framework: Human-AI Synergy Across the Neptuno Network",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2026-10-16",
@@ -343,7 +391,11 @@
       "citationId": "laia-ethics-as-infrastructure-build-conditions",
       "title": "Ethics as Infrastructure: Build Conditions and the Layer the EU AI Act Does Not Regulate",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2026-10-21",
@@ -373,7 +425,11 @@
       "citationId": "laia-brisecom-year-zero-subsistence-threshold",
       "title": "Year Zero: What a Company With Large Ambitions Actually Costs to Keep Alive",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2026-10-23",
@@ -402,7 +458,11 @@
       "citationId": "laia-clean-software-clean-work-dependency",
       "title": "Clean Software, Clean Work: Unnecessary Dependency as a Single Problem in Two Layers",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2026-10-23",
@@ -431,7 +491,11 @@
       "citationId": "laia-neptuno-trident-three-layers-resilience",
       "title": "The Trident: Three Layers of Resilience That Converge in One Point of Resolution",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2026-10-23",
@@ -461,7 +525,11 @@
       "citationId": "laia-defence-cheaper-than-attack-cost-accounting",
       "title": "Defence Is Cheaper Than Attack: A Cost Accounting of Offensive Versus Defensive Posture",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2026-10-23",
@@ -490,7 +558,11 @@
       "citationId": "laia-arteries-of-the-earth-chokepoints",
       "title": "Arteries of the Earth: Chokepoints, Trade Circulation and Why Blocking Them Is Self-Harming",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2026-10-23",
@@ -520,7 +592,11 @@
       "citationId": "laia-lux-equation-measurable-return",
       "title": "The Lux Equation: Measuring the Economic Return of Gratitude and Congregation, and What It Cannot Prove",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2026-10-23",
@@ -550,7 +626,11 @@
       "citationId": "laia-contract-first-interface-agnostic-design",
       "title": "Contract-First, Interface-Agnostic Design: The Operation as the Unit of Software Architecture",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2026-10-23",
@@ -580,7 +660,11 @@
       "citationId": "laia-meteoectasis-impact-induced-assimilation",
       "title": "Meteoectasis: A Terminological Framework for Total Impact-Induced Assimilation and Dilatation in Planetary Accretion",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2026-10-30",
@@ -611,7 +695,11 @@
       "citationId": "laia-freedom-as-absorbing-state-game-theory-of-faith",
       "title": "Freedom as an Absorbing State: Game Theory, Withdrawal and the Path of Faith",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2026-11-02",
@@ -641,7 +729,11 @@
       "citationId": "laia-dynamic-equilibrium-beyond-consensus-veto",
       "title": "Dynamic Equilibrium: A Framework Beyond Consensus and Veto",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2026-11-01",
@@ -671,7 +763,11 @@
       "citationId": "laia-sovereign-code-first-infrastructure",
       "title": "Sovereign Code-First Infrastructure: Decoupling Business Logic from Persistent Plumbing",
       "authors": [
-        "Francisco Javier Jiménez Gómez"
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
       ],
       "affiliation": "Brisecom / LAIA Project",
       "date": "2026-11-19",

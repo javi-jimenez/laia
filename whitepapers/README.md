@@ -4,6 +4,10 @@ This directory hosts formal whitepapers and technical research documents produce
 
 These documents transform applied research and real-world case studies into rigorous, reproducible technical references. Each paper follows a structured academic format (abstract, introduction, methodology, results, discussion, conclusion, references) and is intended for public review, citation, and collaboration.
 
+<!-- whitepapers-author:start -->
+**Author:** Francisco Javier Jiménez Gómez — Brisecom SL / LAIA Project. **ORCID:** _pending_. **Zenodo:** a DOI is minted per paper as it is registered (see `dois.json`).
+<!-- whitepapers-author:end -->
+
 ## Index of Documents
 
 > Los **PDFs** de cada documento están disponibles en la [última release de GitHub](https://github.com/javi-jimenez/laia/releases/latest).
@@ -94,6 +98,21 @@ make citations-check  # exit 1 if stale (used by CI)
 | **Crossref** | ✅ API | Paid membership | Not needed: Zenodo already issues DOIs (DataCite) for free. |
 | **arXiv** | ❌ UI only | Endorsement + LaTeX source | Disciplines and endorsement policy make it a poor fit for this collection. |
 | **ResearchGate / Academia.edu** | ❌ No public API | Manual upload | Out of scope for automation. |
+
+### ORCID
+
+The author ORCID lives in exactly one place — [`whitepapers/authors.json`](authors.json) — and from there it
+reaches every output: the header of this index, the `orcid:` field of `CITATION.cff`, the `orcid` field of the
+BibTeX entries, the `creators[].orcid` sent to Zenodo, and the ORCID badge on `laia.brisecom.org`.
+
+```json
+{
+  "Francisco Javier Jiménez Gómez": { "orcid": "0000-0002-XXXX-XXXX", "affiliation": "Brisecom SL / LAIA Project" }
+}
+```
+
+Fill it once, run `make index citations`, and the whole repository follows. An empty value is rendered as
+_"pending"_ rather than as a broken link.
 
 ### Registering with Zenodo
 

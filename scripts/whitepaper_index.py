@@ -27,6 +27,9 @@ from whitepaper_meta import REPO_ROOT, Paper, load_papers, numbered
 START = "<!-- whitepapers-index:start -->"
 END = "<!-- whitepapers-index:end -->"
 
+AUTHOR_START = "<!-- whitepapers-author:start -->"
+AUTHOR_END = "<!-- whitepapers-author:end -->"
+
 
 def escape_cell(text: str) -> str:
     return text.replace("|", "\\|")
@@ -66,16 +69,33 @@ TARGETS = {
 }
 
 
-def update(path: Path, table: str, write: bool) -> bool:
+def render_author(papers: list[tuple[int, Paper]]) -> str:
+    """Author/ORCID line; regenerated so it appears as soon as ORCID is known."""
+    author = papers[0][1].authors[0]
+    line = f"**Author:** {author.name}"
+    if author.affiliation:
+        line += f" — {author.affiliation}"
+    if author.orcid:
+        line += f". **ORCID:** [{author.orcid}](https://orcid.org/{author.orcid})"
+    else:
+        line += ". **ORCID:** _pending_"
+    return (
+        line
+        + ". **Zenodo:** a DOI is minted per paper as it is registered "
+        + "(see `dois.json`)."
+    )
+
+
+def update(
+    path: Path, table: str, write: bool, start: str = START, end: str = END
+) -> bool:
     """Return True if the file is out of date; write it unless ``write`` is False."""
     text = path.read_text(encoding="utf-8")
-    if START not in text or END not in text:
-        raise SystemExit(
-            f"error: {path.name} is missing the index markers {START} / {END}"
-        )
-    head, rest = text.split(START, 1)
-    _, tail = rest.split(END, 1)
-    new_text = f"{head}{START}\n{table}\n{END}{tail}"
+    if start not in text or end not in text:
+        raise SystemExit(f"error: {path.name} is missing the markers {start} / {end}")
+    head, rest = text.split(start, 1)
+    _, tail = rest.split(end, 1)
+    new_text = f"{head}{start}\n{table}\n{end}{tail}"
     if new_text == text:
         return False
     if write:
@@ -103,6 +123,16 @@ def main() -> int:
         for name, render in TARGETS.items()
         if update(REPO_ROOT / name, render(papers), write=not args.check)
     ]
+
+    author_changed = update(
+        REPO_ROOT / "whitepapers" / "README.md",
+        render_author(papers),
+        write=not args.check,
+        start=AUTHOR_START,
+        end=AUTHOR_END,
+    )
+    if author_changed and "whitepapers/README.md" not in changed:
+        changed.append("whitepapers/README.md (author line)")
 
     if args.check:
         if changed:

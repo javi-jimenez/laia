@@ -9,6 +9,7 @@ entry and its PDF asset name. This module parses it once so the generators
 
 from __future__ import annotations
 
+import json
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -19,8 +20,20 @@ WHITEPAPERS_DIR = REPO_ROOT / "whitepapers"
 GITHUB_REPO = "javi-jimenez/laia"
 BLOB_URL = f"https://github.com/{GITHUB_REPO}/blob/main/whitepapers/{{slug}}.md"
 PDF_URL = f"https://github.com/{GITHUB_REPO}/releases/latest/download/{{slug}}.pdf"
+AUTHORS_FILE = WHITEPAPERS_DIR / "authors.json"
 
 KEY_RE = re.compile(r"^([A-Za-z_][\w-]*):\s*(.*)$")
+
+
+@dataclass(frozen=True)
+class Author:
+    name: str
+    orcid: str = ""
+    affiliation: str = ""
+
+    @property
+    def family_given(self) -> tuple[str, str]:
+        return split_name(self.name)
 
 
 @dataclass(frozen=True)
@@ -31,7 +44,7 @@ class Paper:
     status: str
     topic: str
     order: int | None
-    authors: tuple[str, ...]
+    authors: tuple[Author, ...]
     keywords: tuple[str, ...]
     version: str
     license: str
@@ -80,6 +93,16 @@ def parse_front_matter(text: str) -> dict[str, object]:
     raise ValueError("unterminated front matter")
 
 
+def load_authors() -> dict[str, dict[str, str]]:
+    """Read whitepapers/authors.json: name -> {orcid, affiliation}."""
+    if not AUTHORS_FILE.exists():
+        return {}
+    data = json.loads(AUTHORS_FILE.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise SystemExit("error: whitepapers/authors.json must be an object keyed by name")
+    return data
+
+
 def _as_tuple(value: object) -> tuple[str, ...]:
     if isinstance(value, list):
         return tuple(value)
@@ -90,6 +113,7 @@ def _as_tuple(value: object) -> tuple[str, ...]:
 
 def load_papers() -> list[Paper]:
     """Return the papers sorted by their declared order, then by date."""
+    registry = load_authors()
     papers: list[Paper] = []
     for path in sorted(WHITEPAPERS_DIR.glob("*.md")):
         if path.name == "README.md":
@@ -125,8 +149,18 @@ def load_papers() -> list[Paper]:
                 status=str(fields.get("status", "Draft")).strip() or "Draft",
                 topic=topic,
                 order=int(raw_order) if raw_order else None,
-                authors=_as_tuple(fields.get("authors")) or (
-                    "Francisco Javier Jiménez Gómez",
+                authors=tuple(
+                    Author(
+                        name=name,
+                        orcid=str(registry.get(name, {}).get("orcid", "")).strip(),
+                        affiliation=str(
+                            registry.get(name, {}).get("affiliation", "")
+                        ).strip(),
+                    )
+                    for name in (
+                        _as_tuple(fields.get("authors"))
+                        or ("Francisco Javier Jiménez Gómez",)
+                    )
                 ),
                 keywords=_as_tuple(fields.get("keywords"))
                 or _as_tuple(fields.get("tags")),

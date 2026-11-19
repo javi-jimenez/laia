@@ -17,3 +17,7 @@ pdf/out/
 # Python
 __pycache__/
 *.py[cod]
+
+# Secretos locales (nunca en el repo)
+.env
+*.token
