@@ -66,13 +66,58 @@ make index-check    # exit 1 if they are out of date (used by CI)
 
 CI runs the check on every pull request and, on pushes to `main`, commits the regenerated tables automatically.
 
+## Citation and registration
+
+The same front matter also drives the citation artifacts, so a paper cannot be cited under a title it no
+longer has:
+
+| Artifact | Purpose | Consumed by |
+|:--|:--|:--|
+| `CITATION.cff` | Repository-level citation file | GitHub "Cite this repository", Zotero, ORCID imports |
+| `whitepapers/references.bib` | One `@techreport` per paper | LaTeX, Zotero, Mendeley, Pandoc |
+| `whitepapers/metadata.json` | Machine-readable feed (title, authors, date, DOI, URLs) | The Hugo site (`laia.brisecom.org`) and the Zenodo publisher |
+| `whitepapers/dois.json` | DOI registry written by the publisher | The three artifacts above |
+
+```bash
+make citations        # regenerate all three
+make citations-check  # exit 1 if stale (used by CI)
+```
+
+### Where these documents can be registered
+
+| Venue | Programmatic? | What it requires | Notes |
+|:--|:--|:--|:--|
+| **Zenodo** (CERN) | ✅ REST API | Free personal token | Mints a **DOI** per record, accepts unpublished drafts, no membership needed. This is the recommended first registration. |
+| **ORCID** | ⚠️ Partly | ORCID iD | Writing works through the API needs ORCID **Member API** credentials (organisational membership). Without membership, works are added with the *Search & Link* wizard — and Zenodo is an ORCID-enabled source, so publishing there is the practical route. |
+| **Google Scholar** | ❌ No submission API | Crawlable HTML + PDF | Inclusion is decided by its crawler: each paper needs a public page showing the **complete abstract** (or the full text) with no login or interstitial, plus a searchable PDF ending in `.pdf`. Guided by `citation_*` (Highwire) meta tags and a sitemap. This belongs in the **site** repo, not here. |
+| **Semantic Scholar / OpenAlex** | ❌ Crawl only | A resolvable DOI or landing page | They discover papers on their own once a DOI exists; nothing to submit. |
+| **Crossref** | ✅ API | Paid membership | Not needed: Zenodo already issues DOIs (DataCite) for free. |
+| **arXiv** | ❌ UI only | Endorsement + LaTeX source | Disciplines and endorsement policy make it a poor fit for this collection. |
+| **ResearchGate / Academia.edu** | ❌ No public API | Manual upload | Out of scope for automation. |
+
+### Registering with Zenodo
+
+```bash
+export ZENODO_TOKEN=...            # zenodo.org/account/settings/applications
+make zenodo-dry                    # print the exact metadata; no network calls
+make zenodo-draft                  # create PRIVATE drafts, review them in the web UI
+make zenodo-publish                # publish (PERMANENT) and record the DOIs
+make citations                     # propagate the DOIs into CFF, BibTeX and JSON
+```
+
+`zenodo-publish` runs `make citations` for you. Publishing is irreversible: drafts can still be edited or
+deleted, published records cannot. Use `--sandbox` for a rehearsal without touching the real record set.
+
+Once a DOI exists, the same DOI flows into `CITATION.cff`, the BibTeX field `doi`, the site feed and — via
+Zenodo's ORCID integration or ORCID's *Search & Link* wizard — into the author's ORCID record.
+
 ## Contributing
 
 To propose corrections, extensions, or new research topics, please open an issue or pull request in this repository. Each document is versioned and open to community review, consistent with the LAIA project's commitment to radical transparency and reproducibility.
 
 To add a whitepaper, create `whitepapers/<slug>.md` with the front matter above (and its `order`), then run
-`make index`. The PDF link in the index follows the file name, so the slug determines the asset name used by
-`make release`.
+`make index citations`. The PDF link in the index follows the file name, so the slug determines the asset name
+used by `make release`.
 
 ## Related
 

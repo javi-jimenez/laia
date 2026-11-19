@@ -13,13 +13,15 @@ on:
     paths:
       - "README.md"
       - "whitepapers/**"
-      - "scripts/whitepaper_index.py"
+      - "CITATION.cff"
+      - "scripts/**"
       - ".github/workflows/whitepaper-index.yml"
   pull_request:
     paths:
       - "README.md"
       - "whitepapers/**"
-      - "scripts/whitepaper_index.py"
+      - "CITATION.cff"
+      - "scripts/**"
       - ".github/workflows/whitepaper-index.yml"
   workflow_dispatch:
 
@@ -42,9 +44,11 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Check index is up to date
+      - name: Check index and citations are up to date
         if: github.event_name == 'pull_request'
-        run: python3 scripts/whitepaper_index.py --check
+        run: |
+          python3 scripts/whitepaper_index.py --check
+          python3 scripts/whitepaper_citations.py --check
 
       - name: Regenerate and commit index
         if: github.event_name != 'pull_request'
@@ -52,6 +56,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 scripts/whitepaper_index.py
+          python3 scripts/whitepaper_citations.py
           if git diff --quiet; then
             echo "Index already up to date; nothing to commit."
             exit 0

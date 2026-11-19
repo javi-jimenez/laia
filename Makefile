@@ -27,6 +27,8 @@ help:
 	@echo "  make deps        Instala dependencias (pandoc + TeX Live) en Ubuntu"
 	@echo "  make index       Regenera el índice de whitepapers en los README"
 	@echo "  make index-check Verifica que el índice esté actualizado (CI)"
+	@echo "  make citations   Genera CITATION.cff, references.bib y metadata.json"
+	@echo "  make citations-check  Verifica que la citación esté actualizada (CI)"
 	@echo "  make pdfs        Genera los PDFs de todos los whitepapers"
 	@echo "  make pdf-one     Genera un PDF concreto (WP=whitepapers/<archivo>.md)"
 	@echo "  make release     Genera los PDFs y crea un Release de GitHub (TAG=..., NOTES=...)"
@@ -70,6 +72,33 @@ index:
 index-check:
 	@$(PYTHON) scripts/whitepaper_index.py --check
 
+# ---------- Metadatos de citación ----------
+# Genera CITATION.cff (botón "Cite this repository" de GitHub), el BibTeX y un
+# feed JSON que consume la web. Los DOI de whitepapers/dois.json (los escribe
+# scripts/zenodo_publish.py) se incorporan automáticamente.
+.PHONY: citations
+citations:
+	@$(PYTHON) scripts/whitepaper_citations.py
+
+.PHONY: citations-check
+citations-check:
+	@$(PYTHON) scripts/whitepaper_citations.py --check
+
+# ---------- Registro en Zenodo (DOI) ----------
+# Sin --publish solo crea borradores privados; publicar es permanente.
+.PHONY: zenodo-dry
+zenodo-dry:
+	@$(PYTHON) scripts/zenodo_publish.py --dry-run
+
+.PHONY: zenodo-draft
+zenodo-draft:
+	@$(PYTHON) scripts/zenodo_publish.py
+
+.PHONY: zenodo-publish
+zenodo-publish:
+	@$(PYTHON) scripts/zenodo_publish.py --publish
+	@$(MAKE) citations
+
 # ---------- Generar todos los PDFs ----------
 .PHONY: pdfs
 pdfs: check
@@ -102,7 +131,7 @@ clean:
 # El tag usa el patrón de los releases históricos: AAAAMMDDHHMM-Nombre
 # (ej. 202608270110-LAIA-Whitepapers). Uso: make release NAME="nombre"
 .PHONY: release
-release: index pdfs
+release: index citations pdfs
 	@command -v gh >/dev/null 2>&1 || { echo "❌ gh CLI no está instalado. Instala con: sudo apt install gh"; exit 1; }
 	@gh auth status >/dev/null 2>&1 || { echo "❌ gh no está autenticado. Ejecuta: gh auth login"; exit 1; }
 	$(eval TS := $(shell date +%Y%m%d%H%M))

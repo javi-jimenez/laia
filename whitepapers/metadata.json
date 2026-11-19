@@ -1,0 +1,698 @@
+{
+  "generatedBy": "scripts/whitepaper_citations.py",
+  "source": "https://github.com/javi-jimenez/laia/tree/main/whitepapers",
+  "papers": [
+    {
+      "order": 1,
+      "slug": "acs-assistant-context-standard",
+      "citationId": "laia-acs-assistant-context-standard",
+      "title": "ACS: An Assistant Context Standard for Persistent, Traceable AI Memory",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2025-12-30",
+      "year": "2025",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Structured AI memory, axioms vs. inferences",
+      "keywords": [
+        "assistant context",
+        "axioms",
+        "inferences",
+        "persistent memory",
+        "hallucination",
+        "traceability"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/acs-assistant-context-standard.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/acs-assistant-context-standard.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 2,
+      "slug": "hybrid-intelligence-forensic-audit",
+      "citationId": "laia-hybrid-intelligence-forensic-audit",
+      "title": "Hybrid Intelligence in Forensic Audit: A Case Study in Systemic Fraud Resolution",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-03-19",
+      "year": "2026",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Human-AI collaboration, forensic auditing",
+      "keywords": [
+        "hybrid intelligence",
+        "forensic auditing",
+        "substitution variables",
+        "radical transparency",
+        "systemic fraud"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/hybrid-intelligence-forensic-audit.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/hybrid-intelligence-forensic-audit.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 3,
+      "slug": "ethical-ai-ballistic-validation",
+      "citationId": "laia-ethical-ai-ballistic-validation",
+      "title": "Ethical AI in High-Stakes Engineering: Mathematical Validation of Ballistic Systems",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-08-10",
+      "year": "2026",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "AI-assisted mathematical validation, defense",
+      "keywords": [
+        "ballistic validation",
+        "armor-piercing ammunition",
+        "mathematical modeling",
+        "ethical AI",
+        "defense engineering"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/ethical-ai-ballistic-validation.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/ethical-ai-ballistic-validation.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 4,
+      "slug": "governance-autonomous-systems-accountability",
+      "citationId": "laia-governance-autonomous-systems-accountability",
+      "title": "Governance of Autonomous Systems: A Framework for Accountability",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2024-11-10",
+      "year": "2024",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "AI governance, accountability, auditing",
+      "keywords": [
+        "governance",
+        "accountability",
+        "audit",
+        "autonomous systems",
+        "AI regulation",
+        "transparency"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/governance-autonomous-systems-accountability.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/governance-autonomous-systems-accountability.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 5,
+      "slug": "operational-algorithmic-ethics",
+      "citationId": "laia-operational-algorithmic-ethics",
+      "title": "Operational Algorithmic Ethics: From Principles to Practice",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2024-11-15",
+      "year": "2024",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Applied AI ethics, bias, transparency",
+      "keywords": [
+        "algorithmic ethics",
+        "bias",
+        "participatory audit",
+        "radical transparency",
+        "accountability"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/operational-algorithmic-ethics.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/operational-algorithmic-ethics.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 6,
+      "slug": "formal-methods-vs-machine-learning",
+      "citationId": "laia-formal-methods-vs-machine-learning",
+      "title": "Formal Methods vs. Machine Learning: Computational Cost and Truth Affinity",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2025-12-30",
+      "year": "2025",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Formal verification, ML, explainability",
+      "keywords": [
+        "formal verification",
+        "machine learning",
+        "computational cost",
+        "truth affinity",
+        "hybrid systems",
+        "explainability"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/formal-methods-vs-machine-learning.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/formal-methods-vs-machine-learning.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 7,
+      "slug": "unified-world-architecture-mmorpg",
+      "citationId": "laia-unified-world-architecture-mmorpg",
+      "title": "Unified World Architecture for Legacy MMORPG Ecosystems: A Strategic Framework",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-08-18",
+      "year": "2026",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Systems architecture, game economies, scaling",
+      "keywords": [
+        "MMORPG",
+        "one tamriel",
+        "unified world",
+        "level scaling",
+        "game monetization",
+        "player retention"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/unified-world-architecture-mmorpg.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/unified-world-architecture-mmorpg.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 8,
+      "slug": "universal-dns-distributed-systems",
+      "citationId": "laia-universal-dns-distributed-systems",
+      "title": "Universal DNS: Distributed Service Discovery at Planetary and Galactic Scale",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2025-12-22",
+      "year": "2025",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Distributed systems, DNS, Web3",
+      "keywords": [
+        "universal DNS",
+        "DDNSC",
+        "distributed service discovery",
+        "CRDT",
+        "decentralized systems",
+        "space networking"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/universal-dns-distributed-systems.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/universal-dns-distributed-systems.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 9,
+      "slug": "ai-collapse-systemic-risks",
+      "citationId": "laia-ai-collapse-systemic-risks",
+      "title": "AI Collapse: Degradation, Scaling Limits, and Systemic Risks",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2025-12-18",
+      "year": "2025",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Model collapse, synthetic data, systemic risk",
+      "keywords": [
+        "model collapse",
+        "synthetic data",
+        "scaling",
+        "data limits",
+        "systemic risk",
+        "AI safety"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/ai-collapse-systemic-risks.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/ai-collapse-systemic-risks.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 10,
+      "slug": "laia-operational-framework",
+      "citationId": "laia-laia-operational-framework",
+      "title": "The LAIA Operational Framework: Architecture, Validation, and Governance",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-04-15",
+      "year": "2026",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "LAIA reference architecture, operational model",
+      "keywords": [
+        "LAIA",
+        "operational framework",
+        "ethical AI",
+        "validation",
+        "reference architecture",
+        "governance"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/laia-operational-framework.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/laia-operational-framework.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 11,
+      "slug": "command-control-information-sovereignty",
+      "citationId": "laia-command-control-information-sovereignty",
+      "title": "Command & Control as Information Sovereignty: Reclaiming the C2 Acronym",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-03-01",
+      "year": "2026",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Information governance, control theory",
+      "keywords": [
+        "command and control",
+        "C2",
+        "information governance",
+        "sovereignty",
+        "control theory",
+        "systems architecture"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/command-control-information-sovereignty.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/command-control-information-sovereignty.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 12,
+      "slug": "collaborative-operational-framework-neptuno-network",
+      "citationId": "laia-collaborative-operational-framework-neptuno-network",
+      "title": "Collaborative Operational Framework: Human-AI Synergy Across the Neptuno Network",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-10-16",
+      "year": "2026",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Human-AI collaboration, zero trust, IP governance",
+      "keywords": [
+        "collaborative framework",
+        "agentic collaboration",
+        "human-in-the-loop",
+        "zero-trust",
+        "distributed systems",
+        "AI Act",
+        "GDPR",
+        "operational standard"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/collaborative-operational-framework-neptuno-network.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/collaborative-operational-framework-neptuno-network.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 13,
+      "slug": "ethics-as-infrastructure-build-conditions",
+      "citationId": "laia-ethics-as-infrastructure-build-conditions",
+      "title": "Ethics as Infrastructure: Build Conditions and the Layer the EU AI Act Does Not Regulate",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-10-21",
+      "year": "2026",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Build conditions, AI Act gap analysis, labour and ethics",
+      "keywords": [
+        "ethics as infrastructure",
+        "build conditions",
+        "AI Act Article 14",
+        "Article 26",
+        "platform work directive",
+        "algorithmic management",
+        "fundamental rights impact assessment",
+        "AI literacy"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/ethics-as-infrastructure-build-conditions.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/ethics-as-infrastructure-build-conditions.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 14,
+      "slug": "brisecom-year-zero-subsistence-threshold",
+      "citationId": "laia-brisecom-year-zero-subsistence-threshold",
+      "title": "Year Zero: What a Company With Large Ambitions Actually Costs to Keep Alive",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-10-23",
+      "year": "2026",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Fixed cost base, B2B contracting, viability of a one-person company",
+      "keywords": [
+        "minimum viable company",
+        "fixed cost base",
+        "B2B contracts",
+        "no payroll",
+        "subsistence threshold",
+        "corporate governance",
+        "independence"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/brisecom-year-zero-subsistence-threshold.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/brisecom-year-zero-subsistence-threshold.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 15,
+      "slug": "clean-software-clean-work-dependency",
+      "citationId": "laia-clean-software-clean-work-dependency",
+      "title": "Clean Software, Clean Work: Unnecessary Dependency as a Single Problem in Two Layers",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-10-23",
+      "year": "2026",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Vendor lock-in, exitability, professional autonomy",
+      "keywords": [
+        "clean software",
+        "vendor lock-in",
+        "exitability",
+        "professional autonomy",
+        "open standards",
+        "dependency audit",
+        "portability"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/clean-software-clean-work-dependency.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/clean-software-clean-work-dependency.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 16,
+      "slug": "neptuno-trident-three-layers-resilience",
+      "citationId": "laia-neptuno-trident-three-layers-resilience",
+      "title": "The Trident: Three Layers of Resilience That Converge in One Point of Resolution",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-10-23",
+      "year": "2026",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Defence layers, ordering dependency, convergence point",
+      "keywords": [
+        "NEPTUNO",
+        "three layers",
+        "resilience architecture",
+        "EU AI Act",
+        "SBOM",
+        "operational projection",
+        "convergence point",
+        "ambidextrous organisation"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/neptuno-trident-three-layers-resilience.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/neptuno-trident-three-layers-resilience.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 17,
+      "slug": "defence-cheaper-than-attack-cost-accounting",
+      "citationId": "laia-defence-cheaper-than-attack-cost-accounting",
+      "title": "Defence Is Cheaper Than Attack: A Cost Accounting of Offensive Versus Defensive Posture",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-10-23",
+      "year": "2026",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Defence economics, multiplier differential, opportunity cost",
+      "keywords": [
+        "defence economics",
+        "offensive operations cost",
+        "fiscal multiplier",
+        "opportunity cost of defence",
+        "positive-sum security",
+        "regional development",
+        "NEPTUNO framework"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/defence-cheaper-than-attack-cost-accounting.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/defence-cheaper-than-attack-cost-accounting.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 18,
+      "slug": "arteries-of-the-earth-chokepoints",
+      "citationId": "laia-arteries-of-the-earth-chokepoints",
+      "title": "Arteries of the Earth: Chokepoints, Trade Circulation and Why Blocking Them Is Self-Harming",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-10-23",
+      "year": "2026",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Trade corridors, chokepoint risk, Hormuz",
+      "keywords": [
+        "chokepoint",
+        "trade artery",
+        "maritime traffic",
+        "Strait of Hormuz",
+        "Suez",
+        "circulation model",
+        "blockade cost",
+        "Silk Road 2.0"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/arteries-of-the-earth-chokepoints.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/arteries-of-the-earth-chokepoints.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 19,
+      "slug": "lux-equation-measurable-return",
+      "citationId": "laia-lux-equation-measurable-return",
+      "title": "The Lux Equation: Measuring the Economic Return of Gratitude and Congregation, and What It Cannot Prove",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-10-23",
+      "year": "2026",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Gratitude, congregation, health economics, epistemic limits",
+      "keywords": [
+        "gratitude intervention",
+        "religious attendance",
+        "mortality",
+        "depression",
+        "social capital",
+        "cost avoidance",
+        "proxy measurement",
+        "what cannot be measured"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/lux-equation-measurable-return.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/lux-equation-measurable-return.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 20,
+      "slug": "contract-first-interface-agnostic-design",
+      "citationId": "laia-contract-first-interface-agnostic-design",
+      "title": "Contract-First, Interface-Agnostic Design: The Operation as the Unit of Software Architecture",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-10-23",
+      "year": "2026",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Software architecture, contracts, ports and adapters",
+      "keywords": [
+        "contract-first",
+        "interface-agnostic",
+        "ports and adapters",
+        "operation contract",
+        "error taxonomy",
+        "Unix philosophy",
+        "CLI",
+        "API design"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/contract-first-interface-agnostic-design.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/contract-first-interface-agnostic-design.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 21,
+      "slug": "meteoectasis-impact-induced-assimilation",
+      "citationId": "laia-meteoectasis-impact-induced-assimilation",
+      "title": "Meteoectasis: A Terminological Framework for Total Impact-Induced Assimilation and Dilatation in Planetary Accretion",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-10-30",
+      "year": "2026",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Impact physics, terminology, isotopic homogenisation",
+      "keywords": [
+        "meteoectasis",
+        "accretionary impact",
+        "hit-and-run",
+        "impact-induced mixing",
+        "magma ocean",
+        "latent heat of fusion",
+        "isotopic homogenisation",
+        "Theia",
+        "terminology proposal"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/meteoectasis-impact-induced-assimilation.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/meteoectasis-impact-induced-assimilation.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 22,
+      "slug": "freedom-as-absorbing-state-game-theory-of-faith",
+      "citationId": "laia-freedom-as-absorbing-state-game-theory-of-faith",
+      "title": "Freedom as an Absorbing State: Game Theory, Withdrawal and the Path of Faith",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-11-02",
+      "year": "2026",
+      "version": "0.1",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Game theory, freedom, exit and closure, faith",
+      "keywords": [
+        "absorbing state",
+        "exit and voice",
+        "commitment device",
+        "observing equilibrium",
+        "honourable means",
+        "path of faith",
+        "decoupling",
+        "terminal set"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/freedom-as-absorbing-state-game-theory-of-faith.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/freedom-as-absorbing-state-game-theory-of-faith.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 23,
+      "slug": "dynamic-equilibrium-beyond-consensus-veto",
+      "citationId": "laia-dynamic-equilibrium-beyond-consensus-veto",
+      "title": "Dynamic Equilibrium: A Framework Beyond Consensus and Veto",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-11-01",
+      "year": "2026",
+      "version": "0.1",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Institutional design, consensus, veto, compensation of forces",
+      "keywords": [
+        "dynamic equilibrium",
+        "consensus",
+        "veto",
+        "consociationalism",
+        "deliberative democracy",
+        "institutional design",
+        "balance of powers",
+        "compensation of forces"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/dynamic-equilibrium-beyond-consensus-veto.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/dynamic-equilibrium-beyond-consensus-veto.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    },
+    {
+      "order": 24,
+      "slug": "sovereign-code-first-infrastructure",
+      "citationId": "laia-sovereign-code-first-infrastructure",
+      "title": "Sovereign Code-First Infrastructure: Decoupling Business Logic from Persistent Plumbing",
+      "authors": [
+        "Francisco Javier Jiménez Gómez"
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-11-19",
+      "year": "2026",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Code-first infrastructure, declarative intent, vendor lock-in",
+      "keywords": [
+        "code-first infrastructure",
+        "declarative intent",
+        "ephemeral plumbing",
+        "ports and adapters",
+        "vendor lock-in",
+        "local-to-production parity",
+        "sovereign systems"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/sovereign-code-first-infrastructure.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/sovereign-code-first-infrastructure.pdf",
+      "doi": null,
+      "zenodoRecord": null
+    }
+  ]
+}

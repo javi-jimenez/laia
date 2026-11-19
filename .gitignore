@@ -13,3 +13,7 @@ pdf/out/
 # Sistema / editor
 .DS_Store
 *.swp
+
+# Python
+__pycache__/
+*.py[cod]
