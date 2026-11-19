@@ -29,6 +29,7 @@ help:
 	@echo "  make index-check Verifica que el índice esté actualizado (CI)"
 	@echo "  make citations   Genera CITATION.cff, references.bib y metadata.json"
 	@echo "  make citations-check  Verifica que la citación esté actualizada (CI)"
+	@echo "  make orcid-sync  Trae el ORCID desde Redis (cluster-config) y regenera"
 	@echo "  make pdfs        Genera los PDFs de todos los whitepapers"
 	@echo "  make pdf-one     Genera un PDF concreto (WP=whitepapers/<archivo>.md)"
 	@echo "  make release     Genera los PDFs y crea un Release de GitHub (TAG=..., NOTES=...)"
@@ -83,6 +84,19 @@ citations:
 .PHONY: citations-check
 citations-check:
 	@$(PYTHON) scripts/whitepaper_citations.py --check
+
+# ---------- Identidad desde Redis ----------
+# El ORCID vive en el cluster-config de Redis (config:laia:author_orcid, repo
+# brisecom-config). Este target lo trae a whitepapers/authors.json para no
+# escribirlo dos veces.
+.PHONY: orcid-sync
+orcid-sync:
+	@$(PYTHON) scripts/orcid_from_redis.py
+	@$(MAKE) index citations
+
+.PHONY: orcid-check
+orcid-check:
+	@$(PYTHON) scripts/orcid_from_redis.py --check
 
 # ---------- Registro en Zenodo (DOI) ----------
 # Sin --publish solo crea borradores privados; publicar es permanente.

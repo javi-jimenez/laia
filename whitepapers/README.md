@@ -114,6 +114,14 @@ BibTeX entries, the `creators[].orcid` sent to Zenodo, and the ORCID badge on `l
 Fill it once, run `make index citations`, and the whole repository follows. An empty value is rendered as
 _"pending"_ rather than as a broken link.
 
+The identifier is also published cluster-wide in the `brisecom-config` repo, which is the source of truth for
+Redis (`config:laia:author_orcid`). To pull it from there instead of editing the file by hand:
+
+```bash
+make orcid-sync     # read Redis, update authors.json, regenerate everything
+make orcid-check    # exit 1 if authors.json differs from Redis
+```
+
 ### Registering with Zenodo
 
 ```bash
