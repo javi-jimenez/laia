@@ -9,10 +9,15 @@ order: 24
 topic: "Code-first infrastructure, declarative intent, vendor lock-in"
 tags: ["software architecture", "infrastructure abstraction", "vendor lock-in", "code-first", "portable systems", "sovereignty", "EU AI Act"]
 keywords: ["code-first infrastructure", "declarative intent", "ephemeral plumbing", "ports and adapters", "vendor lock-in", "local-to-production parity", "sovereign systems"]
+doi: "10.5281/zenodo.24356451"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Sovereign Code-First Infrastructure: Decoupling Business Logic from Persistent Plumbing
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356451](https://doi.org/10.5281/zenodo.24356451) · Zenodo (concept DOI [10.5281/zenodo.24356450](https://doi.org/10.5281/zenodo.24356450)) · cite this version
+<!-- doi:end -->
 
 **Author:** Francisco Javier Jiménez Gómez
 

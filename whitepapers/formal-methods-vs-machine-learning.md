@@ -9,10 +9,15 @@ order: 6
 topic: "Formal verification, ML, explainability"
 tags: ["formal methods", "machine learning", "verification", "computational cost", "explainability", "truth affinity", "LAIA"]
 keywords: ["formal verification", "machine learning", "computational cost", "truth affinity", "hybrid systems", "explainability"]
+doi: "10.5281/zenodo.24356471"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Formal Methods vs. Machine Learning: Computational Cost and Truth Affinity
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356471](https://doi.org/10.5281/zenodo.24356471) · Zenodo · cite this version
+<!-- doi:end -->
 
 ## Abstract
 

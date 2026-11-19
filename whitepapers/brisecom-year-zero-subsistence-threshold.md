@@ -9,10 +9,15 @@ order: 14
 topic: "Fixed cost base, B2B contracting, viability of a one-person company"
 tags: ["company viability", "fixed cost", "B2B contracting", "lean structure", "corporate governance", "year zero"]
 keywords: ["minimum viable company", "fixed cost base", "B2B contracts", "no payroll", "subsistence threshold", "corporate governance", "independence"]
+doi: "10.5281/zenodo.24356491"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Year Zero: What a Company With Large Ambitions Actually Costs to Keep Alive
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356491](https://doi.org/10.5281/zenodo.24356491) · Zenodo · cite this version
+<!-- doi:end -->
 
 ## Abstract
 

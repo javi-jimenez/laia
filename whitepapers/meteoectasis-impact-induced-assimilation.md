@@ -9,10 +9,15 @@ order: 21
 topic: "Impact physics, terminology, isotopic homogenisation"
 tags: ["planetary science", "impact physics", "accretion", "terminology", "geophysics", "isotopic homogenisation"]
 keywords: ["meteoectasis", "accretionary impact", "hit-and-run", "impact-induced mixing", "magma ocean", "latent heat of fusion", "isotopic homogenisation", "Theia", "terminology proposal"]
+doi: "10.5281/zenodo.24356512"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Meteoectasis: A Terminological Framework for Total Impact-Induced Assimilation and Dilatation in Planetary Accretion
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356512](https://doi.org/10.5281/zenodo.24356512) · Zenodo · cite this version
+<!-- doi:end -->
 
 > **What this paper is and is not.** This is a **terminology paper**, not a physics
 > paper. It does not report new measurements, new simulations or a new impact

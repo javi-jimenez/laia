@@ -80,7 +80,7 @@ longer has:
 | `CITATION.cff` | Repository-level citation file | GitHub "Cite this repository", Zotero, ORCID imports |
 | `whitepapers/references.bib` | One `@techreport` per paper | LaTeX, Zotero, Mendeley, Pandoc |
 | `whitepapers/metadata.json` | Machine-readable feed (title, authors, date, DOI, URLs) | The Hugo site (`laia.brisecom.org`) and the Zenodo publisher |
-| `whitepapers/dois.json` | DOI registry (written by the publisher) | The three artifacts above, and the DOI column of both index tables |
+| `whitepapers/dois.json` | DOI registry (written by the publisher) | The three artifacts above, the DOI column of both index tables, and the `doi:` line inside each document |
 | `whitepapers/zenodo-drafts.json` | Deposit id of each private draft | The publisher, so a re-run updates instead of duplicating |
 
 ```bash
@@ -148,6 +148,26 @@ deposits — it reports the existing drafts and stops. Each draft carries the Ma
 
 Once a DOI exists, the same DOI flows into `CITATION.cff`, the BibTeX field `doi`, the site feed and — via
 Zenodo's ORCID integration or ORCID's *Search & Link* wizard — into the author's ORCID record.
+
+It is also written **into the document itself**, because GitHub does not support per-file meta tags in Markdown:
+
+```bash
+make dois          # write the DOI into front matter and a visible line
+make dois-check    # exit 1 if a registered DOI is missing from its paper
+```
+
+```yaml
+doi: "10.5281/zenodo.24356508"
+```
+
+```markdown
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356508](https://doi.org/10.5281/zenodo.24356508) · Zenodo · cite this version
+<!-- doi:end -->
+```
+
+GitHub renders the front matter as a property table, so the DOI appears both in the header block and in the body.
+The markers make the sync idempotent: removing an entry from `dois.json` and running `make dois` cleans the paper.
 
 ## Contributing
 

@@ -9,10 +9,15 @@ order: 1
 topic: "Structured AI memory, axioms vs. inferences"
 tags: ["AI", "memory", "context", "standard", "traceability", "LLM", "ACS"]
 keywords: ["assistant context", "axioms", "inferences", "persistent memory", "hallucination", "traceability"]
+doi: "10.5281/zenodo.24356455"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # ACS: An Assistant Context Standard for Persistent, Traceable AI Memory
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356455](https://doi.org/10.5281/zenodo.24356455) · Zenodo · cite this version
+<!-- doi:end -->
 
 ## Abstract
 

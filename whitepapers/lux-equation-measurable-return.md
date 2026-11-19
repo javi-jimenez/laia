@@ -9,10 +9,15 @@ order: 19
 topic: "Gratitude, congregation, health economics, epistemic limits"
 tags: ["gratitude", "congregation", "social capital", "health economics", "religion", "measurement", "epistemics"]
 keywords: ["gratitude intervention", "religious attendance", "mortality", "depression", "social capital", "cost avoidance", "proxy measurement", "what cannot be measured"]
+doi: "10.5281/zenodo.24356508"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # The Lux Equation: Measuring the Economic Return of Gratitude and Congregation, and What It Cannot Prove
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356508](https://doi.org/10.5281/zenodo.24356508) · Zenodo · cite this version
+<!-- doi:end -->
 
 > **What this paper is and is not.** The original article behind this paper made a stronger claim than the
 > evidence supports: that a measurable energy surplus *demonstrates* the existence of God. This paper keeps the

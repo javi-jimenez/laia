@@ -9,10 +9,15 @@ order: 3
 topic: "AI-assisted mathematical validation, defense"
 tags: ["ballistics", "mathematical validation", "ethical AI", "defense", "engineering", "LAIA"]
 keywords: ["ballistic validation", "armor-piercing ammunition", "mathematical modeling", "ethical AI", "defense engineering"]
+doi: "10.5281/zenodo.24356459"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Ethical AI in High-Stakes Engineering: Mathematical Validation of Ballistic Systems
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356459](https://doi.org/10.5281/zenodo.24356459) · Zenodo · cite this version
+<!-- doi:end -->
 
 ## Abstract
 

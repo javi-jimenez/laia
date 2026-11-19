@@ -9,10 +9,15 @@ order: 23
 topic: "Institutional design, consensus, veto, compensation of forces"
 tags: ["political theory", "institutional design", "governance", "consensus", "veto", "game theory", "systems theory"]
 keywords: ["dynamic equilibrium", "consensus", "veto", "consociationalism", "deliberative democracy", "institutional design", "balance of powers", "compensation of forces"]
+doi: "10.5281/zenodo.24356521"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Dynamic Equilibrium: A Framework Beyond Consensus and Veto
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356521](https://doi.org/10.5281/zenodo.24356521) · Zenodo · cite this version
+<!-- doi:end -->
 
 > **What this paper is and is not.** This is a **framework paper**. It defines a model of institutional
 > balance and states the conditions under which that model could be shown to be wrong. It does not report

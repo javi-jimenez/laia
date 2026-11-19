@@ -9,10 +9,15 @@ order: 2
 topic: "Human-AI collaboration, forensic auditing"
 tags: ["forensic audit", "hybrid intelligence", "human-AI collaboration", "fraud", "transparency", "LAIA"]
 keywords: ["hybrid intelligence", "forensic auditing", "substitution variables", "radical transparency", "systemic fraud"]
+doi: "10.5281/zenodo.24356457"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Hybrid Intelligence in Forensic Audit: A Case Study in Systemic Fraud Resolution
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356457](https://doi.org/10.5281/zenodo.24356457) · Zenodo · cite this version
+<!-- doi:end -->
 
 ## Abstract
 

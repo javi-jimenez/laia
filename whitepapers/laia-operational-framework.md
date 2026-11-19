@@ -9,10 +9,15 @@ order: 10
 topic: "LAIA reference architecture, operational model"
 tags: ["LAIA", "reference architecture", "operational framework", "ethical AI", "validation", "governance"]
 keywords: ["LAIA", "operational framework", "ethical AI", "validation", "reference architecture", "governance"]
+doi: "10.5281/zenodo.24356479"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # The LAIA Operational Framework: Architecture, Validation, and Governance
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356479](https://doi.org/10.5281/zenodo.24356479) · Zenodo · cite this version
+<!-- doi:end -->
 
 ## Abstract
 

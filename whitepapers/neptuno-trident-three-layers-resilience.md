@@ -9,10 +9,15 @@ order: 16
 topic: "Defence layers, ordering dependency, convergence point"
 tags: ["NEPTUNO", "resilience", "compliance", "security", "operational projection", "technological sovereignty", "system architecture"]
 keywords: ["NEPTUNO", "three layers", "resilience architecture", "EU AI Act", "SBOM", "operational projection", "convergence point", "ambidextrous organisation"]
+doi: "10.5281/zenodo.24356499"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # The Trident: Three Layers of Resilience That Converge in One Point of Resolution
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356499](https://doi.org/10.5281/zenodo.24356499) · Zenodo · cite this version
+<!-- doi:end -->
 
 > **Scope note, read first.** The NEPTUNO repository contains two triads that are easy to confuse and are not the
 > same thing. **The other one — BRISECOM as umbrella, the NEPTUNO network as transport, LAIA as engine — is

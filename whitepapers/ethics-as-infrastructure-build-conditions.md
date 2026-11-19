@@ -9,10 +9,15 @@ order: 13
 topic: "Build conditions, AI Act gap analysis, labour and ethics"
 tags: ["AI ethics", "EU AI Act", "labour rights", "AI governance", "ethical economy", "build conditions", "LAIA"]
 keywords: ["ethics as infrastructure", "build conditions", "AI Act Article 14", "Article 26", "platform work directive", "algorithmic management", "fundamental rights impact assessment", "AI literacy"]
+doi: "10.5281/zenodo.24356488"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Ethics as Infrastructure: Build Conditions and the Layer the EU AI Act Does Not Regulate
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356488](https://doi.org/10.5281/zenodo.24356488) · Zenodo · cite this version
+<!-- doi:end -->
 
 **IP Holder & Principal Researcher:** Francisco Javier Jiménez Gómez
 

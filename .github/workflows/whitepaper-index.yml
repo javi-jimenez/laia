@@ -49,6 +49,7 @@ jobs:
         run: |
           python3 scripts/whitepaper_index.py --check
           python3 scripts/whitepaper_citations.py --check
+          python3 scripts/whitepaper_dois.py --check
 
       - name: Regenerate and commit index
         if: github.event_name != 'pull_request'
@@ -57,6 +58,7 @@ jobs:
         run: |
           python3 scripts/whitepaper_index.py
           python3 scripts/whitepaper_citations.py
+          python3 scripts/whitepaper_dois.py
           if git diff --quiet; then
             echo "Index already up to date; nothing to commit."
             exit 0

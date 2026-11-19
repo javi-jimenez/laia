@@ -9,10 +9,15 @@ order: 7
 topic: "Systems architecture, game economies, scaling"
 tags: ["MMORPG", "game architecture", "unified world", "monetization", "systems design", "LAIA"]
 keywords: ["MMORPG", "one tamriel", "unified world", "level scaling", "game monetization", "player retention"]
+doi: "10.5281/zenodo.24356473"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Unified World Architecture for Legacy MMORPG Ecosystems: A Strategic Framework
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356473](https://doi.org/10.5281/zenodo.24356473) · Zenodo · cite this version
+<!-- doi:end -->
 
 ## Abstract
 

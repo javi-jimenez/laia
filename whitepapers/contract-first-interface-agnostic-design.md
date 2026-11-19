@@ -9,10 +9,15 @@ order: 20
 topic: "Software architecture, contracts, ports and adapters"
 tags: ["software architecture", "contract-first design", "hexagonal architecture", "Unix philosophy", "API design", "separation of concerns"]
 keywords: ["contract-first", "interface-agnostic", "ports and adapters", "operation contract", "error taxonomy", "Unix philosophy", "CLI", "API design"]
+doi: "10.5281/zenodo.24356510"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Contract-First, Interface-Agnostic Design: The Operation as the Unit of Software Architecture
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356510](https://doi.org/10.5281/zenodo.24356510) · Zenodo · cite this version
+<!-- doi:end -->
 
 ## Abstract
 

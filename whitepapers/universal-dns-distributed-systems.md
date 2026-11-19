@@ -9,10 +9,15 @@ order: 8
 topic: "Distributed systems, DNS, Web3"
 tags: ["DNS", "distributed systems", "Web3", "CRDT", "decentralized", "space", "LAIA"]
 keywords: ["universal DNS", "DDNSC", "distributed service discovery", "CRDT", "decentralized systems", "space networking"]
+doi: "10.5281/zenodo.24356475"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Universal DNS: Distributed Service Discovery at Planetary and Galactic Scale
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356475](https://doi.org/10.5281/zenodo.24356475) · Zenodo · cite this version
+<!-- doi:end -->
 
 ## Abstract
 

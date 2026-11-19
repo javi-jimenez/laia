@@ -9,10 +9,15 @@ order: 12
 topic: "Human-AI collaboration, zero trust, IP governance"
 tags: ["Neptuno Network", "human-AI collaboration", "agentic AI", "zero trust", "AI governance", "intellectual property", "EU AI Act", "LAIA"]
 keywords: ["collaborative framework", "agentic collaboration", "human-in-the-loop", "zero-trust", "distributed systems", "AI Act", "GDPR", "operational standard"]
+doi: "10.5281/zenodo.24356486"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Collaborative Operational Framework: Human-AI Synergy Across the Neptuno Network
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356486](https://doi.org/10.5281/zenodo.24356486) · Zenodo · cite this version
+<!-- doi:end -->
 
 **IP Holder & Principal Researcher:** Francisco Javier Jiménez Gómez
 

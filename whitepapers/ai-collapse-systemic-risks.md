@@ -9,10 +9,15 @@ order: 9
 topic: "Model collapse, synthetic data, systemic risk"
 tags: ["AI collapse", "model collapse", "synthetic data", "scaling limits", "systemic risk", "LAIA"]
 keywords: ["model collapse", "synthetic data", "scaling", "data limits", "systemic risk", "AI safety"]
+doi: "10.5281/zenodo.24356477"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # AI Collapse: Degradation, Scaling Limits, and Systemic Risks
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356477](https://doi.org/10.5281/zenodo.24356477) · Zenodo · cite this version
+<!-- doi:end -->
 
 ## Abstract
 

@@ -9,10 +9,15 @@ order: 15
 topic: "Vendor lock-in, exitability, professional autonomy"
 tags: ["clean software", "professional autonomy", "exitability", "dependency", "open standards", "labour relations", "vendor lock-in"]
 keywords: ["clean software", "vendor lock-in", "exitability", "professional autonomy", "open standards", "dependency audit", "portability"]
+doi: "10.5281/zenodo.24356497"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Clean Software, Clean Work: Unnecessary Dependency as a Single Problem in Two Layers
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356497](https://doi.org/10.5281/zenodo.24356497) · Zenodo · cite this version
+<!-- doi:end -->
 
 ## Abstract
 

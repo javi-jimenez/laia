@@ -27,6 +27,7 @@ help:
 	@echo "  make deps        Instala dependencias (pandoc + TeX Live) en Ubuntu"
 	@echo "  make index       Regenera el índice de whitepapers en los README"
 	@echo "  make index-check Verifica que el índice esté actualizado (CI)"
+	@echo "  make dois        Escribe el DOI dentro de cada whitepaper"
 	@echo "  make citations   Genera CITATION.cff, references.bib y metadata.json"
 	@echo "  make citations-check  Verifica que la citación esté actualizada (CI)"
 	@echo "  make orcid-sync  Trae el ORCID desde Redis (cluster-config) y regenera"
@@ -74,6 +75,18 @@ index:
 .PHONY: index-check
 index-check:
 	@$(PYTHON) scripts/whitepaper_index.py --check
+
+# ---------- DOI dentro de cada whitepaper ----------
+# GitHub no admite metaetiquetas por fichero en Markdown: la única forma de
+# que el DOI se lea al abrir el documento es escribirlo allí. Lo hace este
+# target desde whitepapers/dois.json (la fuente).
+.PHONY: dois
+dois:
+	@$(PYTHON) scripts/whitepaper_dois.py
+
+.PHONY: dois-check
+dois-check:
+	@$(PYTHON) scripts/whitepaper_dois.py --check
 
 # ---------- Metadatos de citación ----------
 # Genera CITATION.cff (botón "Cite this repository" de GitHub), el BibTeX y un
@@ -158,7 +171,7 @@ clean:
 # El tag usa el patrón de los releases históricos: AAAAMMDDHHMM-Nombre
 # (ej. 202608270110-LAIA-Whitepapers). Uso: make release NAME="nombre"
 .PHONY: release
-release: index citations pdfs
+release: index dois citations pdfs
 	@command -v gh >/dev/null 2>&1 || { echo "❌ gh CLI no está instalado. Instala con: sudo apt install gh"; exit 1; }
 	@gh auth status >/dev/null 2>&1 || { echo "❌ gh no está autenticado. Ejecuta: gh auth login"; exit 1; }
 	$(eval TS := $(shell date +%Y%m%d%H%M))

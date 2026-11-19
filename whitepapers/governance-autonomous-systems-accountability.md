@@ -9,10 +9,15 @@ order: 4
 topic: "AI governance, accountability, auditing"
 tags: ["AI governance", "autonomous systems", "accountability", "auditing", "regulation", "LAIA"]
 keywords: ["governance", "accountability", "audit", "autonomous systems", "AI regulation", "transparency"]
+doi: "10.5281/zenodo.24356461"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Governance of Autonomous Systems: A Framework for Accountability
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356461](https://doi.org/10.5281/zenodo.24356461) · Zenodo · cite this version
+<!-- doi:end -->
 
 ## Abstract
 

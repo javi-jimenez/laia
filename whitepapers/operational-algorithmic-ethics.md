@@ -9,10 +9,15 @@ order: 5
 topic: "Applied AI ethics, bias, transparency"
 tags: ["AI ethics", "algorithmic bias", "transparency", "audit", "operational ethics", "LAIA"]
 keywords: ["algorithmic ethics", "bias", "participatory audit", "radical transparency", "accountability"]
+doi: "10.5281/zenodo.24356465"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Operational Algorithmic Ethics: From Principles to Practice
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356465](https://doi.org/10.5281/zenodo.24356465) · Zenodo · cite this version
+<!-- doi:end -->
 
 ## Abstract
 

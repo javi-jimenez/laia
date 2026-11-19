@@ -9,10 +9,15 @@ order: 18
 topic: "Trade corridors, chokepoint risk, Hormuz"
 tags: ["trade routes", "chokepoints", "Silk Road", "maritime logistics", "Hormuz", "systemic risk", "NEPTUNO"]
 keywords: ["chokepoint", "trade artery", "maritime traffic", "Strait of Hormuz", "Suez", "circulation model", "blockade cost", "Silk Road 2.0"]
+doi: "10.5281/zenodo.24356506"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Arteries of the Earth: Chokepoints, Trade Circulation and Why Blocking Them Is Self-Harming
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356506](https://doi.org/10.5281/zenodo.24356506) · Zenodo · cite this version
+<!-- doi:end -->
 
 > **Status: a theory with a model and a worked case.** The proposition is that the world trading system behaves
 > like a circulatory system: flow concentrates in a small number of narrow vessels, the health of the whole

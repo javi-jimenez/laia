@@ -9,10 +9,15 @@ order: 22
 topic: "Game theory, freedom, exit and closure, faith"
 tags: ["game theory", "freedom", "institutional design", "exit", "faith", "systems theory", "ethics"]
 keywords: ["absorbing state", "exit and voice", "commitment device", "observing equilibrium", "honourable means", "path of faith", "decoupling", "terminal set"]
+doi: "10.5281/zenodo.24356514"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Freedom as an Absorbing State: Game Theory, Withdrawal and the Path of Faith
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356514](https://doi.org/10.5281/zenodo.24356514) · Zenodo · cite this version
+<!-- doi:end -->
 
 > **What this paper is and is not.** This is a **framework paper**. It proposes a formal model of
 > freedom as a game-theoretic state, states the conditions under which the model is stable, and

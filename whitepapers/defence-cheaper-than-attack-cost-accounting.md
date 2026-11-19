@@ -9,10 +9,15 @@ order: 17
 topic: "Defence economics, multiplier differential, opportunity cost"
 tags: ["defence economics", "fiscal multiplier", "opportunity cost", "conflict", "public investment", "NEPTUNO", "conjecture"]
 keywords: ["defence economics", "offensive operations cost", "fiscal multiplier", "opportunity cost of defence", "positive-sum security", "regional development", "NEPTUNO framework"]
+doi: "10.5281/zenodo.24356502"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Defence Is Cheaper Than Attack: A Cost Accounting of Offensive Versus Defensive Posture
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356502](https://doi.org/10.5281/zenodo.24356502) · Zenodo · cite this version
+<!-- doi:end -->
 
 > **Status: conjecture, with a model.** The original working note asserted a figure of "500 trillion" — which,
 > in Spanish notation, would be **16.7 times US GDP** and therefore impossible. The corrected figure, in

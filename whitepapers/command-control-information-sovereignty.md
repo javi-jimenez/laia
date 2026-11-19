@@ -9,10 +9,15 @@ order: 11
 topic: "Information governance, control theory"
 tags: ["C2", "information governance", "control theory", "sovereignty", "LAIA", "systems architecture"]
 keywords: ["command and control", "C2", "information governance", "sovereignty", "control theory", "systems architecture"]
+doi: "10.5281/zenodo.24356484"
 license: "CC BY-NC-SA 4.0"
 ---
 
 # Command & Control as Information Sovereignty: Reclaiming the C2 Acronym
+
+<!-- doi:start -->
+> **DOI:** [10.5281/zenodo.24356484](https://doi.org/10.5281/zenodo.24356484) · Zenodo · cite this version
+<!-- doi:end -->
 
 ## Abstract
 
