@@ -5,7 +5,7 @@ This directory hosts formal whitepapers and technical research documents produce
 These documents transform applied research and real-world case studies into rigorous, reproducible technical references. Each paper follows a structured academic format (abstract, introduction, methodology, results, discussion, conclusion, references) and is intended for public review, citation, and collaboration.
 
 <!-- whitepapers-author:start -->
-**Author:** Francisco Javier Jiménez Gómez — Brisecom SL / LAIA Project. **ORCID:** _pending_. **Zenodo:** a DOI is minted per paper as it is registered (see `dois.json`).
+**Author:** Francisco Javier Jiménez Gómez — Brisecom SL / LAIA Project. **ORCID:** [0009-0007-1082-431X](https://orcid.org/0009-0007-1082-431X). **Zenodo:** a DOI is minted per paper as it is registered (see [`dois.json`](dois.json)).
 <!-- whitepapers-author:end -->
 
 ## Index of Documents

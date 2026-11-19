@@ -69,7 +69,7 @@ TARGETS = {
 }
 
 
-def render_author(papers: list[tuple[int, Paper]]) -> str:
+def render_author(papers: list[tuple[int, Paper]], prefix: str = "") -> str:
     """Author/ORCID line; regenerated so it appears as soon as ORCID is known."""
     author = papers[0][1].authors[0]
     line = f"**Author:** {author.name}"
@@ -82,7 +82,7 @@ def render_author(papers: list[tuple[int, Paper]]) -> str:
     return (
         line
         + ". **Zenodo:** a DOI is minted per paper as it is registered "
-        + "(see `dois.json`)."
+        + f"(see [`{prefix}dois.json`]({prefix}dois.json))."
     )
 
 
@@ -124,15 +124,16 @@ def main() -> int:
         if update(REPO_ROOT / name, render(papers), write=not args.check)
     ]
 
-    author_changed = update(
-        REPO_ROOT / "whitepapers" / "README.md",
-        render_author(papers),
-        write=not args.check,
-        start=AUTHOR_START,
-        end=AUTHOR_END,
-    )
-    if author_changed and "whitepapers/README.md" not in changed:
-        changed.append("whitepapers/README.md (author line)")
+    author_targets = {"whitepapers/README.md": "", "README.md": "whitepapers/"}
+    for target, prefix in author_targets.items():
+        if update(
+            REPO_ROOT / target,
+            render_author(papers, prefix),
+            write=not args.check,
+            start=AUTHOR_START,
+            end=AUTHOR_END,
+        ) and target not in changed:
+            changed.append(f"{target} (author line)")
 
     if args.check:
         if changed:

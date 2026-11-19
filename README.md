@@ -4,6 +4,10 @@
 
 **LAIA** (del valenciano/catalán *Lai·a*: *la que parla dolç o s'expressa amb claredat*) es un proyecto de **investigación en inteligencia artificial ética**, transparente y verificable. Fundado por **Francisco Javier Jiménez Gómez** en **Brisecom**, LAIA combina **lógica formal**, **disciplinas humanísticas** y **transparencia radical** para construir sistemas de IA auditablemente responsables.
 
+<!-- whitepapers-author:start -->
+**Author:** Francisco Javier Jiménez Gómez — Brisecom SL / LAIA Project. **ORCID:** [0009-0007-1082-431X](https://orcid.org/0009-0007-1082-431X). **Zenodo:** a DOI is minted per paper as it is registered (see [`whitepapers/dois.json`](whitepapers/dois.json)).
+<!-- whitepapers-author:end -->
+
 ---
 
 ## 🧭 Misión y Visión

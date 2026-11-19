@@ -93,6 +93,19 @@ def parse_front_matter(text: str) -> dict[str, object]:
     raise ValueError("unterminated front matter")
 
 
+ORCID_RE = re.compile(r"^\d{4}-\d{4}-\d{4}-\d{3}[\dX]$")
+
+
+def valid_orcid(value: str) -> bool:
+    """Check the ORCID shape and its ISO 7064 MOD 11-2 check digit."""
+    if not ORCID_RE.match(value):
+        return False
+    digits = value.replace("-", "")
+    total = sum(int(c) * 2 ** (15 - i) for i, c in enumerate(digits[:15]))
+    expected = (12 - total % 11) % 11
+    return digits[15] == ("X" if expected == 10 else str(expected))
+
+
 def load_authors() -> dict[str, dict[str, str]]:
     """Read whitepapers/authors.json: name -> {orcid, affiliation}."""
     if not AUTHORS_FILE.exists():
@@ -100,6 +113,12 @@ def load_authors() -> dict[str, dict[str, str]]:
     data = json.loads(AUTHORS_FILE.read_text(encoding="utf-8"))
     if not isinstance(data, dict):
         raise SystemExit("error: whitepapers/authors.json must be an object keyed by name")
+    for name, entry in data.items():
+        orcid = str((entry or {}).get("orcid", "")).strip()
+        if orcid and not valid_orcid(orcid):
+            raise SystemExit(
+                f"error: authors.json has an invalid ORCID for '{name}': {orcid}"
+            )
     return data
 
 
