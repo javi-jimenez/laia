@@ -19,6 +19,7 @@ Front matter fields used: ``title``, ``date``, ``status``, ``order``, ``topic``
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
@@ -35,30 +36,45 @@ def escape_cell(text: str) -> str:
     return text.replace("|", "\\|")
 
 
+def load_dois() -> dict:
+    path = REPO_ROOT / "whitepapers" / "dois.json"
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def doi_cell(dois: dict, slug: str) -> str:
+    doi = (dois.get(slug) or {}).get("doi")
+    return f"[{doi}](https://doi.org/{doi})" if doi else "—"
+
+
 def render_full_index(papers: list[tuple[int, Paper]]) -> str:
+    dois = load_dois()
     rows = [
-        "| # | Document | Topic | Date | Status | PDF |",
-        "|---|----------|-------|------|--------|-----|",
+        "| # | Document | Topic | Date | Status | DOI | PDF |",
+        "|---|----------|-------|------|--------|-----|-----|",
     ]
     for number, paper in papers:
         rows.append(
             f"| {number:02d} | [{escape_cell(paper.title)}]({paper.slug}.md) "
             f"| {escape_cell(paper.topic)} | {paper.date} | {paper.status} "
-            f"| [PDF]({paper.pdf_url}) |"
+            f"| {doi_cell(dois, paper.slug)} | [PDF]({paper.pdf_url}) |"
         )
     return "\n".join(rows)
 
 
 def render_home_index(papers: list[tuple[int, Paper]]) -> str:
+    dois = load_dois()
     rows = [
-        "| # | Documento | Fecha | PDF |",
-        "|---|-----------|-------|-----|",
+        "| # | Documento | Fecha | DOI | PDF |",
+        "|---|-----------|-------|-----|-----|",
     ]
     for number, paper in papers:
         rows.append(
             f"| {number:02d} | "
             f"[{escape_cell(paper.title)}](whitepapers/{paper.slug}.md) "
-            f"| {paper.date} | [PDF]({paper.pdf_url}) |"
+            f"| {paper.date} | {doi_cell(dois, paper.slug)} "
+            f"| [PDF]({paper.pdf_url}) |"
         )
     return "\n".join(rows)
 

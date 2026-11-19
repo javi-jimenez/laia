@@ -177,6 +177,7 @@ def render_json(papers: list[tuple[int, Paper]], dois: dict) -> str:
                 "url": paper.url,
                 "pdfUrl": paper.pdf_url,
                 "doi": entry.get("doi"),
+                "conceptDoi": entry.get("conceptDoi"),
                 "zenodoRecord": entry.get("zenodoRecord"),
             }
         )
