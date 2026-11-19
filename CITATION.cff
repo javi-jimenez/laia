@@ -20,6 +20,7 @@ references:
     date-published: 2025-12-30
     number: "WP 01"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/acs-assistant-context-standard.md
+    doi: 10.5281/zenodo.24356455
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Hybrid Intelligence in Forensic Audit: A Case Study in Systemic Fraud Resolution"
@@ -31,6 +32,7 @@ references:
     date-published: 2026-03-19
     number: "WP 02"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/hybrid-intelligence-forensic-audit.md
+    doi: 10.5281/zenodo.24356457
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Ethical AI in High-Stakes Engineering: Mathematical Validation of Ballistic Systems"
@@ -42,6 +44,7 @@ references:
     date-published: 2026-08-10
     number: "WP 03"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/ethical-ai-ballistic-validation.md
+    doi: 10.5281/zenodo.24356459
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Governance of Autonomous Systems: A Framework for Accountability"
@@ -53,6 +56,7 @@ references:
     date-published: 2024-11-10
     number: "WP 04"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/governance-autonomous-systems-accountability.md
+    doi: 10.5281/zenodo.24356461
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Operational Algorithmic Ethics: From Principles to Practice"
@@ -64,6 +68,7 @@ references:
     date-published: 2024-11-15
     number: "WP 05"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/operational-algorithmic-ethics.md
+    doi: 10.5281/zenodo.24356465
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Formal Methods vs. Machine Learning: Computational Cost and Truth Affinity"
@@ -75,6 +80,7 @@ references:
     date-published: 2025-12-30
     number: "WP 06"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/formal-methods-vs-machine-learning.md
+    doi: 10.5281/zenodo.24356471
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Unified World Architecture for Legacy MMORPG Ecosystems: A Strategic Framework"
@@ -86,6 +92,7 @@ references:
     date-published: 2026-08-18
     number: "WP 07"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/unified-world-architecture-mmorpg.md
+    doi: 10.5281/zenodo.24356473
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Universal DNS: Distributed Service Discovery at Planetary and Galactic Scale"
@@ -97,6 +104,7 @@ references:
     date-published: 2025-12-22
     number: "WP 08"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/universal-dns-distributed-systems.md
+    doi: 10.5281/zenodo.24356475
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "AI Collapse: Degradation, Scaling Limits, and Systemic Risks"
@@ -108,6 +116,7 @@ references:
     date-published: 2025-12-18
     number: "WP 09"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/ai-collapse-systemic-risks.md
+    doi: 10.5281/zenodo.24356477
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "The LAIA Operational Framework: Architecture, Validation, and Governance"
@@ -119,6 +128,7 @@ references:
     date-published: 2026-04-15
     number: "WP 10"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/laia-operational-framework.md
+    doi: 10.5281/zenodo.24356479
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Command & Control as Information Sovereignty: Reclaiming the C2 Acronym"
@@ -130,6 +140,7 @@ references:
     date-published: 2026-03-01
     number: "WP 11"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/command-control-information-sovereignty.md
+    doi: 10.5281/zenodo.24356484
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Collaborative Operational Framework: Human-AI Synergy Across the Neptuno Network"
@@ -141,6 +152,7 @@ references:
     date-published: 2026-10-16
     number: "WP 12"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/collaborative-operational-framework-neptuno-network.md
+    doi: 10.5281/zenodo.24356486
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Ethics as Infrastructure: Build Conditions and the Layer the EU AI Act Does Not Regulate"
@@ -152,6 +164,7 @@ references:
     date-published: 2026-10-21
     number: "WP 13"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/ethics-as-infrastructure-build-conditions.md
+    doi: 10.5281/zenodo.24356488
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Year Zero: What a Company With Large Ambitions Actually Costs to Keep Alive"
@@ -163,6 +176,7 @@ references:
     date-published: 2026-10-23
     number: "WP 14"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/brisecom-year-zero-subsistence-threshold.md
+    doi: 10.5281/zenodo.24356491
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Clean Software, Clean Work: Unnecessary Dependency as a Single Problem in Two Layers"
@@ -174,6 +188,7 @@ references:
     date-published: 2026-10-23
     number: "WP 15"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/clean-software-clean-work-dependency.md
+    doi: 10.5281/zenodo.24356497
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "The Trident: Three Layers of Resilience That Converge in One Point of Resolution"
@@ -185,6 +200,7 @@ references:
     date-published: 2026-10-23
     number: "WP 16"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/neptuno-trident-three-layers-resilience.md
+    doi: 10.5281/zenodo.24356499
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Defence Is Cheaper Than Attack: A Cost Accounting of Offensive Versus Defensive Posture"
@@ -196,6 +212,7 @@ references:
     date-published: 2026-10-23
     number: "WP 17"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/defence-cheaper-than-attack-cost-accounting.md
+    doi: 10.5281/zenodo.24356502
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Arteries of the Earth: Chokepoints, Trade Circulation and Why Blocking Them Is Self-Harming"
@@ -207,6 +224,7 @@ references:
     date-published: 2026-10-23
     number: "WP 18"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/arteries-of-the-earth-chokepoints.md
+    doi: 10.5281/zenodo.24356506
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "The Lux Equation: Measuring the Economic Return of Gratitude and Congregation, and What It Cannot Prove"
@@ -218,6 +236,7 @@ references:
     date-published: 2026-10-23
     number: "WP 19"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/lux-equation-measurable-return.md
+    doi: 10.5281/zenodo.24356508
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Contract-First, Interface-Agnostic Design: The Operation as the Unit of Software Architecture"
@@ -229,6 +248,7 @@ references:
     date-published: 2026-10-23
     number: "WP 20"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/contract-first-interface-agnostic-design.md
+    doi: 10.5281/zenodo.24356510
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Meteoectasis: A Terminological Framework for Total Impact-Induced Assimilation and Dilatation in Planetary Accretion"
@@ -240,6 +260,7 @@ references:
     date-published: 2026-10-30
     number: "WP 21"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/meteoectasis-impact-induced-assimilation.md
+    doi: 10.5281/zenodo.24356512
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Freedom as an Absorbing State: Game Theory, Withdrawal and the Path of Faith"
@@ -251,6 +272,7 @@ references:
     date-published: 2026-11-02
     number: "WP 22"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/freedom-as-absorbing-state-game-theory-of-faith.md
+    doi: 10.5281/zenodo.24356514
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Dynamic Equilibrium: A Framework Beyond Consensus and Veto"
@@ -262,6 +284,7 @@ references:
     date-published: 2026-11-01
     number: "WP 23"
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/dynamic-equilibrium-beyond-consensus-veto.md
+    doi: 10.5281/zenodo.24356521
     notes: "Draft · CC BY-NC-SA 4.0"
   - type: report
     title: "Sovereign Code-First Infrastructure: Decoupling Business Logic from Persistent Plumbing"

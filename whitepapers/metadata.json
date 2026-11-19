@@ -31,9 +31,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/acs-assistant-context-standard.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/acs-assistant-context-standard.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356455",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356455
     },
     {
       "order": 2,
@@ -63,9 +63,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/hybrid-intelligence-forensic-audit.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/hybrid-intelligence-forensic-audit.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356457",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356457
     },
     {
       "order": 3,
@@ -95,9 +95,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/ethical-ai-ballistic-validation.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/ethical-ai-ballistic-validation.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356459",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356459
     },
     {
       "order": 4,
@@ -128,9 +128,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/governance-autonomous-systems-accountability.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/governance-autonomous-systems-accountability.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356461",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356461
     },
     {
       "order": 5,
@@ -160,9 +160,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/operational-algorithmic-ethics.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/operational-algorithmic-ethics.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356465",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356465
     },
     {
       "order": 6,
@@ -193,9 +193,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/formal-methods-vs-machine-learning.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/formal-methods-vs-machine-learning.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356471",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356471
     },
     {
       "order": 7,
@@ -226,9 +226,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/unified-world-architecture-mmorpg.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/unified-world-architecture-mmorpg.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356473",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356473
     },
     {
       "order": 8,
@@ -259,9 +259,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/universal-dns-distributed-systems.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/universal-dns-distributed-systems.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356475",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356475
     },
     {
       "order": 9,
@@ -292,9 +292,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/ai-collapse-systemic-risks.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/ai-collapse-systemic-risks.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356477",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356477
     },
     {
       "order": 10,
@@ -325,9 +325,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/laia-operational-framework.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/laia-operational-framework.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356479",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356479
     },
     {
       "order": 11,
@@ -358,9 +358,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/command-control-information-sovereignty.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/command-control-information-sovereignty.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356484",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356484
     },
     {
       "order": 12,
@@ -393,9 +393,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/collaborative-operational-framework-neptuno-network.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/collaborative-operational-framework-neptuno-network.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356486",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356486
     },
     {
       "order": 13,
@@ -428,9 +428,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/ethics-as-infrastructure-build-conditions.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/ethics-as-infrastructure-build-conditions.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356488",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356488
     },
     {
       "order": 14,
@@ -462,9 +462,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/brisecom-year-zero-subsistence-threshold.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/brisecom-year-zero-subsistence-threshold.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356491",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356491
     },
     {
       "order": 15,
@@ -496,9 +496,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/clean-software-clean-work-dependency.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/clean-software-clean-work-dependency.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356497",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356497
     },
     {
       "order": 16,
@@ -531,9 +531,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/neptuno-trident-three-layers-resilience.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/neptuno-trident-three-layers-resilience.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356499",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356499
     },
     {
       "order": 17,
@@ -565,9 +565,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/defence-cheaper-than-attack-cost-accounting.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/defence-cheaper-than-attack-cost-accounting.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356502",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356502
     },
     {
       "order": 18,
@@ -600,9 +600,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/arteries-of-the-earth-chokepoints.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/arteries-of-the-earth-chokepoints.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356506",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356506
     },
     {
       "order": 19,
@@ -635,9 +635,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/lux-equation-measurable-return.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/lux-equation-measurable-return.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356508",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356508
     },
     {
       "order": 20,
@@ -670,9 +670,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/contract-first-interface-agnostic-design.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/contract-first-interface-agnostic-design.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356510",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356510
     },
     {
       "order": 21,
@@ -706,9 +706,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/meteoectasis-impact-induced-assimilation.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/meteoectasis-impact-induced-assimilation.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356512",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356512
     },
     {
       "order": 22,
@@ -741,9 +741,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/freedom-as-absorbing-state-game-theory-of-faith.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/freedom-as-absorbing-state-game-theory-of-faith.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356514",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356514
     },
     {
       "order": 23,
@@ -776,9 +776,9 @@
       ],
       "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/dynamic-equilibrium-beyond-consensus-veto.md",
       "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/dynamic-equilibrium-beyond-consensus-veto.pdf",
-      "doi": null,
+      "doi": "10.5281/zenodo.24356521",
       "conceptDoi": null,
-      "zenodoRecord": null
+      "zenodoRecord": 24356521
     },
     {
       "order": 24,

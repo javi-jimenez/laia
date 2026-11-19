@@ -1,9 +1,147 @@
 {
+  "acs-assistant-context-standard": {
+    "doi": "10.5281/zenodo.24356455",
+    "zenodoRecord": 24356455,
+    "publishedAt": "2026-11-19T01:01:53.818486+00:00",
+    "environment": "production"
+  },
+  "ai-collapse-systemic-risks": {
+    "doi": "10.5281/zenodo.24356477",
+    "zenodoRecord": 24356477,
+    "publishedAt": "2026-11-19T01:02:17.259242+00:00",
+    "environment": "production"
+  },
+  "arteries-of-the-earth-chokepoints": {
+    "doi": "10.5281/zenodo.24356506",
+    "zenodoRecord": 24356506,
+    "publishedAt": "2026-11-19T01:02:43.616101+00:00",
+    "environment": "production"
+  },
+  "brisecom-year-zero-subsistence-threshold": {
+    "doi": "10.5281/zenodo.24356491",
+    "zenodoRecord": 24356491,
+    "publishedAt": "2026-11-19T01:02:31.974080+00:00",
+    "environment": "production"
+  },
+  "clean-software-clean-work-dependency": {
+    "doi": "10.5281/zenodo.24356497",
+    "zenodoRecord": 24356497,
+    "publishedAt": "2026-11-19T01:02:34.887335+00:00",
+    "environment": "production"
+  },
+  "collaborative-operational-framework-neptuno-network": {
+    "doi": "10.5281/zenodo.24356486",
+    "zenodoRecord": 24356486,
+    "publishedAt": "2026-11-19T01:02:26.142877+00:00",
+    "environment": "production"
+  },
+  "command-control-information-sovereignty": {
+    "doi": "10.5281/zenodo.24356484",
+    "zenodoRecord": 24356484,
+    "publishedAt": "2026-11-19T01:02:23.149851+00:00",
+    "environment": "production"
+  },
+  "contract-first-interface-agnostic-design": {
+    "doi": "10.5281/zenodo.24356510",
+    "zenodoRecord": 24356510,
+    "publishedAt": "2026-11-19T01:02:49.496891+00:00",
+    "environment": "production"
+  },
+  "defence-cheaper-than-attack-cost-accounting": {
+    "doi": "10.5281/zenodo.24356502",
+    "zenodoRecord": 24356502,
+    "publishedAt": "2026-11-19T01:02:40.725573+00:00",
+    "environment": "production"
+  },
+  "dynamic-equilibrium-beyond-consensus-veto": {
+    "doi": "10.5281/zenodo.24356521",
+    "zenodoRecord": 24356521,
+    "publishedAt": "2026-11-19T01:02:58.404994+00:00",
+    "environment": "production"
+  },
+  "ethical-ai-ballistic-validation": {
+    "doi": "10.5281/zenodo.24356459",
+    "zenodoRecord": 24356459,
+    "publishedAt": "2026-11-19T01:01:59.697359+00:00",
+    "environment": "production"
+  },
+  "ethics-as-infrastructure-build-conditions": {
+    "doi": "10.5281/zenodo.24356488",
+    "zenodoRecord": 24356488,
+    "publishedAt": "2026-11-19T01:02:29.091499+00:00",
+    "environment": "production"
+  },
+  "formal-methods-vs-machine-learning": {
+    "doi": "10.5281/zenodo.24356471",
+    "zenodoRecord": 24356471,
+    "publishedAt": "2026-11-19T01:02:08.389683+00:00",
+    "environment": "production"
+  },
+  "freedom-as-absorbing-state-game-theory-of-faith": {
+    "doi": "10.5281/zenodo.24356514",
+    "zenodoRecord": 24356514,
+    "publishedAt": "2026-11-19T01:02:55.372166+00:00",
+    "environment": "production"
+  },
+  "governance-autonomous-systems-accountability": {
+    "doi": "10.5281/zenodo.24356461",
+    "zenodoRecord": 24356461,
+    "publishedAt": "2026-11-19T01:02:02.633083+00:00",
+    "environment": "production"
+  },
+  "hybrid-intelligence-forensic-audit": {
+    "doi": "10.5281/zenodo.24356457",
+    "zenodoRecord": 24356457,
+    "publishedAt": "2026-11-19T01:01:56.686984+00:00",
+    "environment": "production"
+  },
+  "laia-operational-framework": {
+    "doi": "10.5281/zenodo.24356479",
+    "zenodoRecord": 24356479,
+    "publishedAt": "2026-11-19T01:02:20.170151+00:00",
+    "environment": "production"
+  },
+  "lux-equation-measurable-return": {
+    "doi": "10.5281/zenodo.24356508",
+    "zenodoRecord": 24356508,
+    "publishedAt": "2026-11-19T01:02:46.678858+00:00",
+    "environment": "production"
+  },
+  "meteoectasis-impact-induced-assimilation": {
+    "doi": "10.5281/zenodo.24356512",
+    "zenodoRecord": 24356512,
+    "publishedAt": "2026-11-19T01:02:52.306472+00:00",
+    "environment": "production"
+  },
+  "neptuno-trident-three-layers-resilience": {
+    "doi": "10.5281/zenodo.24356499",
+    "zenodoRecord": 24356499,
+    "publishedAt": "2026-11-19T01:02:37.801973+00:00",
+    "environment": "production"
+  },
+  "operational-algorithmic-ethics": {
+    "doi": "10.5281/zenodo.24356465",
+    "zenodoRecord": 24356465,
+    "publishedAt": "2026-11-19T01:02:05.494103+00:00",
+    "environment": "production"
+  },
   "sovereign-code-first-infrastructure": {
     "doi": "10.5281/zenodo.24356451",
     "conceptDoi": "10.5281/zenodo.24356450",
     "zenodoRecord": 24356451,
     "publishedAt": "2026-11-19T00:57:34.228339+00:00",
+    "environment": "production"
+  },
+  "unified-world-architecture-mmorpg": {
+    "doi": "10.5281/zenodo.24356473",
+    "zenodoRecord": 24356473,
+    "publishedAt": "2026-11-19T01:02:11.323698+00:00",
+    "environment": "production"
+  },
+  "universal-dns-distributed-systems": {
+    "doi": "10.5281/zenodo.24356475",
+    "zenodoRecord": 24356475,
+    "publishedAt": "2026-11-19T01:02:14.371857+00:00",
     "environment": "production"
   }
 }
