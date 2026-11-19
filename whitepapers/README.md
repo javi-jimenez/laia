@@ -81,6 +81,7 @@ longer has:
 | `whitepapers/references.bib` | One `@techreport` per paper | LaTeX, Zotero, Mendeley, Pandoc |
 | `whitepapers/metadata.json` | Machine-readable feed (title, authors, date, DOI, URLs) | The Hugo site (`laia.brisecom.org`) and the Zenodo publisher |
 | `whitepapers/dois.json` | DOI registry written by the publisher | The three artifacts above |
+| `whitepapers/zenodo-drafts.json` | Deposit id of each private draft | The publisher, so a re-run updates instead of duplicating |
 
 ```bash
 make citations        # regenerate all three
@@ -134,6 +135,9 @@ make citations                     # propagate the DOIs into CFF, BibTeX and JSO
 
 `zenodo-publish` runs `make citations` for you. Publishing is irreversible: drafts can still be edited or
 deleted, published records cannot. Use `--sandbox` for a rehearsal without touching the real record set.
+
+Drafts are recorded in `zenodo-drafts.json`, so running the publisher twice does not create duplicate
+deposits — it reports the existing drafts and stops. Each draft carries the Markdown source and the PDF.
 
 Once a DOI exists, the same DOI flows into `CITATION.cff`, the BibTeX field `doi`, the site feed and — via
 Zenodo's ORCID integration or ORCID's *Search & Link* wizard — into the author's ORCID record.

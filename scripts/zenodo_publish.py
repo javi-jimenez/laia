@@ -43,6 +43,9 @@ PRODUCTION = "https://zenodo.org/api"
 SANDBOX = "https://sandbox.zenodo.org/api"
 
 DOIS_FILE = REPO_ROOT / "whitepapers" / "dois.json"
+# Drafts are recorded separately: they have no DOI yet, and without a record a
+# second run would create a duplicate deposit.
+DRAFTS_FILE = REPO_ROOT / "whitepapers" / "zenodo-drafts.json"
 PDF_DIR = REPO_ROOT / "pdf" / "out"
 WPS_DIR = REPO_ROOT / "whitepapers"
 
@@ -114,6 +117,8 @@ def build_metadata(paper: Paper, abstract: str) -> dict:
         creator = {"name": f"{family}, {given}" if given else family}
         if author.orcid:
             creator["orcid"] = author.orcid
+        if author.affiliation:
+            creator["affiliation"] = author.affiliation
         creators.append(creator)
 
     metadata = {
@@ -165,6 +170,19 @@ def save_dois(dois: dict[str, dict[str, object]]) -> None:
     )
 
 
+def load_drafts() -> dict[str, int]:
+    if not DRAFTS_FILE.exists():
+        return {}
+    return json.loads(DRAFTS_FILE.read_text(encoding="utf-8"))
+
+
+def save_drafts(drafts: dict[str, int]) -> None:
+    DRAFTS_FILE.write_text(
+        json.dumps(dict(sorted(drafts.items())), ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+
 def resolve_token(token_file: str | None, sandbox: bool) -> str:
     """Read the token from ZENODO_TOKEN, then from the environment's file."""
     token = os.environ.get("ZENODO_TOKEN", "").strip()
@@ -209,18 +227,27 @@ def main() -> int:
 
     papers = numbered(load_papers())
     dois = load_dois()
+    drafts = load_drafts()
 
     selected = [(n, p) for n, p in papers if not args.only or p.slug == args.only]
     if not selected:
         raise SystemExit(f"error: no whitepaper matches '{args.only}'")
 
-    pending = [(n, p) for n, p in selected if p.slug not in dois]
+    pending = [(n, p) for n, p in selected if p.slug not in dois and p.slug not in drafts]
     already = [p.slug for _, p in selected if p.slug in dois]
+    drafted = [p.slug for _, p in selected if p.slug in drafts and p.slug not in dois]
+
+    if drafted:
+        print(f"draft already exists (skipped): {len(drafted)} document(s)")
 
     if already:
         print(f"already registered (skipped): {', '.join(already)}")
     if not pending:
-        print("Nothing to do: every selected whitepaper has a DOI.")
+        if drafted and not already:
+            print("Nothing to do: every selected whitepaper already has a draft.")
+            print("Review them on Zenodo, then publish with --publish.")
+        else:
+            print("Nothing to do: every selected whitepaper has a DOI.")
         return 0
 
     if args.dry_run:
@@ -284,6 +311,9 @@ def main() -> int:
             else:
                 print(f"  ! no PDF at {pdf.relative_to(REPO_ROOT)} (run `make pdfs`)")
 
+            drafts[paper.slug] = dep_id
+            save_drafts(drafts)
+
             if not args.publish:
                 url = deposition["links"].get("html", f"https://zenodo.org/deposit/{dep_id}")
                 print(f"  draft kept private: {url}")
@@ -303,6 +333,8 @@ def main() -> int:
                 "environment": "sandbox" if args.sandbox else "production",
             }
             save_dois(dois)
+            drafts.pop(paper.slug, None)
+            save_drafts(drafts)
             print(f"  ✔ published: {doi}")
         except ZenodoError as exc:
             failures += 1
