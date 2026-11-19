@@ -223,6 +223,11 @@ def main() -> int:
         "--token-file",
         help="file containing the token (default: ~/.config/laia/zenodo[.sandbox].token)",
     )
+    parser.add_argument(
+        "--list",
+        action="store_true",
+        help="list drafts and published records with their URLs; no network calls",
+    )
     args = parser.parse_args()
 
     papers = numbered(load_papers())
@@ -233,21 +238,57 @@ def main() -> int:
     if not selected:
         raise SystemExit(f"error: no whitepaper matches '{args.only}'")
 
-    pending = [(n, p) for n, p in selected if p.slug not in dois and p.slug not in drafts]
-    already = [p.slug for _, p in selected if p.slug in dois]
-    drafted = [p.slug for _, p in selected if p.slug in drafts and p.slug not in dois]
+    published = {p.slug for _, p in selected if p.slug in dois}
+    to_publish = [
+        (n, p) for n, p in selected if p.slug in drafts and p.slug not in dois
+    ]
+    to_create = [
+        (n, p)
+        for n, p in selected
+        if p.slug not in dois and p.slug not in drafts
+    ]
+    # Publishing an existing draft must not re-create it; publishing a paper
+    # that has no draft yet creates it first and then publishes it.
+    pending = (to_publish + to_create) if args.publish else to_create
 
-    if drafted:
-        print(f"draft already exists (skipped): {len(drafted)} document(s)")
+    if args.list:
+        if published:
+            print(f"published ({len(published)}):")
+            for number, paper in selected:
+                if paper.slug in dois:
+                    entry = dois[paper.slug]
+                    print(f"  WP {number:02d} {paper.slug} — doi:{entry.get('doi')}")
+        if to_publish:
+            print(f"\ndrafts ready to publish ({len(to_publish)}):")
+            for number, paper in to_publish:
+                dep = drafts[paper.slug]
+                print(
+                    f"  WP {number:02d} {paper.slug} — "
+                    f"https://zenodo.org/deposit/{dep}"
+                )
+            print(
+                "\nPublish one by one:\n"
+                "  python3 scripts/zenodo_publish.py --publish --only <slug>"
+            )
+        if to_create:
+            print(f"\nnot started ({len(to_create)}):")
+            for number, paper in to_create:
+                print(f"  WP {number:02d} {paper.slug}")
+        return 0
 
-    if already:
-        print(f"already registered (skipped): {', '.join(already)}")
+    if published:
+        print(f"already published (skipped): {len(published)} document(s)")
+    if args.publish and to_create:
+        print(
+            f"note: {len(to_create)} document(s) have no draft yet; "
+            "--publish will create and publish them in one step"
+        )
     if not pending:
-        if drafted and not already:
-            print("Nothing to do: every selected whitepaper already has a draft.")
-            print("Review them on Zenodo, then publish with --publish.")
+        if args.publish:
+            print("Nothing to publish: every selected whitepaper already has a DOI.")
         else:
-            print("Nothing to do: every selected whitepaper has a DOI.")
+            print("Nothing to create: every selected whitepaper already has a draft.")
+            print("Review them on Zenodo, then publish with --publish --only <slug>.")
         return 0
 
     if args.dry_run:
@@ -288,31 +329,43 @@ def main() -> int:
         pdf = PDF_DIR / f"{paper.slug}.pdf"
         try:
             abstract = extract_abstract(WPS_DIR / f"{paper.slug}.md")
-            print(f"▶ {label}: creating draft…")
-            deposition = request(
-                "POST",
-                f"{api}/deposit/depositions",
-                token,
-                payload={},
-            )
-            dep_id = deposition["id"]
-            bucket = deposition["links"]["bucket"]
-
-            request(
-                "PUT",
-                f"{api}/deposit/depositions/{dep_id}",
-                token,
-                payload={"metadata": build_metadata(paper, abstract)},
-            )
-
-            upload_file(bucket, WPS_DIR / f"{paper.slug}.md", token)
-            if pdf.exists():
-                upload_file(bucket, pdf, token)
+            existing = drafts.get(paper.slug)
+            if existing and args.publish:
+                # Already a draft: publish it as it stands, do not duplicate it.
+                dep_id = existing
+                print(f"▶ {label}: publishing existing draft {dep_id}…")
+                deposition = request(
+                    "GET", f"{api}/deposit/depositions/{dep_id}", token
+                )
+                if deposition.get("submitted"):
+                    print("  already published; use --list to see the DOI")
+                    continue
             else:
-                print(f"  ! no PDF at {pdf.relative_to(REPO_ROOT)} (run `make pdfs`)")
+                print(f"▶ {label}: creating draft…")
+                deposition = request(
+                    "POST",
+                    f"{api}/deposit/depositions",
+                    token,
+                    payload={},
+                )
+                dep_id = deposition["id"]
+                bucket = deposition["links"]["bucket"]
 
-            drafts[paper.slug] = dep_id
-            save_drafts(drafts)
+                request(
+                    "PUT",
+                    f"{api}/deposit/depositions/{dep_id}",
+                    token,
+                    payload={"metadata": build_metadata(paper, abstract)},
+                )
+
+                upload_file(bucket, WPS_DIR / f"{paper.slug}.md", token)
+                if pdf.exists():
+                    upload_file(bucket, pdf, token)
+                else:
+                    print(f"  ! no PDF at {pdf.relative_to(REPO_ROOT)} (run `make pdfs`)")
+
+                drafts[paper.slug] = dep_id
+                save_drafts(drafts)
 
             if not args.publish:
                 url = deposition["links"].get("html", f"https://zenodo.org/deposit/{dep_id}")

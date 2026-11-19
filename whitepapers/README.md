@@ -133,8 +133,15 @@ make zenodo-publish                # publish (PERMANENT) and record the DOIs
 make citations                     # propagate the DOIs into CFF, BibTeX and JSON
 ```
 
-`zenodo-publish` runs `make citations` for you. Publishing is irreversible: drafts can still be edited or
-deleted, published records cannot. Use `--sandbox` for a rehearsal without touching the real record set.
+Publishing one at a time is the recommended path — review each draft on Zenodo first:
+
+```bash
+make zenodo-list                              # drafts and published, with links
+make zenodo-publish-one SLUG=<slug>           # publish that one, then regenerate citations
+```
+
+`zenodo-publish` (all at once) and `zenodo-publish-one` run `make citations` for you. Publishing is
+irreversible: drafts can still be edited or deleted, published records cannot. Use `--sandbox` for a rehearsal without touching the real record set.
 
 Drafts are recorded in `zenodo-drafts.json`, so running the publisher twice does not create duplicate
 deposits — it reports the existing drafts and stops. Each draft carries the Markdown source and the PDF.

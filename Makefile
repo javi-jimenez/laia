@@ -30,6 +30,8 @@ help:
 	@echo "  make citations   Genera CITATION.cff, references.bib y metadata.json"
 	@echo "  make citations-check  Verifica que la citación esté actualizada (CI)"
 	@echo "  make orcid-sync  Trae el ORCID desde Redis (cluster-config) y regenera"
+	@echo "  make zenodo-list Lista borradores y publicados con sus enlaces"
+	@echo "  make zenodo-publish-one SLUG=...  Publica un whitepaper concreto"
 	@echo "  make pdfs        Genera los PDFs de todos los whitepapers"
 	@echo "  make pdf-one     Genera un PDF concreto (WP=whitepapers/<archivo>.md)"
 	@echo "  make release     Genera los PDFs y crea un Release de GitHub (TAG=..., NOTES=...)"
@@ -107,6 +109,17 @@ zenodo-dry:
 .PHONY: zenodo-draft
 zenodo-draft:
 	@$(PYTHON) scripts/zenodo_publish.py
+
+.PHONY: zenodo-list
+zenodo-list:
+	@$(PYTHON) scripts/zenodo_publish.py --list
+
+# Publicar UNO: make zenodo-publish-one SLUG=<slug>
+.PHONY: zenodo-publish-one
+zenodo-publish-one:
+	@test -n "$(SLUG)" || { echo "❌ Usa: make zenodo-publish-one SLUG=<slug>"; echo "   Lista: make zenodo-list"; exit 1; }
+	@$(PYTHON) scripts/zenodo_publish.py --publish --only "$(SLUG)"
+	@$(MAKE) citations
 
 .PHONY: zenodo-publish
 zenodo-publish:
