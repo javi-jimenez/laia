@@ -23,7 +23,6 @@ license: "CC BY 4.0 (text) / Apache-2.0 (code)"
 
 **Organization:** BRISECOM SL
 
-
 ## Abstract
 
 An auditor needs aggregate facts about a trail of events — how many, how often,
