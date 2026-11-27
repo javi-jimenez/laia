@@ -77,6 +77,7 @@ LAIA produce **documentos técnicos formales** (whitepapers) que transforman inv
 | 22 | [Freedom as an Absorbing State: Game Theory, Withdrawal and the Path of Faith](whitepapers/freedom-as-absorbing-state-game-theory-of-faith.md) | 2026-11-02 | [10.5281/zenodo.24356514](https://doi.org/10.5281/zenodo.24356514) | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/freedom-as-absorbing-state-game-theory-of-faith.pdf) |
 | 23 | [Dynamic Equilibrium: A Framework Beyond Consensus and Veto](whitepapers/dynamic-equilibrium-beyond-consensus-veto.md) | 2026-11-01 | [10.5281/zenodo.24356521](https://doi.org/10.5281/zenodo.24356521) | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/dynamic-equilibrium-beyond-consensus-veto.pdf) |
 | 24 | [Sovereign Code-First Infrastructure: Decoupling Business Logic from Persistent Plumbing](whitepapers/sovereign-code-first-infrastructure.md) | 2026-11-19 | [10.5281/zenodo.24356451](https://doi.org/10.5281/zenodo.24356451) | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/sovereign-code-first-infrastructure.pdf) |
+| 25 | [Encrypted Audit Aggregation: A Specification and a Reproducible Cost Harness for Computing Over Data That Is Never Decrypted](whitepapers/encrypted-audit-aggregation.md) | 2026-11-27 | [10.5281/zenodo.24582258](https://doi.org/10.5281/zenodo.24582258) | [PDF](https://github.com/javi-jimenez/laia/releases/latest/download/encrypted-audit-aggregation.pdf) |
 <!-- whitepapers-index:end -->
 
 ---

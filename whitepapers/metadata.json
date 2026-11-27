@@ -813,6 +813,39 @@
       "doi": "10.5281/zenodo.24356451",
       "conceptDoi": "10.5281/zenodo.24356450",
       "zenodoRecord": 24356451
+    },
+    {
+      "order": 25,
+      "slug": "encrypted-audit-aggregation",
+      "citationId": "laia-encrypted-audit-aggregation",
+      "title": "Encrypted Audit Aggregation: A Specification and a Reproducible Cost Harness for Computing Over Data That Is Never Decrypted",
+      "authors": [
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "0009-0007-1082-431X",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-11-27",
+      "year": "2026",
+      "version": "1.0.2",
+      "status": "Draft",
+      "license": "CC BY 4.0 (text) / Apache-2.0 (code)",
+      "topic": "Homomorphic encryption, encrypted auditing, reproducibility, pre-registration",
+      "keywords": [
+        "fully homomorphic encryption",
+        "audit trail",
+        "aggregate queries",
+        "operation counting",
+        "trusted timestamping",
+        "negative results"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/encrypted-audit-aggregation.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/encrypted-audit-aggregation.pdf",
+      "doi": "10.5281/zenodo.24582258",
+      "conceptDoi": "10.5281/zenodo.24581624",
+      "zenodoRecord": 24582258
     }
   ]
 }

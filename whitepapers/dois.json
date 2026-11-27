@@ -59,6 +59,13 @@
     "publishedAt": "2026-11-19T01:02:58.404994+00:00",
     "environment": "production"
   },
+  "encrypted-audit-aggregation": {
+    "doi": "10.5281/zenodo.24582258",
+    "conceptDoi": "10.5281/zenodo.24581624",
+    "zenodoRecord": 24582258,
+    "publishedAt": "2026-11-27T08:38:12+00:00",
+    "environment": "production"
+  },
   "ethical-ai-ballistic-validation": {
     "doi": "10.5281/zenodo.24356459",
     "zenodoRecord": 24356459,

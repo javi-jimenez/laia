@@ -298,3 +298,15 @@ references:
     url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/sovereign-code-first-infrastructure.md
     doi: 10.5281/zenodo.24356451
     notes: "Draft · CC BY-NC-SA 4.0"
+  - type: report
+    title: "Encrypted Audit Aggregation: A Specification and a Reproducible Cost Harness for Computing Over Data That Is Never Decrypted"
+    authors:
+      - family-names: "Jiménez Gómez"
+        given-names: "Francisco Javier"
+        orcid: https://orcid.org/0009-0007-1082-431X
+    year: 2026
+    date-published: 2026-11-27
+    number: "WP 25"
+    url: https://github.com/javi-jimenez/laia/blob/main/whitepapers/encrypted-audit-aggregation.md
+    doi: 10.5281/zenodo.24582258
+    notes: "Draft · CC BY 4.0 (text) / Apache-2.0 (code)"
