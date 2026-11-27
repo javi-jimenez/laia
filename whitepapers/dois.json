@@ -23,6 +23,13 @@
     "publishedAt": "2026-11-19T01:02:31.974080+00:00",
     "environment": "production"
   },
+  "ceres-local-food-logistics": {
+    "doi": "10.5281/zenodo.24583114",
+    "conceptDoi": "10.5281/zenodo.24583102",
+    "zenodoRecord": 24583114,
+    "publishedAt": "2026-11-27T09:20:00+00:00",
+    "environment": "production"
+  },
   "clean-software-clean-work-dependency": {
     "doi": "10.5281/zenodo.24356497",
     "zenodoRecord": 24356497,

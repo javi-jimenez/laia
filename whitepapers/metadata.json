@@ -846,6 +846,41 @@
       "doi": "10.5281/zenodo.24582258",
       "conceptDoi": "10.5281/zenodo.24581624",
       "zenodoRecord": 24582258
+    },
+    {
+      "order": 26,
+      "slug": "ceres-local-food-logistics",
+      "citationId": "laia-ceres-local-food-logistics",
+      "title": "CERES: Last-Mile Food Logistics Without a Platform — Surplus from the Field, Carried by Young Self-Employed Couriers",
+      "authors": [
+        {
+          "name": "Francisco Javier Jiménez Gómez",
+          "orcid": "0009-0007-1082-431X",
+          "affiliation": "Brisecom SL / LAIA Project"
+        }
+      ],
+      "affiliation": "Brisecom / LAIA Project",
+      "date": "2026-11-27",
+      "year": "2026",
+      "version": "1.0",
+      "status": "Draft",
+      "license": "CC BY-NC-SA 4.0",
+      "topic": "Agri-food, last-mile logistics, cooperativism, food loss, platform-free coordination",
+      "keywords": [
+        "food surplus",
+        "short food supply chain",
+        "cooperative",
+        "autónomo",
+        "false self-employment",
+        "route ownership",
+        "cold chain",
+        "last-mile"
+      ],
+      "url": "https://github.com/javi-jimenez/laia/blob/main/whitepapers/ceres-local-food-logistics.md",
+      "pdfUrl": "https://github.com/javi-jimenez/laia/releases/latest/download/ceres-local-food-logistics.pdf",
+      "doi": "10.5281/zenodo.24583114",
+      "conceptDoi": "10.5281/zenodo.24583102",
+      "zenodoRecord": 24583114
     }
   ]
 }
