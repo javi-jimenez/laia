@@ -23,7 +23,6 @@ license: "CC BY-NC-SA 4.0"
 
 **Organization:** BRISECOM SL
 
-
 ## Abstract
 
 Product leaves the field every week that never enters the commercial channel: it is
